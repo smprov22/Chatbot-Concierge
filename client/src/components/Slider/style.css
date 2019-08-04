@@ -1,0 +1,18 @@
+
+
+.rangeslider{
+    margin: 0 auto;
+}
+
+p{
+    margin: 1em !important;
+}
+
+.rangeslider-horizontal{
+    width: 400px;
+}
+
+.rangeslider-horizontal .rangeslider__fill {
+    background-color: #4aaaa5;
+}
+

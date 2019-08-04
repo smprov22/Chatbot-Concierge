@@ -1,0 +1,13 @@
+.descriptionsRight{
+  float: right;
+  margin-top: 6em;
+  font-size: 10px;
+  color: black;
+}
+
+.descriptionsLeft{
+  float: left;
+  margin-top: 6em;
+  font-size: 10px;
+  color: black;
+}
