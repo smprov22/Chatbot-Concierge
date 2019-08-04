@@ -4,7 +4,7 @@ import { Route, Link } from 'react-router-dom'
 // components
 import Signup from './pages/sign-up'
 import LoginForm from './pages/login-form'
-import Navbar from './components/navbar'
+import Navbar from './components/Nav/navbar'
 import Home from './pages/home'
 import Activities from './pages/activities'
 import ShareInput from './pages/shareInput'

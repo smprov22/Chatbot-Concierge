@@ -1,13 +1,18 @@
 .descriptionsRight{
-  float: right;
+  float: left;
   margin-top: 6em;
   font-size: 10px;
   color: black;
 }
 
 .descriptionsLeft{
-  float: left;
+  float: right;
   margin-top: 6em;
   font-size: 10px;
   color: black;
+}
+
+.col-md-6{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import StartBtn from '../components/button'
+import StartBtn from '../components/Button/button'
 import { Redirect } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 
