@@ -23,14 +23,14 @@ class FormInput extends Component {
         return (
           <form onSubmit={this.handleSubmit}>
             <label>
-              Location:
-              <input type="text" value={this.state.value} onChange={this.handleChange} />
+  
+              <input className="form-control" placeholder="Location" type="text" value={this.state.value} onChange={this.handleChange} />
             </label>
             <label>
-              Description:
-              <textarea type="text" value={this.state.value} onChange={this.handleChange} />
+        
+              <textarea className="form-control" placeholder="Description" type="text" value={this.state.value} onChange={this.handleChange} />
             </label>
-            <input type="submit" value="Submit" />
+            {/* <input type="submit" value="Submit" /> */}
           </form>
         );
       }

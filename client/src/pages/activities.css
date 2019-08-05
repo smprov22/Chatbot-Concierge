@@ -1,18 +1,43 @@
-.descriptionsRight{
-  float: left;
-  margin-top: 6em;
-  font-size: 10px;
+.descriptionsLeft{
+  margin-top: 3.2em;
+  font-size: 12px;
   color: black;
+  text-align:left;
 }
 
-.descriptionsLeft{
-  float: right;
-  margin-top: 6em;
-  font-size: 10px;
+.descriptionsRight{
+  margin-top: 3.2em;
+  font-size: 12px;
   color: black;
+  text-align:right;
 }
+
 
 .col-md-6{
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+.titleQ{
+  margin-top: 10% !important;
+  font-weight: 800;
+  font-size: 50px;
+  text-align: left;
+  
+}
+
+
+
+.Wrapper{
+  margin-top: 150px;
+  margin-bottom: 150px;
+  height: 100%;
+}
+
+.Wrapper-2{
+  background-color: blue;
+}
+
+.backgroundRight{
+  background-color: lightblue;
 }

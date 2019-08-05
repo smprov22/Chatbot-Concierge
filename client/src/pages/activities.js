@@ -3,82 +3,62 @@ import { Redirect } from 'react-router-dom'
 import axios from 'axios'
 import ReactDOM from 'react-dom';
 import SliderBar from '../components/Slider'
-import {Container, Row, Col} from '../components/Grid'
+import { SubmitBtn } from '../components/Button/button'
+import { Container, Row, Col } from '../components/Grid'
 import '../components/Slider/style.css'
 import '../pages/activities.css'
 
 
 class Activities extends Component {
+
+    state = {
+        answers: [
+           { id: 'fdsd', title: 'Why is the sky blue?' },
+           { id: 'adsf', title: 'Who invented pizza?' },
+           { id: 'afdsf', title: 'Is green tea overrated?' },
+        ],
+           displayAnswers: false
+   }
     render() {
         return (
+        <div className ="Wrapper">
             <Container>
                 <Row>
                     <Col size="md-3">
-                        <h6 className="descriptionsLeft">Kids</h6>
-                    </Col> 
-                    
+                       <h1 className="titleQ">WHAT TYPE OF ACTIVITY SHOULD WE PLAN?</h1> 
+                    </Col>
+                    <Col size="md-2">
+                        <h6 className="descriptionsRight">Kids</h6><br></br>
+                        <h6 className="descriptionsRight">An hour</h6><br></br>
+                        <h6 className="descriptionsRight">Indoors</h6><br></br>
+                        <h6 className="descriptionsRight">Sloth</h6><br></br>
+                        <h6 className="descriptionsRight">Budget Friendly</h6><br></br>
+                    </Col>
+
                     <Col size="md-5">
                         <p>Kid Friendly?</p>
                         <SliderBar />
-                    </Col> 
-                    <Col size="md-3">
-                        <h6 className="descriptionsRight">Cocktails</h6>
-                    </Col> 
-                </Row>  
-                 <Row>
-                    <Col size="md-3">
-                        <h6 className="descriptionsLeft">An hour</h6>
-                    </Col> 
-                    
-                    <Col size="md-5">
                         <p>Duration?</p>
                         <SliderBar />
-                    </Col> 
-                    <Col size="md-3">
-                        <h6 className="descriptionsRight">All day</h6>
-                    </Col> 
-                </Row>  
-                <Row>
-                    <Col size="md-3">
-                        <h6 className="descriptionsLeft">Outdoors</h6>
-                    </Col> 
-                    
-                    <Col size="md-5">
                         <p>Location?</p>
                         <SliderBar />
-                    </Col> 
-                    <Col size="md-3">
-                        <h6 className="descriptionsRight">Indoors</h6>
-                    </Col> 
-                </Row>
-                <Row>
-                    <Col size="md-3">
-                        <h6 className="descriptionsLeft">Sloth</h6>
-                    </Col> 
-                    
-                    <Col size="md-5">
                         <p>Activity Level?</p>
                         <SliderBar />
-                    </Col> 
-                    <Col size="md-3">
-                        <h6 className="descriptionsRight">Cheetah</h6>
-                    </Col> 
-                </Row> 
-                <Row>
-                    <Col size="md-3">
-                        <h6 className="descriptionsLeft">Budget Friendly</h6>
-                    </Col> 
-                    
-                    <Col size="md-5">
                         <p>Price?</p>
                         <SliderBar />
-                    </Col> 
-                    <Col size="md-3">
-                        <h6 className="descriptionsRight">Living Large</h6>
-                    </Col> 
-                </Row>     
-              
-           </Container>
+                        <SubmitBtn />
+                    </Col>
+                    <Col size="md-2">
+                        <h6 className="descriptionsLeft">Cocktails</h6><br></br>
+                        <h6 className="descriptionsLeft">All day</h6><br></br>
+                        <h6 className="descriptionsLeft">Outdoors</h6><br></br>
+                        <h6 className="descriptionsLeft">Cheetah</h6><br></br>
+                        <h6 className="descriptionsLeft">Living Large</h6><br></br>
+                    </Col>
+        
+                </Row>
+            </Container>
+         </div>
         )
     }
 }

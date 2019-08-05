@@ -3,3 +3,11 @@
       color: black;
 
 }
+
+.contentRight{
+     /* margin-left: 25%; */
+}
+
+.contentLeft{
+      float: left;
+}
