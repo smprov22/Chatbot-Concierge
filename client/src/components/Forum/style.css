@@ -10,6 +10,6 @@
     margin-top: 150px;
 }
 
-.card-img-forum{
-    width: 30%;
+img .card-img{
+    width: 50% !important;
 }

@@ -3,6 +3,7 @@ import '../ActivityCards/style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock, faBaby, faTree, faHiking, faMoneyBillAlt} from '@fortawesome/free-solid-svg-icons'
 import { BookBtn } from '../Button/button'
+import '../Forum'
 
 
 class ActivityCard extends Component {
@@ -48,11 +49,12 @@ class ActivityCard extends Component {
                 <div className="card mb-3" >
                     <div className="row no-gutters">
                         <div className="col-md-4">
-                            <img src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_412,c_fill,g_auto,h_232,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F180219103122-zanzibar-and-its-islands---mnemba-a-view-from-the-sky-mnemba-island-lodge.jpg" className="card-img" alt="..."></img>
+                            <img src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png" className="card-img-forum" alt="..."></img>
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
+                                    <h5 className="card-title">USER HANDLE</h5>
+                                    <h6 className="card-title">Location</h6>
                                     <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                     <FontAwesomeIcon icon={faClock} className="icons" size="lg"/>
@@ -60,7 +62,6 @@ class ActivityCard extends Component {
                                     <FontAwesomeIcon icon={faTree} className="icons" size="lg"/>
                                     <FontAwesomeIcon icon={faHiking} className="icons" size="lg"/>
                                     <FontAwesomeIcon icon={faMoneyBillAlt}className="icons" size="lg"/><br></br><br></br>
-                                    <BookBtn/>
                                 </div>
                             </div>
                         </div>

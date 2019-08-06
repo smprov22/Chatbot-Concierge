@@ -82,7 +82,7 @@ constructor(props) {
                     </Col>
         
                 </Row>
-                <ActivityCard></ActivityCard>
+                <ActivityCard />
             </Container>
          </div>
         )

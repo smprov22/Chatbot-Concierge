@@ -8,6 +8,8 @@ import { SubmitBtn } from '../components/Button/button'
 import '../components/Slider/style.css'
 import '../pages/activities.css'
 import FormInput from '../components/FormInput';
+import Forum from '../components/Forum'
+import '../components/Forum'
 
 
 class ShareInput extends Component {
@@ -50,6 +52,7 @@ class ShareInput extends Component {
                 </Col>
     
             </Row>
+            <Forum/>
         </Container>
      </div>
     )

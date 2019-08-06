@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 
+
 export function StartBtn(props) {
   return (
     <button className="start-btn btn btn-outline-info" {...props} tabIndex="0">
@@ -17,7 +18,16 @@ export function SubmitBtn(props) {
   );
 }
 
-export default SubmitBtn
+export function BookBtn(props) {
+  return (
+    <button  className="book-btn btn btn-outline-info" {...props} tabIndex="0">
+    Book
+    </button>
+  );
+}
+
+
+export default {BookBtn, StartBtn, SubmitBtn}
 
 
 
