@@ -3,7 +3,7 @@ import "./style.css";
 
 export function StartBtn(props) {
   return (
-    <button className="start-btn" {...props} tabIndex="0">
+    <button className="start-btn btn btn-outline-info" {...props} tabIndex="0">
     Start
     </button>
   );
@@ -11,13 +11,14 @@ export function StartBtn(props) {
 
 export function SubmitBtn(props) {
   return (
-    <button className="submit-btn" {...props} tabIndex="0">
+    <button  className="submit-btn btn btn-outline-info" {...props} tabIndex="0">
     Sumbit
     </button>
   );
 }
 
 export default SubmitBtn
+
 
 
 

@@ -5,20 +5,45 @@ import ReactDOM from 'react-dom';
 import SliderBar from '../components/Slider'
 import { SubmitBtn } from '../components/Button/button'
 import { Container, Row, Col } from '../components/Grid'
+import ActivityCard from '../components/ActivityCards'
 import '../components/Slider/style.css'
 import '../pages/activities.css'
 
 
+
 class Activities extends Component {
 
-    state = {
-        answers: [
-           { id: 'fdsd', title: 'Why is the sky blue?' },
-           { id: 'adsf', title: 'Who invented pizza?' },
-           { id: 'afdsf', title: 'Is green tea overrated?' },
-        ],
-           displayAnswers: false
-   }
+constructor(props) {
+        super(props);
+        this.state = { 
+            answers:{
+                image: "",
+                description: "",
+                city: "",
+                kids: "",
+                duration: "",
+                location: "",
+                active: "",
+                price: ""
+            },
+               displayAnswers: false
+        }
+ }
+
+  
+    handleOnChange = (value) => {
+        this.setState({
+            image: value,
+            description: value,
+            city: value,
+            kids: value,
+            duration: value,
+            location: value,
+            active: value,
+            price: value
+
+        })
+}
     render() {
         return (
         <div className ="Wrapper">
@@ -57,6 +82,7 @@ class Activities extends Component {
                     </Col>
         
                 </Row>
+                <ActivityCard></ActivityCard>
             </Container>
          </div>
         )
