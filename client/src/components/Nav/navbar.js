@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import { Route, Link } from 'react-router-dom'
-import logo from '../justin.jpg';
-import '../App.css';
+import logo from './justin.jpg';
+import '../../App.css';
 import axios from 'axios'
 
 class Navbar extends Component {
@@ -50,10 +50,10 @@ class Navbar extends Component {
                                         </Link>
                                     <Link to="/login" className="btn btn-link text-secondary">
                                     <span className="text-secondary">login</span>
-				</Link>
+				                    </Link>
                                     <Link to="/signup" className="btn btn-link">
                                     <span className="text-secondary">sign up</span>
-				</Link>
+				                    </Link>
                                 </section>
                             )}
                     </div>

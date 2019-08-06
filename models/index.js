@@ -1,4 +1,4 @@
 module.exports = {
-    Event: require("./event"),
-    AddEvent: require ("./addEvent")
-  };
+  Event: require("./event"),
+  AddEvent: require ("./addEvent")
+};
