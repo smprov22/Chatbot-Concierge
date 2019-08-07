@@ -27,7 +27,7 @@ export function BookBtn(props) {
 }
 
 
-export default {BookBtn, StartBtn, SubmitBtn}
+export default StartBtn
 
 
 
