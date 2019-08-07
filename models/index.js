@@ -1,4 +1,4 @@
 module.exports = {
-    Answers: require("./activityAnswers")
+    Event: require("./event"),
+    AddEvent: require ("./addEvent")
   };
-  
