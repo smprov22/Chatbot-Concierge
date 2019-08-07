@@ -11,8 +11,7 @@ const PORT = process.env.PORT || 3001;
 
 // Route requires
 // const routes = require("./routes");
-const user = require('./routes/user')
-
+const { user, routes } = require('./routes/index.js')
 // MIDDLEWARE
 app.use(morgan('dev'))
 // app.use(
@@ -43,7 +42,8 @@ app.use(passport.session()) // calls the deserializeUser
 // Define API routes here
 // app.use(routes);
 app.use('/user', user)
-
+app.use('/api', routes)
+// app.use('/')
 // Starting Server 
 app.listen(PORT, () => {
 	console.log(`App listening on PORT: ${PORT}`)
