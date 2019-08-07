@@ -78,12 +78,12 @@ class App extends Component {
           path="/signup"
           render={() =>
             <Signup/>}
-        />
+        /> 
         <Route
           path="/activities"
           render={() =>
             <Activities/>}
-        />
+        /> 
         <Route
           path="/shareInput"
           render={() =>
