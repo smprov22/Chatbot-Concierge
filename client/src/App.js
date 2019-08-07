@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import axios from 'axios'
 import { Route, Link } from 'react-router-dom'
 // components
-import Signup from './components/sign-up'
-import LoginForm from './components/login-form'
-import Navbar from './components/navbar'
-import Home from './components/home'
+import Signup from './pages/sign-up'
+import LoginForm from './pages/login-form'
+import Navbar from './components/Nav/navbar'
+import Home from './pages/home'
+import Activities from './pages/activities'
+import ShareInput from './pages/shareInput'
 import Manager from './components/manager'
 
 class App extends Component {
@@ -79,6 +81,16 @@ class App extends Component {
           path="/manager"
           render={() =>
             <Manager/>}
+        />
+        <Route  
+          path="/activities"
+          render={() =>
+            <Activities/>}
+        />
+        <Route
+          path="/shareInput"
+          render={() =>
+            <ShareInput/>}
         />
 
       </div>
