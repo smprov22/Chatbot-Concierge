@@ -1,3 +1,7 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -21,6 +25,8 @@
 .App-intro {
   font-size: large;
 }
+
+
 
 .navbar {
  

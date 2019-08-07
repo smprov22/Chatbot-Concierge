@@ -1,0 +1,15 @@
+.card .mb-3{
+    max-width:540px !important;
+}
+
+.icons{
+    margin: 15px;
+}
+
+.card{
+    margin-top: 150px;
+}
+
+.card-img-forum{
+    width: 30%;
+}
