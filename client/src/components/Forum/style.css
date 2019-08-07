@@ -1,0 +1,15 @@
+.card .mb-3{
+    max-width:540px !important;
+}
+
+.icons{
+    margin: 15px;
+}
+
+.card{
+    margin-top: 150px;
+}
+
+img .card-img{
+    width: 50% !important;
+}
