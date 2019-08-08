@@ -1,0 +1,25 @@
+.containerIpad{
+
+    text-align: right;
+}
+
+
+iframe{
+    position:absolute; 
+    top:500px; 
+    left:468px; 
+    width:510px; 
+    height:330px;
+    position: absolute;
+}
+
+.ipad{
+    position:relative; 
+}
+
+.cineDiv{
+    height:0; 
+    padding-bottom:177.78%;
+    width:100%;
+    margin-left: 1000px;
+}
