@@ -18,11 +18,17 @@
     align-items: center !important;
   }
 
-  .rightNav{
-      float: right;
-  }
+.nav-link2{
+  margin-right: 60px;
+}
 
+.nav-link-share{
+  margin-left: 60px;
+}
+
+  a {
+  color: gray !important;
  
-  
+  }
 
   

@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import StartBtn from '../components/Button/button'
 import { Redirect } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import '../App.css'
+import Cinemagraph from '../components/Cinemagraph/cinemagraph'
 
 
 class Home extends Component {
@@ -18,16 +20,15 @@ class Home extends Component {
 
     }
 
-render() {
-        const imageStyle = {
-            width: 400
-        }
+    render() {
         return (
-            <div>
-                <p>It's good to be home</p>
-                <img style={imageStyle} src="https://i.ytimg.com/vi/N1icEHtgb3g/maxresdefault.jpg" alt=""/>
-                <StartBtn 
-                onClick={this.onStartBtn} />
+
+            <div className="containerTitle">
+                    <p className="homeTitle">Let's do <br></br>something fun</p>
+                    <StartBtn
+                        onClick={this.onStartBtn} />
+                    <Cinemagraph />
+                  
             </div>
 
         )

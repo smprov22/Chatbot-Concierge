@@ -5,6 +5,20 @@
 .App {
   text-align: center;
 }
+
+.homeTitle{
+  font-weight: 200 !important;
+  font-size: 2rem;
+}
+
+.containerTitle{
+  text-align: center;
+  margin-top: 100px;
+  align-items: center;
+  display:inline-block;
+}
+
+
 /* 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;

@@ -1,0 +1,26 @@
+.containerIpad{
+    /* float: right; */
+    /* margin-top: 150px; */
+    text-align: right;
+}
+
+iframe{
+    position:absolute; 
+    top:460px; 
+    left:468px; 
+    width:510px; 
+    height:330px;
+    position: absolute;
+    /* transform: rotate(-3deg);  */
+}
+
+.ipad{
+    position:relative; 
+}
+
+.cineDiv{
+    height:0; 
+    padding-bottom:177.78%;
+    width:100%;
+    margin-left: 1000px;
+}

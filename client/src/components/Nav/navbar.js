@@ -37,10 +37,10 @@ class Navbar extends Component {
 
                 <nav className="navbar navbar-light bg-light">
                     <Link to="/shareInput" className="btn btn-link">
-                        <span className="">HAVE SOMETHING TO SHARE?</span>
+                        <span className="nav-link-share">HAVE SOMETHING TO SHARE?</span>
                     </Link>
                     <a className="navbar-brand" href="/">
-                        <img src={logo} className="App-logo" width="50" height="50" alt="logo" />
+                        <img src={logo} className="App-logo" width="80" height="50" alt="logo" />
                     </a>
                     <ul class="nav justify-content-end">
                     <li>
@@ -48,7 +48,7 @@ class Navbar extends Component {
                        LOGIN
                     </Link>
                 
-                    <Link to="#" className="btn btn-link nav-item nav-link " onClick={this.logout}>
+                    <Link to="#" className="btn btn-link nav-item nav-link2 " onClick={this.logout}>
                        LINK
                       </Link> 
                       </li>
