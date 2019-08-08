@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import axios from 'axios'
 import { Route, Link } from 'react-router-dom'
 // components
-import Wrapper from './components/Wrapper/wrapper'
 import Signup from './pages/sign-up'
 import LoginForm from './pages/login-form'
 import Navbar from './components/Nav/navbar'

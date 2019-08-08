@@ -6,12 +6,11 @@
 
 iframe{
     position:absolute; 
-    top:460px; 
+    top:500px; 
     left:468px; 
     width:510px; 
     height:330px;
     position: absolute;
-    /* transform: rotate(-3deg);  */
 }
 
 .ipad{

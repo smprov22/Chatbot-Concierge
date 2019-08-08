@@ -24,9 +24,11 @@ class Home extends Component {
         return (
 
             <div className="containerTitle">
-                    <p className="homeTitle">Let's do <br></br>something fun</p>
+                    <p className="homeTitle">Let's do <br></br>something fun <br></br>
                     <StartBtn
                         onClick={this.onStartBtn} />
+                    </p>
+                 
                     <Cinemagraph />
                   
             </div>

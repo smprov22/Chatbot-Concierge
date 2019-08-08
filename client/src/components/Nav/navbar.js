@@ -40,7 +40,7 @@ class Navbar extends Component {
                         <span className="nav-link-share">HAVE SOMETHING TO SHARE?</span>
                     </Link>
                     <a className="navbar-brand" href="/">
-                        <img src={logo} className="App-logo" width="80" height="50" alt="logo" />
+                        <img src={logo} className="App-logo" width="80" height="60" alt="logo" />
                     </a>
                     <ul class="nav justify-content-end">
                     <li>
@@ -49,7 +49,7 @@ class Navbar extends Component {
                     </Link>
                 
                     <Link to="#" className="btn btn-link nav-item nav-link2 " onClick={this.logout}>
-                       LINK
+                       LOGOUT
                       </Link> 
                       </li>
                     </ul>
