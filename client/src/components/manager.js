@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import { Redirect } from 'react-router-dom'
+// import { Redirect } from 'react-router-dom'
 import {List, Submissions} from './submissions'
 import {ApproveBtn, DeleteBtn} from './buttons'
 import API from '../utils/api'
 
 class Manager extends Component {
-    constructor() {
-        super()
-    }
+    // constructor() {
+    //     super()
+    // }
 
     state = {
         submissions: []
