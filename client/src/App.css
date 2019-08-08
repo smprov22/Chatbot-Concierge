@@ -1,48 +1,40 @@
 *{
   font-family: 'Montserrat', sans-serif;
+
+}
+
+html {
+  height: 1000px;
+}
+
+.homeTitle{
+  font-weight: 200 !important;
+  font-size: 2rem;
+}
+
+.containerTitle{
+  text-align: center;
+  margin-top: 100px;
+  align-items: center;
+  display:inline-block;
 }
 
 .App {
+  height: 1000px;
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
+  scroll-behavior: smooth;
 }
 
 
+.App {
 
-.navbar {
- 
-  margin-top: auto;
-  
-}
-#top-filler {
-  margin-bottom: auto;
-}
-
-#nav-container {
-  align-items: flex-end;
+background: url('../src/pages/background1.png') no-repeat center center fixed;
+-webkit-mask-image: -webkit-gradient(linear, left 90%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+
 

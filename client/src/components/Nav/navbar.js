@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 // import { Redirect } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import logo from './justin.jpg';
-import '../../App.css';
+import logo from './logo.png';
+import '../Nav/style.css';
 import axios from 'axios'
 
 class Navbar extends Component {
@@ -35,30 +35,28 @@ class Navbar extends Component {
         return (
             <div>
 
-                <header className="navbar App-header" id="nav-container">
-                    <div className="col-2">
-                    </div>
-                    <div className="col-8 col-mr-auto">
-                        <div id="top-filler"></div>
-                        <img src={logo} className="App-logo" alt="logo" />
-                        <h1 className="App-title">Chatbot Concierge</h1>
-                    </div>
-                    <div className="col-2" >
-                        {loggedIn ? (
-                            <section className="navbar-section">
-                                <Link to="#" className="btn btn-link text-secondary" onClick={this.logout}>
-                                    <span className="text-secondary">logout</span></Link>
+                <nav className="navbar navbar-light bg-light">
+                    <Link to="/shareInput" className="btn btn-link">
+                        <span className="nav-link-share">HAVE SOMETHING TO SHARE?</span>
+                    </Link>
+                    <a className="navbar-brand" href="/">
+                        <img src={logo} className="App-logo" width="80" height="60" alt="logo" />
+                    </a>
+                    <ul class="nav justify-content-end">
+                    <li>
+                    <Link to="/login" className="btn btn-link nav-item active nav-link">
+                       LOGIN
+                    </Link>
+                
+                    <Link to="#" className="btn btn-link nav-item nav-link2 " onClick={this.logout}>
+                       LOGOUT
+                      </Link> 
+                      </li>
+                    </ul>
+                </nav>
 
-                            </section>
-                        ) : (
-                                <section className="navbar-section">
-                                    <Link to="/login" className="btn btn-link text-secondary">
-                                        <span className="text-secondary">login</span>
-                                    </Link>
-                                </section>
-                            )}
-                    </div>
-                </header>
+
+
             </div>
 
         );

@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-// import { Redirect } from 'react-router-dom'
-// import axios from 'axios'
-// import ReactDOM from 'react-dom';
+import React, { Component } from '../../node_modules/react'
+import { Redirect } from '../../node_modules/react-router-dom'
+// import axios from '../../node_modules/axios'
+import ReactDOM from '../../node_modules/react-dom';
 import SliderBar from '../components/Slider'
 import {Container, Row, Col} from '../components/Grid'
 import { SubmitBtn } from '../components/Button/button'

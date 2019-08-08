@@ -4,7 +4,7 @@ import "./style.css";
 
 export function StartBtn(props) {
   return (
-    <button className="start-btn btn btn-outline-info" {...props} tabIndex="0">
+    <button className="start-btn btn btn-primary" {...props} tabIndex="0">
     Start
     </button>
   );
