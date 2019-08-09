@@ -12,7 +12,8 @@ const addEventSchema = new Schema({
   approved: { type: Boolean, default: false },
   description: String,
   date: { type: Date, default: Date.now },
-  link: String
+  link: String,
+  image: { data: Buffer, contentType: String },
 });
 
 const AddEvent = mongoose.model("AddEvent", addEventSchema);

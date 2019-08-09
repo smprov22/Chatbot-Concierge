@@ -6,7 +6,7 @@ import { BookBtn } from '../Button/button'
 import API from '../../utils/api'
 
 
-function ActivityCard({ title, ages, duration, location, activityLevel, price, description, link }) {
+function ActivityCard({ title, ages, duration, location, activityLevel, price, description, link, image }) {
     //     BookButton = event =>{
     //     event.preventDefault();
     //     let path = {link}
@@ -18,7 +18,7 @@ function ActivityCard({ title, ages, duration, location, activityLevel, price, d
                 <div className="card mb-3" >
                     <div className="row no-gutters">
                         <div className="col-md-4">
-                            <img src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_412,c_fill,g_auto,h_232,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F180219103122-zanzibar-and-its-islands---mnemba-a-view-from-the-sky-mnemba-island-lodge.jpg" className="card-img" alt="..."></img>
+                            <img src={image} className="card-img img-thumbnail img-fluid w-100" alt={title}></img>
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body">
@@ -47,33 +47,5 @@ function ActivityCard({ title, ages, duration, location, activityLevel, price, d
 
 export default ActivityCard
 
-
-
-// {this.state.books.length ? (
-//   <List>
-//     {this.state.books.map(book => (
-//       <Book
-//         key={book._id}
-//         title={book.title}
-//         subtitle={book.subtitle}
-//         link={book.link}
-//         authors={book.authors.join(", ")}
-//         description={book.description}
-//         image={book.image}
-//         Button={() => (
-//           <button
-//             onClick={() => this.handleBookDelete(book._id)}
-//             className="btn btn-danger ml-2"
-//           >
-//             Delete
-//           </button>
-//         )}
-//       />
-//     ))}
-//   </List>
-// ) : (
-//   <h2 className="text-center">No Saved Books</h2>
-// )}
-// </Card>
 
 

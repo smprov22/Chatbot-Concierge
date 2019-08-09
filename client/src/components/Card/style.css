@@ -8,4 +8,9 @@
 
 .card{
     margin-top: 50px !important;
+    margin-bottom: 50px !important;
 }
+
+.card .mb-4{
+    margin-top: 100px !important;
+} 

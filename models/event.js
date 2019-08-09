@@ -12,7 +12,8 @@ const eventSchema = new Schema({
   approved: Boolean,
   description: String,
   date: { type: Date, default: Date.now },
-  link: String
+  link: String,
+  image: { data: Buffer, contentType: String },
   
 });
 
