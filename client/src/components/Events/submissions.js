@@ -8,6 +8,8 @@ export function List({ children }) {
   );
 }
 
-export function Submissions({ children }) {
-  return <li className="list-group-item">{children}</li>;
+export function Submissions({ children, props }) {
+  return <div>
+    <li className="list-group-item">{children}</li>
+    </div>;
 }

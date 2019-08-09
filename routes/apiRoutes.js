@@ -10,7 +10,7 @@ module.exports = function (app) {
   // Matches with "/api/submissions/:id"
   app.route("/api/submissions/:id")
     .get(addEventController.findById)
-    .put(addEventController.update)
+    .put(addEventController.approve)
     .delete(addEventController.remove);
 
   app.get('/api/events/:loc', (req, res) => {
