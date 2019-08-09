@@ -3,9 +3,6 @@
 
 }
 
-html {
-  height: 1000px;
-}
 
 .homeTitle{
   font-weight: 200 !important;
@@ -20,20 +17,15 @@ html {
 }
 
 .App {
-  height: 1000px;
+  height: 100%;
   text-align: center;
   scroll-behavior: smooth;
-}
-
-
-.App {
-
-background: url('../src/pages/background1.png') no-repeat center center fixed;
--webkit-mask-image: -webkit-gradient(linear, left 90%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+  background: url('../src/pages/background1.png') no-repeat center center fixed;
+  -webkit-mask-image: -webkit-gradient(linear, left 90%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 

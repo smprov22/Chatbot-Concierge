@@ -42,7 +42,7 @@ class Navbar extends Component {
                     <a className="navbar-brand" href="/">
                         <img src={logo} className="App-logo" width="80" height="60" alt="logo" />
                     </a>
-                    <ul class="nav justify-content-end">
+                    <ul className="nav justify-content-end">
                     <li>
                     <Link to="/login" className="btn btn-link nav-item active nav-link">
                        LOGIN

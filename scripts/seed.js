@@ -11,16 +11,19 @@ mongoose.connect(
 const eventSeed = [
     {
         title: "California State Capitol Museum Tour",
+        location: "Sacramento, CA",
         ages: 0,
         duration: 0,
         location: 0,
         activityLevel: 1,
         price: 0,
         approved: false,
-        description: "At the State Capitol, the past, present and future of California interact with equal force. The building serves as both a museum and the state’s working seat of government. Visitors to the Capitol can experience California’s rich history and witness the making of history through the modern lawmaking process."
+        description: "At the State Capitol, the past, present and future of California interact with equal force. The building serves as both a museum and the state’s working seat of government. Visitors to the Capitol can experience California’s rich history and witness the making of history through the modern lawmaking process.",
+        link: "http://capitolmuseum.ca.gov/"
     },
     {
         title: "American River Bike Trail",
+        location: "Sacramento, CA",
         ages: 1,
         duration: 1,
         location: 2,

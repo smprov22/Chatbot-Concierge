@@ -3,6 +3,7 @@ const Schema = mongoose.Schema;
 
 const eventSchema = new Schema({
   title: String,
+  location: String,
   ages: Number,
   duration: Number,
   location: Number,
@@ -10,7 +11,9 @@ const eventSchema = new Schema({
   price: Number,
   approved: Boolean,
   description: String,
-  date: { type: Date, default: Date.now }
+  date: { type: Date, default: Date.now },
+  link: String
+  
 });
 
 const Events = mongoose.model("Events", eventSchema);

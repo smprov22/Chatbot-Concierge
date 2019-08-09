@@ -5,7 +5,7 @@ export default {
   getSubmissions: function() {
     return axios.get("/api/submissions");
   },
-  // Gets the book with the given id
+  // Gets the submissions with the given id
   getSubmission: function(id) {
     return axios.get("/api/submissions/" + id);
   },
@@ -18,3 +18,6 @@ export default {
     return axios.post("/api/submissions", submissionData);
   }
 };
+
+
+

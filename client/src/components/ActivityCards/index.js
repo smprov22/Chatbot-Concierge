@@ -3,46 +3,16 @@ import '../ActivityCards/style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock, faBaby, faTree, faHiking, faMoneyBillAlt} from '@fortawesome/free-solid-svg-icons'
 import { BookBtn } from '../Button/button'
+import API from '../../utils/api'
 
 
-class ActivityCard extends Component {
+function ActivityCard({ title, ages, duration, location, activityLevel, price, description, link }) {
+    //     BookButton = event =>{
+    //     event.preventDefault();
+    //     let path = {link}
+    //     this.props.history.push(path)
 
-    constructor(props) {
-        super(props);
-        this.state = { 
-            answers:{
-                image: "",
-                description: "",
-                city: "",
-                kids: "",
-                duration: "",
-                location: "",
-                active: "",
-                price: ""
-            },
-               displayAnswers: false
-        }
- }
-
-
-    handleOnChange = (value) => {
-        this.setState({
-            image: value,
-            description: value,
-            city: value,
-            kids: value,
-            duration: value,
-            location: value,
-            active: value,
-            price: value
-
-        })
-    }
-        render() {
-           
-            // let { image } = this.state
-            // let { description } = this.state
-            // let { city } = this.state
+    // }
 
             return (
                 <div className="card mb-3" >
@@ -52,15 +22,18 @@ class ActivityCard extends Component {
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
-                                    <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
-                                    <FontAwesomeIcon icon={faClock} className="icons" size="lg"/>
+                                    <h5 className="card-title">{title}</h5>
+                                    <p className="card-text">{description}</p>
+                                    <p className="card-text"><small className="text-muted"> Location: {location} </small></p>
+                                    <p >Ages: {ages} | Duration: {duration} | Activity Level: {activityLevel} | Price: {price} </p>
+                                    <a href={link} className="bookBtn">BOOK</a>
+                                    {/* <FontAwesomeIcon icon={faClock} className="icons" size="lg"/>
                                     <FontAwesomeIcon icon={faBaby} className="icons" size="lg"/>
                                     <FontAwesomeIcon icon={faTree} className="icons" size="lg"/>
                                     <FontAwesomeIcon icon={faHiking} className="icons" size="lg"/>
-                                    <FontAwesomeIcon icon={faMoneyBillAlt}className="icons" size="lg"/><br></br><br></br>
-                                    <BookBtn/>
+                                    <FontAwesomeIcon icon={faMoneyBillAlt}className="icons" size="lg"/><br></br><br></br> */}
+                                 
+                               
                                 </div>
                             </div>
                         </div>
@@ -69,9 +42,38 @@ class ActivityCard extends Component {
             )
         }
 
-}
+
+
 
 export default ActivityCard
 
+
+
+// {this.state.books.length ? (
+//   <List>
+//     {this.state.books.map(book => (
+//       <Book
+//         key={book._id}
+//         title={book.title}
+//         subtitle={book.subtitle}
+//         link={book.link}
+//         authors={book.authors.join(", ")}
+//         description={book.description}
+//         image={book.image}
+//         Button={() => (
+//           <button
+//             onClick={() => this.handleBookDelete(book._id)}
+//             className="btn btn-danger ml-2"
+//           >
+//             Delete
+//           </button>
+//         )}
+//       />
+//     ))}
+//   </List>
+// ) : (
+//   <h2 className="text-center">No Saved Books</h2>
+// )}
+// </Card>
 
 

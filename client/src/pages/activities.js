@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import API from '../utils/api'
 import { Redirect } from 'react-router-dom'
 import axios from 'axios'
 import ReactDOM from 'react-dom';
@@ -8,42 +9,62 @@ import { Container, Row, Col } from '../components/Grid'
 import ActivityCard from '../components/ActivityCards'
 import '../components/Slider/style.css'
 import '../pages/activities.css'
+import List from '../components/List/index'
+import Card from '../components/Card/index'
 
 
 
 class Activities extends Component {
 
-constructor(props) {
-        super(props);
-        this.state = { 
-            answers:{
-                image: "",
-                description: "",
-                city: "",
-                kids: "",
-                duration: "",
-                location: "",
-                active: "",
-                price: ""
-            },
-               displayAnswers: false
-        }
- }
+    state = {
+        events: []
+      };
+    
+      componentDidMount() {
+        this.getSubmissions();
+      }
+    
+      getSubmissions = () => {
+        API.getSubmissions()
+          .then(res =>
+            this.setState({
+              events: res.data
+            })
+          )
+          .catch(err => console.log(err));
+      }
+    
+
+//         super(props);
+//         this.state = { 
+//             answers:{
+//                 title: "",
+//                 ages: 0,
+//                 duration: 0,
+//                 location: 0,
+//                 activityLevel: 1,
+//                 price: 0,
+//                 approved: false,
+//                 description: ""
+//             },
+//                displayAnswers: false
+//         }
+//  }
 
   
-    handleOnChange = (value) => {
-        this.setState({
-            image: value,
-            description: value,
-            city: value,
-            kids: value,
-            duration: value,
-            location: value,
-            active: value,
-            price: value
+//     handleOnChange = (value) => {
+//         this.setState({
+//             image: value,
+//             description: value,
+//             city: value,
+//             kids: value,
+//             duration: value,
+//             location: value,
+//             active: value,
+//             price: value
 
-        })
-}
+//         })
+
     render() {
         return (
         <div className ="Wrapper">
@@ -82,7 +103,27 @@ constructor(props) {
                     </Col>
         
                 </Row>
-                <ActivityCard />
+                <Card title="All Events" >
+                    {this.state.events.length ? (
+                <List>
+                {this.state.events.map(event => (
+                  <ActivityCard
+                    key={event.id}
+                    title={event.title}
+                    ages={event.ages}
+                    duration={event.duration}
+                    location={event.location}
+                    activityLevel={event.activityLevel}
+                    price={event.price}
+                    description={event.description} 
+                    link={event.link}
+                 />
+                ))}
+              </List>
+                   ) : (
+                    <h2 className="text-center">No Events :(</h2>
+                  )}
+               </Card>
             </Container>
          </div>
         )
