@@ -28,6 +28,12 @@ module.exports = {
       .then(eventData => res.json(eventData))
       .catch(err => res.status(422).json(err));
   },
+  approve: function(req, res) {
+    db.AddEvent
+      .findOneAndUpdate({ _id: req.params.id }, {approved : true})
+      .then(eventData => res.json(eventData))
+      .catch(err => res.status(422).json(err));
+  },
   remove: function(req, res) {
     db.AddEvent
       .findById({ _id: req.params.id })
