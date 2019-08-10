@@ -1,0 +1,16 @@
+.cardBack{
+    background-color: rgba(249, 249, 250, 0.356) !important;
+}
+
+.card .mb-3{
+    max-width: 100% !important;
+}
+
+.card{
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+
+.card .mb-4{
+    margin-top: 100px !important;
+} 
