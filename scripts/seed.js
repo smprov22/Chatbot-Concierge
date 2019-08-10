@@ -86,6 +86,97 @@ const eventSeed = [
         description: "Just minutes from the city of Sacramento, the delta area feels like a million miles away from busy city life. Wandering along scenic Highway 160 throughout the southern portion of Sacramento County, the Delta area is rich in history and folklore. Whether you're exploring islands, fishing, swimming or enjoying a picnic with your family, you'll notice the pace of life slows as you enter this beautiful and majestic world. From fall through spring, it is a quiet getaway for people in search of back-road adventures and towns that haven't changed in 50 years. In summer, the waterways become full of people enjoying boating, waterskiing, and windsurfing. ",
         link: "https://visitcadelta.com/",
         image:"https://regionalchange.ucdavis.edu/sites/g/files/dgvnsk986/files/styles/sf_landscape_16x9/public/images/article/Aerial%20Photo%20Sac.jpg?h=0b568681&itok=8jZhs9s6"
+    },
+    {
+      title: "Sacramento Zoo",
+      city: "Sacramento, CA",
+      link: "https://www.saczoo.org/",
+      image: "https://www.daytrippen.com/wp-content/uploads/2014/11/sacramento-zoo-train.jpg",
+      ages: 0,
+      duration: 1,
+      location: 0,
+      activityLevel: 1,
+      price: 1,
+      approved: false,
+      description: "The Sacramento Zoo inspires appreciation, respect and a connection with wildlife and nature through education, recreation and conservation. A few of the programs we offer are: summer camp, family and group overnights, ZooMobile, wildlife stage shows, keeper chats, zoo previews, animal encounters and much more."
+    },
+    {
+      title: "Fairytale Town",
+      city: "Sacramento, CA",
+      link: "https://www.fairytaletown.org/",
+      image: "https://www.fairytaletown.org/wp-content/uploads/2018/10/1-Humpty-Dumptys-Bridge.jpg",
+      ages: 0,
+      duration: 1,
+      location: 0,
+      activityLevel: 0,
+      price: 1,
+      approved: false,
+      description: "For 60 years, Fairytale Town has offered children and families a safe place to imagine, play and learn. With 26 playsets based on nursery rhymes and fairytales, a friendly flock of farm animals, two performing arts stages and several gardens, learning has never been more fun!"
+    },
+    {
+      title: "SeaQuest Folsom",
+      city: "Sacramento, CA",
+      link: "https://folsom.visitseaquest.com/",
+      image: "https://kncifm.com/wp-content/uploads/sites/6/2018/03/GettyImages-842398218.jpg",
+      ages: 0,
+      duration: 1,
+      location: 2,
+      activityLevel: 0,
+      price: 1,
+      approved: false,
+      description: "SeaQuest is a complete hands-on, interactive experience - not only with animals, but also with the community. SeaQuest strives to be an integral part of nearby neighborhoods by supporting local nonprofits, hosting field trips for kids, educating students of all ages and even acting as a tropical pet rescue for animals."
+    },
+    {
+      title: "California State Railroad Museum",
+      city: "Sacramento, CA",
+      link: "https://www.californiarailroad.museum/",
+      image: "https://www.californiabeaches.com/wp-content/uploads/2016/05/california-sacramento-state-railway-museum-1.jpg",
+      ages: 0,
+      duration: 1,
+      location: 2,
+      activityLevel: 0,
+      price: 1,
+      approved: false,
+      description: "Experience the feats of engineering and ingenuity that have kept the Golden State steaming along for nearly 200 years – from immaculately restored engines and cars to exciting events and exhibits that bring the railroad to life."
+    },
+    {
+      title: "Crocker Art Museum",
+      city: "Sacramento, CA",
+      link: "https://www.crockerart.org/",
+      image: "https://cdn.carmel-apartments.com/system/uploads/fae/image/asset/5008/1600x1040-discover-enchanting-artwork-at-the-crocker-art-museum-in-sacramento.jpg",
+      ages: 1,
+      duration: 1,
+      location: 2,
+      activityLevel: 0,
+      price: 1,
+      approved: false,
+      description: "With art ranging from European drawings and Native American ceramics to California paintings and Chinese tomb figures, there is much to discover. If you are hoping to see the whole museum in one visit, we recommend you allow for at least three hours."
+    },
+    {
+      title: "Sacramento Historic River Cruise",
+      city: "Sacramento, CA",
+      link: "https://www.hornblower.com/sacramento/sacramento-historic-river-cruises/",
+      image: "https://my.hornblower.com/assets/images/products/hbsac/ec793343-50c7-4a5b-8f70-b9cfc5233a17.jpeg",
+      ages: 1,
+      duration: 1,
+      location: 2,
+      activityLevel: 0,
+      price: 1,
+      approved: false,
+      description: "In this Sacramento river cruise, we’ll sail past Old Sacramento's famous historical sites, including the Delta King, the I Street Bridge, the Tower Bridge, and the Air Force Docks. As we tour, we’ll hear fascinating stories—from John Sutter, the founder of Sacramento to the wild days of the Gold Rush. California's capital city is filled with lively history and beautiful sights, and you’ll have the perfect view on this cruise. "
+    },
+    {
+      title: "Capitol Park",
+      city: "Sacramento, CA",
+      link: "https://www.visitsacramento.com/listing/capitol-park/3764/",
+      image: "https://live.staticflickr.com/4123/4935559470_23bb92b068_b.jpg",
+      ages: 1,
+      duration: 1,
+      location: 2,
+      activityLevel: 0,
+      price: 1,
+      approved: false,
+      description: "This popular park, surrounding the California State Capitol, has trees from around the world and memorials to significant state events."
     }
 ]
 

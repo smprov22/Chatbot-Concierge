@@ -29,6 +29,9 @@ export function BookBtn(props) {
 
 // export class BookBtn extends React.Component{
 //   render() { return <Link to={this.props.} />; }
+// }
+
+
 // export function ApproveBtn(props) {
 //   return (
 //     <button className="approve-btn btn btn-success" {...props} id={submission.id} onClick={(event) => props.handleApproveButton(event)}>
@@ -44,6 +47,7 @@ export function BookBtn(props) {
 //     </button>
 //   );
 // }
+
 
 
 export default StartBtn

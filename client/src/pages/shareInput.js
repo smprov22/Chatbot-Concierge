@@ -1,6 +1,7 @@
 import React, { Component } from '../../node_modules/react'
-import { Redirect } from '../../node_modules/react-router-dom'
+// import { Redirect } from '../../node_modules/react-router-dom'
 // import axios from '../../node_modules/axios'
+import API from '../utils/api'
 import ReactDOM from '../../node_modules/react-dom';
 import SliderBar from '../components/Slider'
 import { Container, Row, Col } from '../components/Grid'
@@ -25,14 +26,14 @@ class ShareInput extends Component {
             myRef: React.createRef()
         }
         this.handleEventSubmit = this.handleEventSubmit.bind(this)
-        this.handleChange = this.handleChange.bind(this)
+		this.handleChange = this.handleChange.bind(this)
     }
 
     handleChange(event) {
-        this.setState({
-            [event.target.name]: event.target.value
-        })
-    }
+		this.setState({
+			[event.target.name]: event.target.value
+		})
+	}
 
     componentDidMount() {
         this.getSubmissions();
@@ -58,6 +59,7 @@ class ShareInput extends Component {
 
         const event = this.state.events
         console.log(event)
+
         API.saveSubmission({
             title: event.title,
             ages: event.ages,
@@ -68,15 +70,18 @@ class ShareInput extends Component {
             description: event.description
         });
     };
+
+
     render() {
         return (
             <div className="Wrapper">
                 <Container>
                     <Row>
                         <Col size="md-3">
-                            <h1 className="titleQ">SHARE SOMETHING WITH OTHER GUESTS?</h1>
+                            <h1 className="titleQ">SHARE ACTIVITIES WITH OTHER GUESTS?</h1>
                             <CitySearch />
-                            <FormInput />
+                            <FormInput value={this.state.title}
+                                        onChange={this.handleChange} />
                         </Col>
                         <Col size="md-2">
                             <h6 className="descriptionsRight">Kids</h6><br></br>
@@ -87,15 +92,15 @@ class ShareInput extends Component {
                         </Col>
 
                         <Col size="md-5">
-                            <p>Kid Friendly?</p>
+                            <p className="questions">Kid Friendly?</p>
                             <SliderBar />
-                            <p>Duration?</p>
+                            <p className="questions">Duration?</p>
                             <SliderBar />
-                            <p>Location?</p>
+                            <p className="questions">Location?</p>
                             <SliderBar />
-                            <p>Activity Level?</p>
+                            <p className="questions">Activity Level?</p>
                             <SliderBar />
-                            <p>Price?</p>
+                            <p className="questions">Price?</p>
                             <SliderBar />
                             <SubmitBtn onClick={() => this.handleEventSubmit()} />
                         </Col>
