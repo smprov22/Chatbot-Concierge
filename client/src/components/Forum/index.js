@@ -1,14 +1,8 @@
 import React, { Component } from 'react'
 import '../ActivityCards/style.css'
-<<<<<<< HEAD
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClock, faBaby, faTree, faHiking, faMoneyBillAlt} from '@fortawesome/free-solid-svg-icons'
-// import { BookBtn } from '../Button/button'
-=======
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faClock, faBaby, faTree, faHiking, faMoneyBillAlt} from '@fortawesome/free-solid-svg-icons'
 import { BookBtn } from '../Button/button'
->>>>>>> de4cee76036a55ad738163e779a99a812823e18d
 import '../Forum'
 
 

@@ -12,13 +12,8 @@ export function StartBtn(props) {
 
 export function SubmitBtn(props) {
   return (
-<<<<<<< HEAD
-    <button  className="submit-btn btn btn-outline-info" {...props} tabIndex="0">
-    Submit
-=======
     <button  className="submit-btn btn btn-primary" {...props} >
     Sumbit
->>>>>>> de4cee76036a55ad738163e779a99a812823e18d
     </button>
   );
 }
