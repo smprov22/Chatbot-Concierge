@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 // import { Redirect } from 'react-router-dom'
 import { List, Submissions } from '../components/Events/submissions'
-// import { ApproveBtn, DeleteBtn } from '../components/Button/button'
 import API from '../utils/api'
 
 class Manager extends Component {
@@ -25,12 +24,25 @@ class Manager extends Component {
 
     handleApproveButton = (id, event) => {
         event.preventDefault();
-        console.log(id);
+        console.log("Approving" + id);
         let approvedEvent = this.state.submissions.filter(submission => submission._id === id)
         approvedEvent = approvedEvent[0];
         console.log(approvedEvent)
         API.approveSubmission(id)
             .then(alert(`${approvedEvent.title} has been approved`))
+            .then(this.componentDidMount())
+            .catch(err => console.log(err))
+    }
+
+    handleDeleteButton = (id, event) => {
+        event.preventDefault();
+        console.log("Deleting" + id);
+        let deletedEvent = this.state.submissions.filter(submission => submission._id === id)
+        deletedEvent = deletedEvent[0];
+        console.log(deletedEvent)
+        API.deleteSubmission(id)
+            .then(alert(`${deletedEvent.title} has been deleted`))
+            .then(this.componentDidMount())
             .catch(err => console.log(err))
     }
 
@@ -55,11 +67,12 @@ class Manager extends Component {
                                     <p><strong>Price: </strong>{submission.price}</p>
                                     <p><strong>Approved: </strong>{submission.approved ? "true" : "false"}</p>
                                     <button className="approve-btn btn btn-success" id={submission._id} onClick={(event) => this.handleApproveButton(submission._id, event)}>
-                                    Approve
+                                        Approve
                                     </button>
-                                    {/* <ApproveBtn submissions={this.state.submissions} handleApproveButton={this.handleApproveButton}/>
-                                    <span>    </span>
-                                    <DeleteBtn /> */}
+                                    <span>      </span>
+                                    <button className="approve-btn btn btn-error" id={submission._id} onClick={(event) => this.handleDeleteButton(submission._id, event)}>
+                                        Delete
+                                    </button>
                                 </Submissions>
                             ))}
                         </List>
