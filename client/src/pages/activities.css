@@ -1,17 +1,26 @@
 .descriptionsLeft{
   margin-top: 3.2em;
   font-size: 12px;
-  color: black;
+  color: white;
   text-align:left;
+  font-weight: bold;
 }
 
 .descriptionsRight{
   margin-top: 3.2em;
   font-size: 12px;
-  color: black;
+  color: white;
   text-align:right;
+  font-weight: bold;
 }
 
+.scrollerRow{
+  margin-bottom: 200px;
+}
+
+.questions{
+  color: white;
+}
 
 .col-md-6{
   padding-left: 0 !important;
@@ -26,11 +35,10 @@
   
 }
 
-
 .Wrapper{
-  margin-top: 150px;
-  margin-bottom: 150px;
+  padding-top: 150px;
   height: 100%;
+  background: url('../pages/background2.png') no-repeat center center fixed;
 }
 
 .Wrapper-2{
@@ -40,3 +48,4 @@
 .backgroundRight{
   background-color: lightblue;
 }
+
