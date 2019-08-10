@@ -8,7 +8,7 @@ import Navbar from './components/Nav/navbar'
 import Home from './pages/home'
 import Activities from './pages/activities'
 import ShareInput from './pages/shareInput'
-import Manager from './components/manager'
+import Manager from './pages/manager'
 
 
 class App extends Component {
