@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import '../ActivityCards/style.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClock, faBaby, faTree, faHiking, faMoneyBillAlt} from '@fortawesome/free-solid-svg-icons'
-import { BookBtn } from '../Button/button'
-import API from '../../utils/api'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faClock, faBaby, faTree, faHiking, faMoneyBillAlt} from '@fortawesome/free-solid-svg-icons'
+// import { BookBtn } from '../Button/button'
+// import API from '../../utils/api'
 
 
-function ActivityCard({ title, ages, duration, location, activityLevel, price, description, link, image }) {
+function ActivityCard({ title, ages, duration, location, activityLevel, price, description, link, image, city }) {
     //     BookButton = event =>{
     //     event.preventDefault();
     //     let path = {link}
@@ -24,8 +24,8 @@ function ActivityCard({ title, ages, duration, location, activityLevel, price, d
                                 <div className="card-body">
                                     <h5 className="card-title">{title}</h5>
                                     <p className="card-text">{description}</p>
-                                    <p className="card-text"><small className="text-muted"> Location: {location} </small></p>
-                                    <p >Ages: {ages} | Duration: {duration} | Activity Level: {activityLevel} | Price: {price} </p>
+                                    <p className="card-text"><small className="text-muted"> Location: {city} </small></p>
+                                    <p >Ages: {ages} | Duration: {duration} | Activity Level: {activityLevel} | Location: {location} | Price: {price} </p>
                                     <a href={link} className="bookBtn">BOOK</a>
                                     {/* <FontAwesomeIcon icon={faClock} className="icons" size="lg"/>
                                     <FontAwesomeIcon icon={faBaby} className="icons" size="lg"/>

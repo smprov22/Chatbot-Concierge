@@ -96,6 +96,7 @@ class Activities extends Component {
                     <ActivityCard
                       key={event.id}
                       title={event.title}
+                      city={event.city}
                       ages={event.ages}
                       duration={event.duration}
                       location={event.location}
@@ -108,7 +109,7 @@ class Activities extends Component {
                   ))}
                 </List>
               ) : (
-                  <h2 className="text-center">No Events :(</h2>
+                  <h5 className="text-center">No activites matched your request. Please try again.</h5>
                 )}
             </Card>
             : null
