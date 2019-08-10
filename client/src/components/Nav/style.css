@@ -1,15 +1,13 @@
 .text-secondary{
     color: black;
 }
-
-  .App-logo {
+.App-logo {
     animation: App-logo-spin infinite 20s linear;
     margin-right: 150px;
-  }
+}
   
  
-
-  .navbar {
+.navbar {
     background-color:rgba(248, 248, 250, 0.596) !important;
     margin-top: auto;
     justify-content: none !important;
@@ -20,15 +18,17 @@
 
 .nav-link2{
   margin-right: 60px;
+
 }
 
 .nav-link-share{
   margin-left: 60px;
+
 }
 
-  a {
-  color: gray !important;
- 
-  }
+a {
+color: gray !important;
+
+}
 
   

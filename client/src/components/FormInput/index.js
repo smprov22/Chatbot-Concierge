@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import API from "../../utils/api"
+import "../FormInput/style.css"
 
 class FormInput extends Component {
 
@@ -7,28 +9,21 @@ class FormInput extends Component {
         this.state = {value: ''};
     
         this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+
       }
     
       handleChange(event) {
         this.setState({value: event.target.value});
       }
-    
-      handleSubmit(event) {
-        alert('A name was submitted: ' + this.state.value);
-        event.preventDefault();
-      }
+        
     
       render() {
         return (
-          <form onSubmit={this.handleSubmit}>
-            <label>
+          <form>
   
-              <input className="form-control" placeholder="Location" type="text" value={this.state.value} onChange={this.handleChange} />
-            </label>
             <label>
-        
-              <textarea className="form-control" placeholder="Description" type="text" value={this.state.value} onChange={this.handleChange} />
+            <input type="text" className="form-control"  placeholder="Title"></input><br></br>
+            <textarea className="form-control " placeholder="Description" type="text" value={this.state.value} onChange={this.handleChange} />
             </label>
             {/* <input type="submit" value="Submit" /> */}
           </form>
