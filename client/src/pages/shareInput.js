@@ -11,6 +11,7 @@ import '../pages/activities.css'
 import FormInput from '../components/FormInput';
 import Forum from '../components/Forum'
 import '../components/Forum'
+import CitySearch from "../components/CitySearch/citysearch"
 
 
 class ShareInput extends Component {
@@ -21,6 +22,13 @@ class ShareInput extends Component {
         this.state = {
             events: [],
             approved: false,
+            title: "",
+            ages: "",
+            duration: "",
+            location: "",
+            activityLevel: "",
+            price: "",
+            description: "",
             myRef: React.createRef()
         }
         this.handleEventSubmit = this.handleEventSubmit.bind(this)
@@ -55,8 +63,20 @@ class ShareInput extends Component {
 
         alert('Thank you! Your activity was submitted for review.');
 
-        const event = this.state.events
+        const event = this.state
+        console.log(event)
 
+        this.setState(
+            {
+                title: event.title,
+                ages: event.ages,
+                duration: event.duration,
+                location: event.location,
+                activityLevel: event.activityLevel,
+                price: event.price,
+                description: event.description
+            }
+        )
         API.saveSubmission({
             title: event.title,
             ages: event.ages,
@@ -76,6 +96,7 @@ class ShareInput extends Component {
                     <Row>
                         <Col size="md-3">
                             <h1 className="titleQ">SHARE ACTIVITIES WITH OTHER GUESTS?</h1>
+                            <CitySearch />
                             <FormInput value={this.state.title}
                                         onChange={this.handleChange} />
                         </Col>
@@ -110,8 +131,8 @@ class ShareInput extends Component {
 
                     </Row>
                     {this.state.eventApproval === true ?
-                        <Forum  />
-                         : null
+                        <Forum />
+                        : null
                     }
                 </Container>
             </div>
