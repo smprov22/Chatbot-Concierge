@@ -15,37 +15,37 @@ import '../components/Forum'
 
 class ShareInput extends Component {
 
-    constructor() {
-        super()
+    // constructor() {
+    //     super()
 
-        this.state = {
-            events: [],
-            approved: false,
-            myRef: React.createRef()
-        }
-        this.handleEventSubmit = this.handleEventSubmit.bind(this)
-		this.handleChange = this.handleChange.bind(this)
+    state = {
+        events: [],
+        // approved: false,
+        myRef: React.createRef()
     }
+    // this.handleEventSubmit = this.handleEventSubmit.bind(this)
+    // this.handleChange = this.handleChange.bind(this)
+    // }
 
     handleChange(event) {
-		this.setState({
-			[event.target.name]: event.target.value
-		})
-	}
-
-    componentDidMount() {
-        this.getSubmissions();
+        this.setState({
+            [event.target.name]: event.target.value
+        })
     }
 
-    getSubmissions = () => {
-        API.getSubmissions(this.state.approved)
-            .then(res =>
-                this.setState({
-                    events: res.data
-                })
-            )
-            .catch(err => console.log(err));
-    }
+    // componentDidMount() {
+    //     this.getSubmissions();
+    // }
+
+    // getSubmissions = () => {
+    //     API.getSubmissions(this.state.approved)
+    //         .then(res =>
+    //             this.setState({
+    //                 events: res.data
+    //             })
+    //         )
+    //         .catch(err => console.log(err));
+    // }
 
 
     // scrollToMyRef = () => window.scrollTo(0, this.myRef.current.offsetTop) 
@@ -56,6 +56,8 @@ class ShareInput extends Component {
         alert('Thank you! Your activity was submitted for review.');
 
         const event = this.state.events
+        console.log("Submit Handler: ")
+        console.log(event)
 
         API.saveSubmission({
             title: event.title,
@@ -77,7 +79,7 @@ class ShareInput extends Component {
                         <Col size="md-3">
                             <h1 className="titleQ">SHARE ACTIVITIES WITH OTHER GUESTS?</h1>
                             <FormInput value={this.state.title}
-                                        onChange={this.handleChange} />
+                                onChange={this.handleChange} />
                         </Col>
                         <Col size="md-2">
                             <h6 className="descriptionsRight">Kids</h6><br></br>
@@ -110,8 +112,8 @@ class ShareInput extends Component {
 
                     </Row>
                     {this.state.eventApproval === true ?
-                        <Forum  />
-                         : null
+                        <Forum />
+                        : null
                     }
                 </Container>
             </div>

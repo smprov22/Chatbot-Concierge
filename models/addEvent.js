@@ -14,7 +14,7 @@ const addEventSchema = new Schema({
   description: String,
   date: { type: Date, default: Date.now },
   link: String,
-  image: { data: Buffer, contentType: String },
+  image: String
 });
 
 const AddEvent = mongoose.model("AddEvent", addEventSchema);
