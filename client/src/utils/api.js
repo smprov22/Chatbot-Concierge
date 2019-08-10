@@ -15,7 +15,13 @@ export default {
   },
   // Saves a book to the database
   saveSubmission: function(submissionData) {
+    console.log(submissionData)
     return axios.post("/api/submissions", submissionData);
+
+  },
+  // Approves a submission to the database
+  approveSubmission: function(id) {
+    return axios.put("/api/submissions/" + id);
   }
 };
 

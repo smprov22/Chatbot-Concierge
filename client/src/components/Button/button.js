@@ -13,7 +13,7 @@ export function StartBtn(props) {
 export function SubmitBtn(props) {
   return (
     <button  className="submit-btn btn btn-primary" {...props} >
-    Sumbit
+    Submit
     </button>
   );
 }
@@ -29,6 +29,20 @@ export function BookBtn(props) {
 
 // export class BookBtn extends React.Component{
 //   render() { return <Link to={this.props.} />; }
+// export function ApproveBtn(props) {
+//   return (
+//     <button className="approve-btn btn btn-success" {...props} id={submission.id} onClick={(event) => props.handleApproveButton(event)}>
+//     Approve
+//     </button>
+//   );
+// }
+
+// export function DeleteBtn(props) {
+//   return (
+//     <button className="delete-btn btn btn-error" {...props} tabIndex="0">
+//     Delete
+//     </button>
+//   );
 // }
 
 

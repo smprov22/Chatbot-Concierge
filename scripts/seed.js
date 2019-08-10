@@ -11,7 +11,7 @@ mongoose.connect(
 const eventSeed = [
     {
         title: "California State Capitol Museum Tour",
-        location: "Sacramento, CA",
+        city: "Sacramento, CA",
         ages: 0,
         duration: 0,
         location: 0,
@@ -24,7 +24,7 @@ const eventSeed = [
     },
     {
         title: "American River Bike Trail",
-        location: "Sacramento, CA",
+        city: "Sacramento, CA",
         ages: 1,
         duration: 1,
         location: 2,
@@ -37,6 +37,7 @@ const eventSeed = [
     },
     {
         title: "Second Saturday Art Walks",
+        city: "Sacramento, CA",
         ages: 0,
         duration: 1,
         location: 1,
@@ -49,6 +50,7 @@ const eventSeed = [
     },
     {
         title: "Folsom Historic District",
+        city: "Sacramento, CA",
         ages: 0,
         duration: 0,
         location: 0,
@@ -61,6 +63,7 @@ const eventSeed = [
     },
     {
         title: "Apple Hill",
+        city: "Sacramento, CA",
         ages: 0,
         duration: 0,
         location: 2,
@@ -73,6 +76,7 @@ const eventSeed = [
     },
     {
         title: "Sacramento River Delta",
+        city: "Sacramento, CA",
         ages: 0,
         duration: 1,
         location: 2,
