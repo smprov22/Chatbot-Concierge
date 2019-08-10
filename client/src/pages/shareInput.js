@@ -11,7 +11,6 @@ import '../pages/activities.css'
 import FormInput from '../components/FormInput';
 import Forum from '../components/Forum'
 import '../components/Forum'
-import API from "../utils/api"
 import CitySearch from "../components/CitySearch/citysearch"
 
 
@@ -23,6 +22,13 @@ class ShareInput extends Component {
         this.state = {
             events: [],
             approved: false,
+            title: "",
+            ages: "",
+            duration: "",
+            location: "",
+            activityLevel: "",
+            price: "",
+            description: "",
             myRef: React.createRef()
         }
         this.handleEventSubmit = this.handleEventSubmit.bind(this)
@@ -57,9 +63,20 @@ class ShareInput extends Component {
 
         alert('Thank you! Your activity was submitted for review.');
 
-        const event = this.state.events
+        const event = this.state
         console.log(event)
 
+        this.setState(
+            {
+                title: event.title,
+                ages: event.ages,
+                duration: event.duration,
+                location: event.location,
+                activityLevel: event.activityLevel,
+                price: event.price,
+                description: event.description
+            }
+        )
         API.saveSubmission({
             title: event.title,
             ages: event.ages,
