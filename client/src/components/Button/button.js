@@ -13,7 +13,7 @@ export function StartBtn(props) {
 export function SubmitBtn(props) {
   return (
     <button  className="submit-btn btn btn-primary" {...props} >
-    Sumbit
+    Submit
     </button>
   );
 }
