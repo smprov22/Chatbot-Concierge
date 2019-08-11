@@ -7,8 +7,8 @@ class FormInput extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          title: '',
-          value: ''
+          value: '',
+          description: ''
         };
     
         this.handleChange = this.handleChange.bind(this);
@@ -17,11 +17,10 @@ class FormInput extends Component {
     
       handleChange(event) {
         this.setState({
-          title: event.target.title,
           value: event.target.value
         });
-        console.log("Hello, Justin!")
-        console.log(this.state.title + " - " + this.state.value)
+        console.log("Title Changed to")
+        console.log(this.state.value)
       }
         
     
@@ -30,8 +29,8 @@ class FormInput extends Component {
           <form>
   
             <label>
-            <input type="text" className="form-control"  placeholder="Title" defaultValue={this.state.title}></input><br></br>
-            <textarea className="form-control " placeholder="Description" type="text" value={this.state.value} onChange={this.handleChange} />
+            <input type="text" className="form-control"  placeholder="Title" value={this.state.value} onChange={this.handleChange}></input><br></br>
+            <textarea className="form-control " placeholder="Description" type="text" description={this.state.description} onChange={this.handleChange} />
             </label>
             {/* <input type="submit" value="Submit" /> */}
           </form>
