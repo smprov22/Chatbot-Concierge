@@ -24,6 +24,10 @@
   margin-bottom: 200px;
 }
 
+.activeRow{
+  margin-left: 300px;
+  margin-right: 300px;
+}
 
 .questions{
   color: white;
@@ -42,17 +46,20 @@
 
 }
 
+
 .Wrapper{
   padding-top: 150px;
   height: 100%;
   background: url('../pages/background2.png') no-repeat center center fixed;
 }
 
-.Wrapper-2{
+/* .Wrapper-2{
   background-color: blue;
-}
+} */
 
 .backgroundRight{
   background-color: lightblue;
 }
+
+
 

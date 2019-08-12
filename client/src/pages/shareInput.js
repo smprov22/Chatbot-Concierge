@@ -97,21 +97,20 @@ class ShareInput extends Component {
             <div className="Wrapper">
                 <Container>
                     <Row>
+                    <Col size="md-1"></Col>
                         <Col size="md-3">
-                            <h1 className="titleQ">SHARE ACTIVITIES WITH OTHER GUESTS?</h1>
-                            <CitySearch />
-                            <FormInput value={this.state.title}
-                                onChange={this.handleChange} />
+                            <h1 className="titleQ animated bounceInLeft slow">SHARE AN ACTIVITY WITH HOTEL GUESTS</h1>
                         </Col>
-                        <Col size="md-2">
+                        <Col size="md-1">
+                            <h6 className="descriptionsRight"></h6><br></br>
                             <h6 className="descriptionsRight">Kids</h6><br></br>
                             <h6 className="descriptionsRight">An hour</h6><br></br>
                             <h6 className="descriptionsRight">Indoors</h6><br></br>
                             <h6 className="descriptionsRight">Sloth</h6><br></br>
                             <h6 className="descriptionsRight">Budget Friendly</h6><br></br>
                         </Col>
-
                         <Col size="md-5">
+                        <CitySearch />
                             <p className="questions">Kid Friendly?</p>
                             <Slider
                                 value={this.state.ages}
@@ -141,17 +140,20 @@ class ShareInput extends Component {
                                 value={this.state.price}
                                 orientation="horizontal"
                                 onChange={(value) => { this.setState({ price: value }) }}
-                            />
+                            /><br></br><br></br>
+                                <FormInput value={this.state.title}
+                                onChange={this.handleChange} />
                             <SubmitBtn onClick={() => this.handleEventSubmit()} />
                         </Col>
-                        <Col size="md-2">
+                        <Col size="md-1">
+                             <h6 className="descriptionsLeft"></h6><br></br>
                             <h6 className="descriptionsLeft">Cocktails</h6><br></br>
                             <h6 className="descriptionsLeft">All day</h6><br></br>
                             <h6 className="descriptionsLeft">Outdoors</h6><br></br>
                             <h6 className="descriptionsLeft">Cheetah</h6><br></br>
                             <h6 className="descriptionsLeft">Living Large</h6><br></br>
                         </Col>
-
+                        <Col size="md-1"></Col>
                     </Row>
                     {/* {this.state.approved === true ? */}
                       {this.state.events.map(event => (

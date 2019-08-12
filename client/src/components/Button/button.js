@@ -12,7 +12,7 @@ export function StartBtn(props) {
 
 export function SubmitBtn(props) {
   return (
-    <button  className="submit-btn btn btn-primary" {...props} >
+    <button  className="submit-btn btn btn-primary animated pulse" {...props} >
     Submit
     </button>
   );
@@ -33,7 +33,7 @@ export class BookBtns extends React.Component{
 }
 render() {
   return (<div>
-          <button  className="book-btn btn btn-outline-info"  onClick={this.btnClick.bind(this)}> Book </button>
+          <button  className="book-btn btn btn-outline-info "  onClick={this.btnClick.bind(this)}> Book </button>
       </div>);
 }
 }

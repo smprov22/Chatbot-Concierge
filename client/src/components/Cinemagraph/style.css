@@ -1,9 +1,14 @@
 .containerIpad{
-
 margin: 0 auto;
 padding-left: 15%;
+width: 100%;
+
 }
 
+
+.cineDiv{
+    width:100%;
+}
 
 iframe{
     position:absolute; 
@@ -16,11 +21,24 @@ iframe{
 
 .ipad{
     position:relative; 
+	overflow: hidden;
+	animation: float 3s ease-in-out infinite;
 }
 
-.cineDiv{
-    height:0; 
-    padding-bottom:177.78%;
-    width:100%;
-    margin-left: 1000px;
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(247, 245, 245, 0.034);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0);
+		transform: translatey(-30px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.014);
+		transform: translatey(0px);
+	}
 }
+
+
