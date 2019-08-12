@@ -46,13 +46,12 @@ class Activities extends Component {
     event.preventDefault();
     
         let result = {
-          key: result.id,
-          city: result.id,
-          ages: result.volumeInfo.title,
-          duration: result.volumeInfo.authors,
-          location: result.volumeInfo.description,
-          activityLevel: result.volumeInfo.imageLinks.smallThumbnail,
-          price: result.volumeInfo.infoLink
+          city: result.value,
+          ages: result.value,
+          duration: result.value,
+          location: result.value,
+          activityLevel: result.value,
+          price: result.value
         }
         return result
 

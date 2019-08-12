@@ -2,8 +2,9 @@ import React, { Component } from '../../node_modules/react'
 // import { Redirect } from '../../node_modules/react-router-dom'
 // import axios from '../../node_modules/axios'
 import API from '../utils/api'
-// import ReactDOM from '../../node_modules/react-dom';
-import SliderBar from '../components/Slider'
+import ReactDOM from '../../node_modules/react-dom';
+import Slider from 'react-rangeslider'
+import 'react-rangeslider/lib/index.css'
 import { Container, Row, Col } from '../components/Grid'
 import { SubmitBtn } from '../components/Button/button'
 import '../components/Slider/style.css'
@@ -23,60 +24,24 @@ class ShareInput extends Component {
             events: [],
             approved: false,
             title: "",
-            ages: "",
-            duration: "",
-            location: "",
-            activityLevel: "",
-            price: "",
+            ages: 50,
+            duration: 50,
+            location: 50,
+            activityLevel: 50,
+            price: 50,
             description: "",
             myRef: React.createRef()
         }
-        this.handleEventSubmit = this.handleEventSubmit.bind(this)
-		this.handleChange = this.handleChange.bind(this)
     }
 
-    handleChange(event) {
-		this.setState({
-			[event.target.name]: event.target.value
-		})
-	}
-
-    componentDidMount() {
-        this.getSubmissions();
-    }
-
-    getSubmissions = () => {
-        API.getSubmissions(this.state.approved)
-            .then(res =>
-                this.setState({
-                    events: res.data
-                })
-            )
-            .catch(err => console.log(err));
-    }
-
-
-    // scrollToMyRef = () => window.scrollTo(0, this.myRef.current.offsetTop) 
-
-
-    handleEventSubmit = id => {
+    handleEventSubmit = () => {
 
         alert('Thank you! Your activity was submitted for review.');
 
         const event = this.state
+
         console.log(event)
 
-        this.setState(
-            {
-                title: event.title,
-                ages: event.ages,
-                duration: event.duration,
-                location: event.location,
-                activityLevel: event.activityLevel,
-                price: event.price,
-                description: event.description
-            }
-        )
         API.saveSubmission({
             title: event.title,
             ages: event.ages,
@@ -97,8 +62,25 @@ class ShareInput extends Component {
                         <Col size="md-3">
                             <h1 className="titleQ">SHARE ACTIVITIES WITH OTHER GUESTS?</h1>
                             <CitySearch />
-                            <FormInput value={this.state.title}
-                                        onChange={this.handleChange} />
+                            <form>
+                                <label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="Title"
+                                        value={this.state.title}
+                                        onChange={(event) => { this.setState({ title: event.target.value }) }}
+                                    />
+                                    <br />
+                                    <textarea
+                                        className="form-control "
+                                        placeholder="Description"
+                                        type="text"
+                                        description={this.state.description}
+                                        onChange={(event) => { this.setState({ description: event.target.value }) }}
+                                    />
+                                </label>
+                            </form>
                         </Col>
                         <Col size="md-2">
                             <h6 className="descriptionsRight">Kids</h6><br></br>
@@ -110,15 +92,35 @@ class ShareInput extends Component {
 
                         <Col size="md-5">
                             <p className="questions">Kid Friendly?</p>
-                            <SliderBar />
+                            <Slider
+                                value={this.state.ages}
+                                orientation="horizontal"
+                                onChange={(value) => { this.setState({ ages: value }) }}
+                            />
                             <p className="questions">Duration?</p>
-                            <SliderBar />
+                            <Slider
+                                value={this.state.duration}
+                                orientation="horizontal"
+                                onChange={(value) => { this.setState({ duration: value }) }}
+                            />
                             <p className="questions">Location?</p>
-                            <SliderBar />
+                            <Slider
+                                value={this.state.location}
+                                orientation="horizontal"
+                                onChange={(value) => { this.setState({ location: value }) }}
+                            />
                             <p className="questions">Activity Level?</p>
-                            <SliderBar />
+                            <Slider
+                                value={this.state.activityLevel}
+                                orientation="horizontal"
+                                onChange={(value) => { this.setState({ activityLevel: value }) }}
+                            />
                             <p className="questions">Price?</p>
-                            <SliderBar />
+                            <Slider
+                                value={this.state.price}
+                                orientation="horizontal"
+                                onChange={(value) => { this.setState({ price: value }) }}
+                            />
                             <SubmitBtn onClick={() => this.handleEventSubmit()} />
                         </Col>
                         <Col size="md-2">
@@ -139,10 +141,6 @@ class ShareInput extends Component {
         )
     }
 }
-
-
-
-
 
 
 export default ShareInput
