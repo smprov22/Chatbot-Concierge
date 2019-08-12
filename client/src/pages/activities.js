@@ -3,7 +3,8 @@ import API from '../utils/api'
 // import { Redirect } from 'react-router-dom'
 // import axios from 'axios'
 // import ReactDOM from 'react-dom';
-import SliderBar from '../components/Slider'
+import Slider from 'react-rangeslider'
+import 'react-rangeslider/lib/index.css'
 import { SubmitBtn } from '../components/Button/button'
 import { Container, Row, Col } from '../components/Grid'
 import ActivityCard from '../components/ActivityCards'
@@ -11,7 +12,8 @@ import '../components/Slider/style.css'
 import '../pages/activities.css'
 import List from '../components/List/index'
 import Card from '../components/Card/index'
-import { set } from 'mongoose';
+import CitySearch from '../components/CitySearch/citysearch'
+// import { set } from 'mongoose';
 
 
 
@@ -21,9 +23,16 @@ class Activities extends Component {
     super()
 
     this.state = {
-      events: [],
-      showEvents: false,
-      myRef: React.createRef()
+        events: [],
+        approved: false,
+        ages: 1,
+        duration: 1,
+        location: 1,
+        activityLevel: 1,
+        price: 1,
+        city: "",
+        showEvents: false,
+        myRef: React.createRef()
     }
   }
 
@@ -41,6 +50,19 @@ class Activities extends Component {
       .catch(err => console.log(err));
   }
 
+  handleFormSubmit = event => {
+    event.preventDefault();
+    let activity = this.state
+    let ages = activity.ages
+    let location = activity.location
+    let duration = activity.duration
+    let level = activity.activityLevel
+    let price = activity.price
+
+    API.getSubmissions(ages, location, duration, level, price)
+    this.show()
+  }
+
 
   show() {
     this.setState({
@@ -54,6 +76,7 @@ class Activities extends Component {
     return (
       <div className="Wrapper">
         <Container>
+        <CitySearch />
           <Row >
             <Col size="md-3">
               <h1 className="titleQ">WHAT TYPE OF ACTIVITY SHOULD WE PLAN?</h1>
@@ -68,16 +91,46 @@ class Activities extends Component {
 
             <Col size="md-5">
               <p className="questions">Kid Friendly?</p>
-              <SliderBar />
+              <Slider
+                    min={0}
+                    max={2}
+                    value={this.state.ages}
+                    orientation="horizontal"
+                    onChange={(value) => { this.setState({ ages: value }) }}
+                />
               <p className="questions">Duration?</p>
-              <SliderBar />
+              <Slider
+                    min={0}
+                    max={2}
+                    value={this.state.duration}
+                    orientation="horizontal"
+                    onChange={(value) => { this.setState({ duration: value }) }}
+                />
               <p className="questions">Location?</p>
-              <SliderBar />
+              <Slider
+                    min={0}
+                    max={2}
+                    value={this.state.location}
+                    orientation="horizontal"
+                    onChange={(value) => { this.setState({ location: value }) }}
+                />
               <p className="questions">Activity Level?</p>
-              <SliderBar />
+              <Slider
+                    min={0}
+                    max={2}
+                    value={this.state.activityLevel}
+                    orientation="horizontal"
+                    onChange={(value) => { this.setState({ activityLevel: value }) }}
+                />
               <p className="questions">Price?</p>
-              <SliderBar />
-              <SubmitBtn onClick={() => this.show()} ></SubmitBtn>
+              <Slider
+                    min={0}
+                    max={2}
+                    value={this.state.price}
+                    orientation="horizontal"
+                    onChange={(value) => { this.setState({ price: value }) }}
+                />
+              <SubmitBtn handleFormSubmit = {this.handleFormSubmit} ></SubmitBtn>
             </Col>
             <Col size="md-2">
               <h6 className="descriptionsLeft">Cocktails</h6><br></br>

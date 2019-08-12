@@ -173,10 +173,49 @@ const eventSeed = [
       ages: 1,
       duration: 1,
       location: 2,
-      activityLevel: 0,
+      activityLevel: 1,
       price: 1,
       approved: false,
       description: "This popular park, surrounding the California State Capitol, has trees from around the world and memorials to significant state events."
+    },
+    {
+      title: "Mix Downtown",
+      city: "Sacramento, CA",
+      link: "https://mixdowntown.net/",
+      image: "https://d1hx7mabke4m1h.cloudfront.net/venue/image/7e21/mix.jpg",
+      ages: 2,
+      duration: 1,
+      location: 0,
+      activityLevel: 0,
+      price: 1,
+      approved: false,
+      description: "This small plates restaurant and lounge creates an inviting social scene with a rooftop patio featuring fire pits and spacious bars, an intimate dance floor, plush lounge seating, expansive couches and semi-private booths."
+    },
+    {
+      title: "Badlands",
+      city: "Sacramento, CA",
+      link: "https://www.badlandssac.com/",
+      image: "http://vp.cdn.cityvoterinc.com/GetImage.ashx?img=00/00/00/02/22/98/22298-2730724.jpg",
+      ages: 2,
+      duration: 1,
+      location: 0,
+      activityLevel: 1,
+      price: 1,
+      approved: false,
+      description: "Badlands is Sacramento’s Premier LGBT Nightclub, Voted #1 LGBT Bar 8 Years in a Row!"
+    },
+    {
+      title: "Sac Brew Boat",
+      city: "Sacramento, CA",
+      link: "https://www.sacbrewboat.com/",
+      image: "https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/37238891_198118534194023_31908716496289792_o.jpg?_nc_cat=104&_nc_oc=AQnlihZmhUGANBBvEV_Z0vnDSbOBok1wtf3ubiVzfd-V1Hlo0J4zeUCfUVW5iMiTNLo&_nc_ht=scontent-lax3-2.xx&oh=c4e703038930dbe392ad326b95a0f2cc&oe=5DE807AF",
+      ages: 2,
+      duration: 0,
+      location: 2,
+      activityLevel: 2,
+      price: 1,
+      approved: false,
+      description: "Sacramento’s 16 passenger Brew Boat provides 1.5 hour pedal-powered party boat tours on the Sacramento River. Groups can bring their own beer/cider/wine aboard the chartered boat (limit 3 drinks per guest) as we cruise, pedal, and have fun on the river."
     }
 ]
 

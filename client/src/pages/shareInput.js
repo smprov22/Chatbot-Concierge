@@ -2,14 +2,14 @@ import React, { Component } from '../../node_modules/react'
 // import { Redirect } from '../../node_modules/react-router-dom'
 // import axios from '../../node_modules/axios'
 import API from '../utils/api'
-import ReactDOM from '../../node_modules/react-dom';
+// import ReactDOM from '../../node_modules/react-dom';
 import Slider from 'react-rangeslider'
 import 'react-rangeslider/lib/index.css'
 import { Container, Row, Col } from '../components/Grid'
 import { SubmitBtn } from '../components/Button/button'
 import '../components/Slider/style.css'
 import '../pages/activities.css'
-import FormInput from '../components/FormInput';
+// import FormInput from '../components/FormInput';
 import Forum from '../components/Forum'
 import '../components/Forum'
 import CitySearch from "../components/CitySearch/citysearch"
@@ -24,13 +24,12 @@ class ShareInput extends Component {
             events: [],
             approved: false,
             title: "",
-            ages: 50,
-            duration: 50,
-            location: 50,
-            activityLevel: 50,
-            price: 50,
-            description: "",
-            myRef: React.createRef()
+            ages: 1,
+            duration: 1,
+            location: 1,
+            activityLevel: 1,
+            price: 1,
+            description: ""
         }
     }
 
@@ -93,30 +92,40 @@ class ShareInput extends Component {
                         <Col size="md-5">
                             <p className="questions">Kid Friendly?</p>
                             <Slider
+                                min={0}
+                                max={2}
                                 value={this.state.ages}
                                 orientation="horizontal"
                                 onChange={(value) => { this.setState({ ages: value }) }}
                             />
                             <p className="questions">Duration?</p>
                             <Slider
+                                min={0}
+                                max={2}
                                 value={this.state.duration}
                                 orientation="horizontal"
                                 onChange={(value) => { this.setState({ duration: value }) }}
                             />
                             <p className="questions">Location?</p>
                             <Slider
+                                min={0}
+                                max={2}
                                 value={this.state.location}
                                 orientation="horizontal"
                                 onChange={(value) => { this.setState({ location: value }) }}
                             />
                             <p className="questions">Activity Level?</p>
                             <Slider
+                                min={0}
+                                max={2}
                                 value={this.state.activityLevel}
                                 orientation="horizontal"
                                 onChange={(value) => { this.setState({ activityLevel: value }) }}
                             />
                             <p className="questions">Price?</p>
                             <Slider
+                                min={0}
+                                max={2}
                                 value={this.state.price}
                                 orientation="horizontal"
                                 onChange={(value) => { this.setState({ price: value }) }}
