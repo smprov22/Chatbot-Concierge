@@ -4,7 +4,7 @@ import StartBtn from '../components/Button/button'
 // import { Link } from 'react-router-dom'
 import '../App.css'
 import Cinemagraph from '../components/Cinemagraph/cinemagraph'
-import CitySearch from '../components/CitySearch/citysearch'
+// import CitySearch from '../components/CitySearch/citysearch'
 
 
 class Home extends Component {
@@ -26,7 +26,6 @@ class Home extends Component {
 
             <div className="containerTitle">
                     <p className="homeTitle">Let's do <br></br>something fun <br></br>  </p>
-                    <CitySearch />
                     <StartBtn
                         onClick={this.onStartBtn} />
                   

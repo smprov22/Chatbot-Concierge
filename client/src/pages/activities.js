@@ -11,7 +11,8 @@ import '../components/Slider/style.css'
 import '../pages/activities.css'
 import List from '../components/List/index'
 import Card from '../components/Card/index'
-import { set } from 'mongoose';
+import CitySearch from '../components/CitySearch/citysearch'
+// import { set } from 'mongoose';
 
 
 
@@ -41,6 +42,22 @@ class Activities extends Component {
       .catch(err => console.log(err));
   }
 
+  handleFormSubmit = event => {
+    event.preventDefault();
+    
+        let result = {
+          key: result.id,
+          city: result.id,
+          ages: result.volumeInfo.title,
+          duration: result.volumeInfo.authors,
+          location: result.volumeInfo.description,
+          activityLevel: result.volumeInfo.imageLinks.smallThumbnail,
+          price: result.volumeInfo.infoLink
+        }
+        return result
+
+  }
+
 
   show() {
     this.setState({
@@ -54,6 +71,7 @@ class Activities extends Component {
     return (
       <div className="Wrapper">
         <Container>
+        <CitySearch />
           <Row >
             <Col size="md-3">
               <h1 className="titleQ">WHAT TYPE OF ACTIVITY SHOULD WE PLAN?</h1>

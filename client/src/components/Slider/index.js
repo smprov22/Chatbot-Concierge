@@ -6,23 +6,27 @@ class SliderBar extends Component {
   constructor(props, context) {
     super(props, context)
     this.state = {
-      volume: 50
+      index: 1
+
     }
   }
 
   handleOnChange = (value) => {
     this.setState({
-      volume: value
+      index: value
     })
   }
 
   render() {
-    let { volume } = this.state
+    let { index } = this.state
     return (
       <div className= "container">
 
         <Slider
-          value={volume}
+          min={0}
+          max={2}
+          value={index}
+          labels={{ 0: "", 1: "", 2: "" }}
           orientation="horizontal"
           onChange={this.handleOnChange}
         />
