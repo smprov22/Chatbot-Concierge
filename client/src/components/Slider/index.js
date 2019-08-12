@@ -19,7 +19,7 @@ class SliderBar extends Component {
   render() {
     let { volume } = this.state
     return (
-      <div className= "container">
+      <div className= "slider">
 
         <Slider
           value={volume}

@@ -21,7 +21,7 @@ class ShareInput extends Component {
 
         this.state = {
             events: [],
-            approved: false,
+            approved: true,
             title: "",
             ages: "",
             duration: "",
@@ -32,14 +32,14 @@ class ShareInput extends Component {
             myRef: React.createRef()
         }
         this.handleEventSubmit = this.handleEventSubmit.bind(this)
-		this.handleChange = this.handleChange.bind(this)
+        this.handleChange = this.handleChange.bind(this)
     }
 
     handleChange(event) {
-		this.setState({
-			[event.target.name]: event.target.value
-		})
-	}
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+    }
 
     componentDidMount() {
         this.getSubmissions();
@@ -68,6 +68,7 @@ class ShareInput extends Component {
 
         this.setState(
             {
+                approved: event.approved,
                 title: event.title,
                 ages: event.ages,
                 duration: event.duration,
@@ -98,7 +99,7 @@ class ShareInput extends Component {
                             <h1 className="titleQ">SHARE ACTIVITIES WITH OTHER GUESTS?</h1>
                             <CitySearch />
                             <FormInput value={this.state.title}
-                                        onChange={this.handleChange} />
+                                onChange={this.handleChange} />
                         </Col>
                         <Col size="md-2">
                             <h6 className="descriptionsRight">Kids</h6><br></br>
@@ -130,10 +131,23 @@ class ShareInput extends Component {
                         </Col>
 
                     </Row>
-                    {this.state.eventApproval === true ?
-                        <Forum />
+                    {/* {this.state.approved === true ? */}
+                      {this.state.events.map(event => (
+                        <Forum 
+                        key={event.id}
+                        title={event.title}
+                        city={event.city}
+                        ages={event.ages}
+                        duration={event.duration}
+                        location={event.location}
+                        activityLevel={event.activityLevel}
+                        price={event.price}
+                        description={event.description}
+                        link={event.link}
+                        />
+                        ))}
                         : null
-                    }
+                    {/* } */}
                 </Container>
             </div>
         )
