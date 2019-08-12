@@ -76,7 +76,6 @@ class Activities extends Component {
     return (
       <div className="Wrapper">
         <Container>
-        <CitySearch />
           <Row >
           <Col size="md-1"></Col>
             <Col size="md-3">

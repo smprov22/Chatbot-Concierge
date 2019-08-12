@@ -27,10 +27,6 @@ class Home extends Component {
 
             <div id="frontPage">
                     <p className="homeTitle">Let's do <br></br>something fun <br></br>  </p>
-<<<<<<< HEAD
-          
-=======
->>>>>>> master
                     <StartBtn
                         onClick={this.onStartBtn} />
                   
