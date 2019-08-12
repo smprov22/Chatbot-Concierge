@@ -14,9 +14,16 @@
   font-weight: bold;
 }
 
+.sliderRight{
+  margin-left: 60px;
+  padding-right: 60px;
+  float: left;
+}
+
 .scrollerRow{
   margin-bottom: 200px;
 }
+
 
 .questions{
   color: white;
@@ -28,11 +35,11 @@
 }
 
 .titleQ{
-  margin-top: 10% !important;
+  margin-top: 35% !important;
   font-weight: 800;
   font-size: 50px;
   text-align: left;
-  
+
 }
 
 .Wrapper{

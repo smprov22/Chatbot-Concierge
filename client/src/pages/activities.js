@@ -11,6 +11,7 @@ import '../components/Slider/style.css'
 import '../pages/activities.css'
 import List from '../components/List/index'
 import Card from '../components/Card/index'
+import CitySearch from '../components/CitySearch/citysearch'
 import { set } from 'mongoose';
 
 
@@ -59,6 +60,7 @@ class Activities extends Component {
               <h1 className="titleQ">WHAT TYPE OF ACTIVITY SHOULD WE PLAN?</h1>
             </Col>
             <Col size="md-2">
+              <h6 className="descriptionsRight"></h6><br></br>
               <h6 className="descriptionsRight">Kids</h6><br></br>
               <h6 className="descriptionsRight">An hour</h6><br></br>
               <h6 className="descriptionsRight">Indoors</h6><br></br>
@@ -66,7 +68,8 @@ class Activities extends Component {
               <h6 className="descriptionsRight">Budget Friendly</h6><br></br>
             </Col>
 
-            <Col size="md-5">
+            <Col className="slider" size="md-5">
+            <CitySearch />
               <p className="questions">Kid Friendly?</p>
               <SliderBar />
               <p className="questions">Duration?</p>
@@ -80,6 +83,7 @@ class Activities extends Component {
               <SubmitBtn onClick={() => this.show()} ></SubmitBtn>
             </Col>
             <Col size="md-2">
+              <h6 className="descriptionsLeft"></h6><br></br>
               <h6 className="descriptionsLeft">Cocktails</h6><br></br>
               <h6 className="descriptionsLeft">All day</h6><br></br>
               <h6 className="descriptionsLeft">Outdoors</h6><br></br>

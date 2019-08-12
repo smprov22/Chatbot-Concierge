@@ -22,7 +22,7 @@ class ShareInput extends Component {
 
         this.state = {
             events: [],
-            approved: false,
+            approved: true,
             title: "",
             ages: 50,
             duration: 50,
@@ -32,9 +32,35 @@ class ShareInput extends Component {
             description: "",
             myRef: React.createRef()
         }
+        this.handleEventSubmit = this.handleEventSubmit.bind(this)
+        this.handleChange = this.handleChange.bind(this)
     }
 
-    handleEventSubmit = () => {
+    handleChange(event) {
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+    }
+
+    componentDidMount() {
+        this.getSubmissions();
+    }
+
+    getSubmissions = () => {
+        API.getSubmissions(this.state.approved)
+            .then(res =>
+                this.setState({
+                    events: res.data
+                })
+            )
+            .catch(err => console.log(err));
+    }
+
+
+    // scrollToMyRef = () => window.scrollTo(0, this.myRef.current.offsetTop) 
+
+
+    handleEventSubmit = id => {
 
         alert('Thank you! Your activity was submitted for review.');
 
@@ -42,6 +68,18 @@ class ShareInput extends Component {
 
         console.log(event)
 
+        this.setState(
+            {
+                approved: event.approved,
+                title: event.title,
+                ages: event.ages,
+                duration: event.duration,
+                location: event.location,
+                activityLevel: event.activityLevel,
+                price: event.price,
+                description: event.description
+            }
+        )
         API.saveSubmission({
             title: event.title,
             ages: event.ages,
@@ -62,25 +100,8 @@ class ShareInput extends Component {
                         <Col size="md-3">
                             <h1 className="titleQ">SHARE ACTIVITIES WITH OTHER GUESTS?</h1>
                             <CitySearch />
-                            <form>
-                                <label>
-                                    <input
-                                        type="text"
-                                        className="form-control"
-                                        placeholder="Title"
-                                        value={this.state.title}
-                                        onChange={(event) => { this.setState({ title: event.target.value }) }}
-                                    />
-                                    <br />
-                                    <textarea
-                                        className="form-control "
-                                        placeholder="Description"
-                                        type="text"
-                                        description={this.state.description}
-                                        onChange={(event) => { this.setState({ description: event.target.value }) }}
-                                    />
-                                </label>
-                            </form>
+                            <FormInput value={this.state.title}
+                                onChange={this.handleChange} />
                         </Col>
                         <Col size="md-2">
                             <h6 className="descriptionsRight">Kids</h6><br></br>
@@ -132,10 +153,23 @@ class ShareInput extends Component {
                         </Col>
 
                     </Row>
-                    {this.state.eventApproval === true ?
-                        <Forum />
+                    {/* {this.state.approved === true ? */}
+                      {this.state.events.map(event => (
+                        <Forum 
+                        key={event.id}
+                        title={event.title}
+                        city={event.city}
+                        ages={event.ages}
+                        duration={event.duration}
+                        location={event.location}
+                        activityLevel={event.activityLevel}
+                        price={event.price}
+                        description={event.description}
+                        link={event.link}
+                        />
+                        ))}
                         : null
-                    }
+                    {/* } */}
                 </Container>
             </div>
         )
