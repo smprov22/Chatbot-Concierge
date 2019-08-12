@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 export function StartBtn(props) {
   return (
@@ -12,7 +12,7 @@ export function StartBtn(props) {
 
 export function SubmitBtn(props) {
   return (
-    <button  className="submit-btn btn btn-primary animated pulse" {...props} >
+    <button type="submit" className="submit-btn btn btn-primary" onClick={props.handleFormSubmit} >
     Submit
     </button>
   );

@@ -1,13 +1,10 @@
 
-import React, { Component } from 'react'
+import React from 'react'
 import '../CitySearch/style.css'
 
 
-class CitySearch extends Component {
+const CitySearch = () => {
 
-
-
-    render() {
         return (
         <form>
             <select>
@@ -24,7 +21,6 @@ class CitySearch extends Component {
 
 
 )}
-}
 
 
 export default CitySearch;

@@ -5,6 +5,7 @@ import StartBtn from '../components/Button/button'
 import '../App.css'
 import Cinemagraph from '../components/Cinemagraph/cinemagraph'
 import "../pages/home.css"
+// import CitySearch from '../components/CitySearch/citysearch'
 
 
 class Home extends Component {
@@ -26,7 +27,10 @@ class Home extends Component {
 
             <div id="frontPage">
                     <p className="homeTitle">Let's do <br></br>something fun <br></br>  </p>
+<<<<<<< HEAD
           
+=======
+>>>>>>> master
                     <StartBtn
                         onClick={this.onStartBtn} />
                   
