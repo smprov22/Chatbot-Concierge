@@ -76,12 +76,14 @@ class Activities extends Component {
     return (
       <div className="Wrapper">
         <Container>
-        <CitySearch />
           <Row >
+          <Col size="md-1"></Col>
             <Col size="md-3">
-              <h1 className="titleQ">WHAT TYPE OF ACTIVITY SHOULD WE PLAN?</h1>
+              <h1 className="titleQ animated bounceInLeft slow">WHAT TYPE OF ACTIVITY SHOULD WE PLAN?</h1>
             </Col>
-            <Col size="md-2">
+      
+            <Col size="md-1">
+              <h6 className="descriptionsRight"></h6><br></br>
               <h6 className="descriptionsRight">Kids</h6><br></br>
               <h6 className="descriptionsRight">An hour</h6><br></br>
               <h6 className="descriptionsRight">Indoors</h6><br></br>
@@ -89,7 +91,8 @@ class Activities extends Component {
               <h6 className="descriptionsRight">Budget Friendly</h6><br></br>
             </Col>
 
-            <Col size="md-5">
+            <Col className="slider" size="md-5">
+            <CitySearch />
               <p className="questions">Kid Friendly?</p>
               <Slider
                     min={0}
@@ -132,13 +135,15 @@ class Activities extends Component {
                 />
               <SubmitBtn handleFormSubmit = {this.handleFormSubmit} ></SubmitBtn>
             </Col>
-            <Col size="md-2">
+            <Col size="md-1">
+              <h6 className="descriptionsLeft"></h6><br></br>
               <h6 className="descriptionsLeft">Cocktails</h6><br></br>
               <h6 className="descriptionsLeft">All day</h6><br></br>
               <h6 className="descriptionsLeft">Outdoors</h6><br></br>
               <h6 className="descriptionsLeft">Cheetah</h6><br></br>
               <h6 className="descriptionsLeft">Living Large</h6><br></br>
             </Col>
+            <Col size="md-1"></Col>
 
           </Row>
           {this.state.showEvents ?

@@ -26,7 +26,7 @@ class FormInput extends Component {
     
       render() {
         return (
-          <form>
+          <form className="guestPost">
   
             <label>
             <input type="text" className="form-control"  placeholder="Title" value={this.state.value} onChange={this.handleChange}></input><br></br>

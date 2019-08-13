@@ -14,8 +14,19 @@
   font-weight: bold;
 }
 
+.sliderRight{
+  margin-left: 60px;
+  padding-right: 60px;
+  float: left;
+}
+
 .scrollerRow{
   margin-bottom: 200px;
+}
+
+.activeRow{
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 .questions{
@@ -28,12 +39,13 @@
 }
 
 .titleQ{
-  margin-top: 10% !important;
+  margin-top: 35% !important;
   font-weight: 800;
   font-size: 50px;
   text-align: left;
-  
+
 }
+
 
 .Wrapper{
   padding-top: 150px;
@@ -41,11 +53,13 @@
   background: url('../pages/background2.png') no-repeat center center fixed;
 }
 
-.Wrapper-2{
+/* .Wrapper-2{
   background-color: blue;
-}
+} */
 
 .backgroundRight{
   background-color: lightblue;
 }
+
+
 

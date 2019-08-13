@@ -20,7 +20,7 @@ class SliderBar extends Component {
   render() {
     let { index } = this.state
     return (
-      <div className= "container">
+      <div className= "slider">
 
         <Slider
           min={0}

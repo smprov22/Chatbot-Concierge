@@ -1,0 +1,13 @@
+#frontPage{
+    height: 750px;
+  }
+
+h4{
+   color:white !important;
+   font-weight: bold;
+}
+
+.loginForm{
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
