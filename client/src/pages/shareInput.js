@@ -29,7 +29,8 @@ class ShareInput extends Component {
             location: 1,
             activityLevel: 1,
             price: 1,
-            description: ""
+            description: "",
+            date: ""
         }
         this.handleEventSubmit = this.handleEventSubmit.bind(this)
         this.handleChange = this.handleChange.bind(this)
@@ -66,6 +67,7 @@ class ShareInput extends Component {
         const event = this.state
 
         console.log(event)
+        let date = event.date
 
         this.setState(
             {
@@ -76,7 +78,8 @@ class ShareInput extends Component {
                 location: event.location,
                 activityLevel: event.activityLevel,
                 price: event.price,
-                description: event.description
+                description: event.description,
+                date: date.toString
             }
         )
         API.saveSubmission({
@@ -177,6 +180,7 @@ class ShareInput extends Component {
                         price={event.price}
                         description={event.description}
                         link={event.link}
+                        date={event.date}
                         />
                         ))}
                         : null
