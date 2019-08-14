@@ -12,7 +12,7 @@ import '../components/Slider/style.css'
 import '../pages/activities.css'
 import List from '../components/List/index'
 import Card from '../components/Card/index'
-import CitySearch from '../components/CitySearch/citysearch'
+// import CitySearch from '../components/CitySearch/citysearch'
 // import { set } from 'mongoose';
 
 
@@ -42,7 +42,7 @@ class Activities extends Component {
 
   getSubmissions = () => {
     API.getSubmissions()
-      .then(res =>
+      .then(res =>  
         this.setState({
           events: res.data
         })
@@ -52,13 +52,16 @@ class Activities extends Component {
 
   handleFormSubmit = () => {
     let activity = this.state
-    let ages = activity.ages
-    let location = activity.location
-    let duration = activity.duration
-    let level = activity.activityLevel
-    let price = activity.price
 
-    API.getSubmissions(ages, location, duration, level, price)
+    let params = {
+        ages: activity.ages,
+        location: activity.location,
+        duration: activity.duration,
+        activityLevel: activity.activityLevel,
+        price: activity.price
+    }
+
+    API.getSubmissions(params)
     this.show()
   }
 
@@ -91,7 +94,17 @@ class Activities extends Component {
             </Col>
 
             <Col className="slider" size="md-5">
-            <CitySearch />
+            <div>
+                <form>
+                    <select>
+                        <option value="1">Sacramento, CA</option>
+                        <option value="2">Austin, TX</option>
+                        <option value="3">New Orleans, LA</option>
+                        <option value="4">New York, NY</option>
+                        <option value="5">Chicago, IL</option>
+                    </select>
+                </form>
+            </div>
               <p className="questions">Kid Friendly?</p>
               <Slider
                     min={0}
