@@ -12,7 +12,7 @@ import '../pages/activities.css'
 import FormInput from '../components/FormInput';
 import Forum from '../components/Forum'
 import '../components/Forum'
-import CitySearch from "../components/CitySearch/citysearch"
+// import CitySearch from "../components/CitySearch/citysearch"
 
 
 class ShareInput extends Component {
@@ -30,34 +30,29 @@ class ShareInput extends Component {
             activityLevel: 1,
             price: 1,
             description: "",
-            date: ""
+            date: "",
+            value: "Sacramento, CA"
         }
-        this.handleEventSubmit = this.handleEventSubmit.bind(this)
-        this.handleChange = this.handleChange.bind(this)
+        // this.handleEventSubmit = this.handleEventSubmit.bind(this)
+        // this.handleChange = this.handleChange.bind(this)
     }
 
-    handleChange(event) {
-        this.setState({
-            [event.target.name]: event.target.value
-        })
-    }
-
-    componentDidMount() {
-        this.getSubmissions();
-    }
-
-    getSubmissions = () => {
-        API.getSubmissions(this.state.approved)
-            .then(res =>
-                this.setState({
-                    events: res.data
-                })
-            )
-            .catch(err => console.log(err));
-    }
+    // getSubmissions = () => {
+    //     API.getSubmissions(this.state.approved)
+    //         .then(res =>
+    //             this.setState({
+    //                 events: res.data
+    //             })
+    //         )
+    //         .catch(err => console.log(err));
+    // }
 
 
     // scrollToMyRef = () => window.scrollTo(0, this.myRef.current.offsetTop) 
+
+    handleNewChange(event) {
+        this.setState({value: event.target.value});
+      }
 
 
     handleEventSubmit = id => {
@@ -67,21 +62,22 @@ class ShareInput extends Component {
         const event = this.state
 
         console.log(event)
-        let date = event.date
+        // let date = event.date
 
-        this.setState(
-            {
-                approved: event.approved,
-                title: event.title,
-                ages: event.ages,
-                duration: event.duration,
-                location: event.location,
-                activityLevel: event.activityLevel,
-                price: event.price,
-                description: event.description,
-                date: date.toString
-            }
-        )
+        // this.setState(
+        //     {
+        //         approved: event.approved,
+        //         title: event.title,
+        //         ages: event.ages,
+        //         duration: event.duration,
+        //         location: event.location,
+        //         activityLevel: event.activityLevel,
+        //         price: event.price,
+        //         description: event.description,
+        //         date: date.toDateString,
+        //         value: event.value
+        //     }
+        // )
         API.saveSubmission({
             title: event.title,
             ages: event.ages,
@@ -89,7 +85,8 @@ class ShareInput extends Component {
             location: event.location,
             activityLevel: event.activityLevel,
             price: event.price,
-            description: event.description
+            description: event.description,
+            city: event.value
         });
     };
 
@@ -112,7 +109,17 @@ class ShareInput extends Component {
                             <h6 className="descriptionsRight">Budget Friendly</h6><br></br>
                         </Col>
                         <Col size="md-5">
-                        <CitySearch />
+                        <div>
+                            <form>
+                                <select value={this.state.value} onChange={this.handleNewChange}>
+                                    <option value="Sacramento, CA">Sacramento, CA</option>
+                                    <option value="Austin, TX">Austin, TX</option>
+                                    <option value="New Orleans, LA">New Orleans, LA</option>
+                                    <option value="New York, NY">New York, NY</option>
+                                    <option value="Chicago, IL">Chicago, IL</option>
+                                </select>
+                            </form>
+                        </div>
                             <p className="questions">Kid Friendly?</p>
                             <Slider
                                 min={0}
@@ -153,9 +160,27 @@ class ShareInput extends Component {
                                 orientation="horizontal"
                                 onChange={(value) => { this.setState({ price: value }) }}
                             /><br></br><br></br>
-                                <FormInput value={this.state.title}
-                                onChange={this.handleChange} />
-                            <SubmitBtn onClick={() => this.handleEventSubmit()} />
+                            <form>
+                               <label>
+                                   <input
+                                       type="text"
+                                       className="form-control"
+                                       placeholder="Title"
+                                       value={this.state.title}
+                                       onChange={(event) => { this.setState({ title: event.target.value }) }}
+                                   />
+                                   <br />
+                                   <textarea
+                                       className="form-control "
+                                       placeholder="Description"
+                                       type="text"
+                                       description={this.state.description}
+                                       onChange={(event) => { this.setState({ description: event.target.value }) }}
+                                   />
+                               </label>
+                           </form>
+                           <SubmitBtn onClick={() => this.handleEventSubmit()} />
+
                         </Col>
                         <Col size="md-1">
                              <h6 className="descriptionsLeft"></h6><br></br>
