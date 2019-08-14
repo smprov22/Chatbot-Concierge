@@ -6,7 +6,7 @@ import '../ActivityCards/style.css'
 import '../Forum'
 
 
-function Forum({ title, ages, duration, location, activityLevel, price, description, city}) {
+function Forum({ title, ages, duration, location, activityLevel, price, description, city, date}) {
 
             return (
                 <div className="card mb-3" >
@@ -20,8 +20,8 @@ function Forum({ title, ages, duration, location, activityLevel, price, descript
                                     <h5 className="card-title">{title}</h5>
                                     <h6 className="card-title">{city}</h6>
                                     <p className="card-text">{description}</p>
-                                    <p className="card-text"><small className="text-muted">updated at</small></p>
-                                    <p >Ages: {ages} | Duration: {duration} | Activity Level: {activityLevel} | Location: {location} | Price: {price} </p>
+                                    <p className="card-text"><small className="text-muted">updated at: {date}</small></p>
+                                    {/* <p >Ages: {ages} | Duration: {duration} | Activity Level: {activityLevel} | Location: {location} | Price: {price} </p> */}
                                     {/* <FontAwesomeIcon icon={faClock} className="icons" size="lg"/>
                                     <FontAwesomeIcon icon={faBaby} className="icons" size="lg"/>
                                     <FontAwesomeIcon icon={faTree} className="icons" size="lg"/>
