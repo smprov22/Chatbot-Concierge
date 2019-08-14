@@ -125,13 +125,6 @@ class App extends Component {
             render={() =>
               <ShareInput />}
           />
-          <Route
-            path="/*"
-            render={() =>
-              <LoginForm
-                updateUser={this.updateUser}
-              />}
-          />
         </div>
       );
     }

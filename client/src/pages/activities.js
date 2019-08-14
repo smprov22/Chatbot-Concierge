@@ -36,19 +36,19 @@ class Activities extends Component {
     }
   }
 
-  componentDidMount() {
-    this.getSubmissions();
-  }
+  // componentDidMount() {
+  //   this.getSubmissions();
+  // }
 
-  getSubmissions = () => {
-    API.getSubmissions()
-      .then(res =>  
-        this.setState({
-          events: res.data
-        })
-      )
-      .catch(err => console.log(err));
-  }
+  // getSubmissions = () => {
+  //   API.getSubmissions()
+  //     .then(res =>  
+  //       this.setState({
+  //         events: res.data
+  //       })
+  //     )
+  //     .catch(err => console.log(err));
+  // }
 
   handleFormSubmit = () => {
     let activity = this.state
@@ -60,11 +60,16 @@ class Activities extends Component {
         activityLevel: activity.activityLevel,
         price: activity.price
     }
-
-    API.getSubmissions(params)
-    this.show()
+    console.log(params);
+    API.getFilterSubmissions(params)
+      .then(res => 
+        this.setState({
+          events: res.data
+        })
+        )
+        .then(this.show())
+        .catch(err => console.log(err));
   }
-
 
   show() {
     this.setState({
