@@ -34,7 +34,7 @@ class ShareInput extends Component {
             value: "Sacramento, CA"
         }
         // this.handleEventSubmit = this.handleEventSubmit.bind(this)
-        // this.handleChange = this.handleChange.bind(this)
+        this.handleNewChange = this.handleNewChange.bind(this)
     }
 
     // getSubmissions = () => {
