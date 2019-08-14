@@ -144,7 +144,7 @@ class ShareInput extends Component {
                         
                     </Row>
                     {/* {this.state.approved === true ? */}
-                      {/* {this.state.events.map(event => (
+                      {this.state.events.map(event => (
                         <Forum 
                         key={event.id}
                         title={event.title}
@@ -158,7 +158,7 @@ class ShareInput extends Component {
                         link={event.link}
                         />
                         ))}
-                        : null */}
+                        : null
                     {/* } */}
                 </Container>
             </div>

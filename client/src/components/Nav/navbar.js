@@ -32,9 +32,30 @@ class Navbar extends Component {
         console.log('navbar render, props: ')
         console.log(this.props);
 
+        if(loggedIn) {
+            return (
+                <div>
+                    <nav className="navbar navbar-light bg-light">
+                        <Link to="/shareInput" className="btn btn-link">
+                            <span className="nav-link-share">HAVE SOMETHING TO SHARE?</span>
+                        </Link>
+                        <a className="navbar-brand" href="/">
+                            <img src={logo} className="App-logo" width="80" height="60" alt="logo" />
+                        </a>
+                        <ul className="nav justify-content-end">
+                            <li>
+                                <Link to="#" className="btn btn-link nav-item nav-link2 " onClick={this.logout}>
+                                    LOGOUT
+                                </Link>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            )
+        } else {
+
         return (
             <div>
-
                 <nav className="navbar navbar-light bg-light">
                     <Link to="/shareInput" className="btn btn-link">
                         <span className="nav-link-share">HAVE SOMETHING TO SHARE?</span>
@@ -43,24 +64,16 @@ class Navbar extends Component {
                         <img src={logo} className="App-logo" width="80" height="60" alt="logo" />
                     </a>
                     <ul className="nav justify-content-end">
-                    <li>
-                    <Link to="/login" className="btn btn-link nav-item active nav-link">
-                       LOGIN
-                    </Link>
-                
-                    <Link to="#" className="btn btn-link nav-item nav-link2 " onClick={this.logout}>
-                       LOGOUT
-                      </Link> 
-                      </li>
+                        <li>
+                            <Link to="/login" className="btn btn-link nav-item active nav-link">
+                                LOGIN
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
-
-
-
             </div>
-
         );
-
+        }
     }
 }
 

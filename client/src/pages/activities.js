@@ -50,8 +50,7 @@ class Activities extends Component {
       .catch(err => console.log(err));
   }
 
-  handleFormSubmit = event => {
-    event.preventDefault();
+  handleFormSubmit = () => {
     let activity = this.state
     let ages = activity.ages
     let location = activity.location
@@ -133,7 +132,7 @@ class Activities extends Component {
                     orientation="horizontal"
                     onChange={(value) => { this.setState({ price: value }) }}
                 />
-              <SubmitBtn handleFormSubmit = {this.handleFormSubmit} ></SubmitBtn>
+              <SubmitBtn onClick={() => this.handleFormSubmit()} ></SubmitBtn>
             </Col>
             <Col size="md-1">
               <h6 className="descriptionsLeft"></h6><br></br>

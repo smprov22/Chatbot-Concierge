@@ -12,7 +12,7 @@ export function StartBtn(props) {
 
 export function SubmitBtn(props) {
   return (
-    <button type="submit" className="submit-btn btn btn-primary" onClick={props.handleFormSubmit} >
+    <button type="submit" className="submit-btn btn btn-primary" {...props} >
     Submit
     </button>
   );
