@@ -11,3 +11,19 @@ h4{
   margin-top: 15%;
   margin-bottom: 15%;
 }
+
+.managerPage{
+  margin-bottom: 25%;
+}
+
+.list-group-item{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.manager-signup{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #5755d9;
+  color: white !important;
+}

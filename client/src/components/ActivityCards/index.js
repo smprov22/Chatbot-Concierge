@@ -1,19 +1,10 @@
 import React from 'react'
 import '../ActivityCards/style.css'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faClock, faBaby, faTree, faHiking, faMoneyBillAlt} from '@fortawesome/free-solid-svg-icons'
-import { BookBtns} from '../Button/button'
-// import API from '../../utils/api'
+import Icons from "../Icons/icons"
 
 
 function ActivityCard({ title, description, link, image, city }) {
 
-    //     BookButton = event =>{
-
-    //     let path = {link}
-    //     this.props.history.push(path)
-
-    // }
             return (
                 <div className="card mb-3"  >
                     <div className="row no-gutters">
@@ -25,13 +16,8 @@ function ActivityCard({ title, description, link, image, city }) {
                                     <h5 className="card-title">{title}</h5>
                                     <p className="card-text">{description}</p>
                                     <p className="card-text"><small className="text-muted"> Location: {city} </small></p>
+                                    <Icons /><br></br>
                                     <a href={link} className="bookBtn">BOOK</a>
-                                    {/* <FontAwesomeIcon icon={faClock} className="icons" size="lg"/>
-                                    <FontAwesomeIcon icon={faBaby} className="icons" size="lg"/>
-                                    <FontAwesomeIcon icon={faTree} className="icons" size="lg"/>
-                                    <FontAwesomeIcon icon={faHiking} className="icons" size="lg"/>
-                                    <FontAwesomeIcon icon={faMoneyBillAlt}className="icons" size="lg"/><br></br><br></br> */}
-                                 
                                
                                 </div>
                             </div>
