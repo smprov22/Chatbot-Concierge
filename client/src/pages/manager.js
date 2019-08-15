@@ -54,10 +54,15 @@ class Manager extends Component {
                     <h4>Manager</h4>
                 </div>
                 <div>
+                    <a href="/signup">Add a New Manager Here</a>
+                </div>
+                <div>
                     {this.state.submissions.length ? (
                         <List>
-                            {this.state.submissions.map(submission => (
-                                <Submissions key={submission._id}>
+                            {this.state.submissions
+                            .filter(submission => (!submission.approved))
+                            .map(submission => (
+                                <Submissions key={submission._id} >
                                     <p><strong>Title: </strong>{submission.title}</p>
                                     <p><strong>Description: </strong>{submission.description}</p>
                                     <p><strong>Ages: </strong>{submission.ages}</p>

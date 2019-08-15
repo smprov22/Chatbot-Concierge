@@ -9,6 +9,14 @@ module.exports = {
       .then(eventData => res.json(eventData))
       .catch(err => res.status(422).json(err));
   },
+  findFilter: function(req, res) {
+    console.log("Find Filter")
+    console.log(req.query)
+    db.AddEvent
+      .find(req.query)
+      .then(eventData => res.json(eventData))
+      .catch(err => res.status(422).json(err));
+  },
   findById: function(req, res) {
     db.AddEvent
       .findById(req.params.id)
