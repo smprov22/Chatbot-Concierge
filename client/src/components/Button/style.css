@@ -8,10 +8,10 @@
 .start-btn{
     margin-bottom: 2em;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    animation-duration: 2s;
-    animation-name: slidein;
+    /* /* animation-duration: 2s;
+    animation-name: slidein; */
+  
 }
-
 
 @keyframes slidein {
     from {

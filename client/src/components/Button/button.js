@@ -28,8 +28,9 @@ export function SubmitBtn(props) {
 // }
 
 export class BookBtns extends React.Component{
-  btnClick() {
-    window.open("https://www.google.com");
+  
+  btnClick(props) {
+    window.open(props);
 }
 render() {
   return (<div>

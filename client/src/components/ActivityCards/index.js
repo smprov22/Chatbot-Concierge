@@ -7,14 +7,13 @@ import { BookBtns} from '../Button/button'
 
 
 function ActivityCard({ title, description, link, image, city }) {
-// function ActivityCard({ title, ages, duration, location, activityLevel, price, description, link, image, city }) {
+
     //     BookButton = event =>{
-    //     event.preventDefault();
+
     //     let path = {link}
     //     this.props.history.push(path)
 
     // }
-   
             return (
                 <div className="card mb-3"  >
                     <div className="row no-gutters">
@@ -26,7 +25,6 @@ function ActivityCard({ title, description, link, image, city }) {
                                     <h5 className="card-title">{title}</h5>
                                     <p className="card-text">{description}</p>
                                     <p className="card-text"><small className="text-muted"> Location: {city} </small></p>
-                                    {/* <p >Ages: {ages} | Duration: {duration} | Activity Level: {activityLevel} | Location: {location} | Price: {price} </p> */}
                                     <a href={link} className="bookBtn">BOOK</a>
                                     {/* <FontAwesomeIcon icon={faClock} className="icons" size="lg"/>
                                     <FontAwesomeIcon icon={faBaby} className="icons" size="lg"/>
