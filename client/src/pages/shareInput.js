@@ -33,19 +33,8 @@ class ShareInput extends Component {
             date: "",
             value: "Sacramento, CA"
         }
+        this.handleNewChange = this.handleNewChange.bind(this)
     }
-
-    
-    getSubmissions = () => {
-        API.getSubmissions(this.state.approved)
-            .then(res =>
-                this.setState({
-                    events: res.data
-                })
-            )
-            .catch(err => console.log(err));
-    }
-
 
     // scrollToMyRef = () => window.scrollTo(0, this.myRef.current.offsetTop) 
 
