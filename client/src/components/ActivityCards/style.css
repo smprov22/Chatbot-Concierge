@@ -17,8 +17,14 @@
 }
 
 .bookBtn{
-    background-color: rgba(65, 105, 225, 0.336);
+    background-color: #5755d9;
+    padding: .5em;
+    border-radius: 5%;
+    color: white !important;
+    text-decoration: none !important;
 }
+
+
 
 .titleQ{
     color: white !important;

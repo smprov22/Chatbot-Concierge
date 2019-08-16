@@ -44,7 +44,7 @@ class Navbar extends Component {
                         </a>
                         <ul className="nav justify-content-end">
                             <li>
-                                <Link to="#" className="btn btn-link nav-item nav-link2 " onClick={this.logout}>
+                                <Link to="#" className="btn btn-link nav-item nav-link" onClick={this.logout}>
                                     LOGOUT
                                 </Link>
                             </li>
