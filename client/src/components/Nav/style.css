@@ -19,7 +19,7 @@ color: gray !important;
   position: absolute;
   left: 50%;
   margin-left: -50px !important; 
-  margin-top: -20px !important; 
+  margin-top: -30px !important; 
 }
 
 @media only screen and (max-width: 768px) {
@@ -42,7 +42,7 @@ color: gray !important;
 
   li, a{
     width: 100%;
-    margin: 2px;
+    margin-top: 10px;
   }
 
 }
