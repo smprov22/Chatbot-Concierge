@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 // import { Redirect } from 'react-router-dom'
 import { List, Submissions } from '../components/Events/submissions'
 import API from '../utils/api'
+import "./home.css"
 
 class Manager extends Component {
     // constructor() {
@@ -49,12 +50,12 @@ class Manager extends Component {
 
     render() {
         return (
-            <div>
+            <div className="managerPage">
                 <div>
-                    <h4>Manager</h4>
+                    <h1>MANAGER VIEW</h1>
                 </div>
                 <div>
-                    <a href="/signup">Add a New Manager Here</a>
+                    <a className="manager-signup" href="/signup">+ Add a New Manager</a>
                 </div>
                 <div>
                     {this.state.submissions.length ? (
@@ -71,11 +72,11 @@ class Manager extends Component {
                                     <p><strong>Activity Level: </strong>{submission.activityLevel}</p>
                                     <p><strong>Price: </strong>{submission.price}</p>
                                     <p><strong>Approved: </strong>{submission.approved ? "true" : "false"}</p>
-                                    <button className="approve-btn btn btn-success" id={submission._id} onClick={(event) => this.handleApproveButton(submission._id, event)}>
+                                    <button className="approve-btn btn btn-primary " id={submission._id} onClick={(event) => this.handleApproveButton(submission._id, event)}>
                                         Approve
                                     </button>
                                     <span>      </span>
-                                    <button className="approve-btn btn btn-error" id={submission._id} onClick={(event) => this.handleDeleteButton(submission._id, event)}>
+                                    <button className="approve-btn btn " id={submission._id} onClick={(event) => this.handleDeleteButton(submission._id, event)}>
                                         Delete
                                     </button>
                                 </Submissions>

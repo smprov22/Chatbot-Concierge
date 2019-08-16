@@ -1,22 +1,20 @@
 .text-secondary{
     color: black;
 }
-.App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    margin-right: 100px;
+
+.navbar-brand{
+  text-align: center;
+
 }
-  
  
 .navbar {
+    width: 100%;
     background-color:rgba(248, 248, 250, 0.596) !important;
-    margin-top: auto;
-    justify-content: none !important;
     padding: 10px;
-    /* box-shadow: 5px 10px 18px #88888831; */
     align-items: center !important;
   }
 
-.nav-link2{
+.nav-link{
   margin-right: 60px;
 
 }

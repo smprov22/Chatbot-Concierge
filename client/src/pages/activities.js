@@ -12,6 +12,7 @@ import '../components/Slider/style.css'
 import '../pages/activities.css'
 import List from '../components/List/index'
 import Card from '../components/Card/index'
+
 // import CitySearch from '../components/CitySearch/citysearch'
 // import { set } from 'mongoose';
 
@@ -71,6 +72,7 @@ class Activities extends Component {
         .catch(err => console.log(err));
   }
 
+
   show() {
     this.setState({
       showEvents: true
@@ -80,6 +82,7 @@ class Activities extends Component {
 
 
   render() {
+ 
     return (
       <div className="Wrapper">
         <Container>
