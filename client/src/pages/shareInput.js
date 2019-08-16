@@ -33,6 +33,7 @@ class ShareInput extends Component {
             date: "",
             value: "Sacramento, CA"
         }
+        this.handleNewChange = this.handleNewChange.bind(this)
     }
 
     // scrollToMyRef = () => window.scrollTo(0, this.myRef.current.offsetTop) 
