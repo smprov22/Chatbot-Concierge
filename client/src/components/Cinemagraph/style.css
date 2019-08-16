@@ -23,6 +23,8 @@ iframe{
     position:relative; 
 	overflow: hidden;
 	animation: float 3s ease-in-out infinite;
+	width: 800px;
+	height: 600px;
 }
 
 
@@ -41,4 +43,29 @@ iframe{
 	}
 }
 
+@media only screen and (max-width: 768px) {
 
+	.ipad{
+		width: 600px;
+		height: 400px;
+		margin: 0 auto;
+	}
+
+	.containerIpad{
+		margin: 0 auto;
+		padding-left: 2%;
+		width: 100%;
+		
+		}
+
+}
+
+
+@media only screen and (max-width: 400px) {
+
+	.ipad{
+		width: 400px;
+		height: 200px;
+	}
+
+}

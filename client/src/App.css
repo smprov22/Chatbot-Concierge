@@ -10,14 +10,6 @@
   margin: 1em 1em .5em 1em !important;
 }
 
-/* a:visited{
-  color: lightblue !important;
-  border: lightblue !important;
-} */
-
-/* .btn:visited{
-  border: 1px solid red !important;
-} */
 .containerTitle{
   text-align: center;
   margin-top: 100px;
@@ -35,5 +27,16 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+
+}
+
+
+@media only screen and (max-width: 400px) {
+
 }
 

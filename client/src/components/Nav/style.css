@@ -1,4 +1,4 @@
-.text-secondary{
+/* .text-secondary{
     color: black;
 }
 
@@ -22,10 +22,22 @@
 .nav-link-share{
   margin-left: 60px;
 
-}
+} */
+
+
 
 a {
 color: gray !important;
 
 }
 
+ul{
+  display: block;
+}
+
+
+.navbar {
+  width: 100%;
+
+  justify-content: center !important;
+}

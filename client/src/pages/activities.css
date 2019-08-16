@@ -53,13 +53,34 @@
   background: url('../pages/background2.png') no-repeat center center fixed;
 }
 
-/* .Wrapper-2{
-  background-color: blue;
-} */
 
 .backgroundRight{
   background-color: lightblue;
 }
 
+@media only screen and (max-width: 768px) {
+  .Wrapper{
+    padding-top: 1px;
 
+  }
+
+  .titleQ{
+    margin-top: 40px !important;
+    margin-bottom: 80px !important;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .createActivity{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 400px) {
+
+}
 

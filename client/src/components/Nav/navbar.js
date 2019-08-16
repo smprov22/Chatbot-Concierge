@@ -32,17 +32,22 @@ class Navbar extends Component {
         console.log('navbar render, props: ')
         console.log(this.props);
 
-        if(loggedIn) {
+        if (loggedIn) {
             return (
                 <div>
                     <nav className="navbar navbar-light bg-light">
-                        <Link to="/shareInput" className="btn btn-link">
-                            <span className="nav-link-share">HAVE SOMETHING TO SHARE?</span>
-                        </Link>
-                        <a className="navbar-brand" href="/">
-                            <img src={logo} className="App-logo" width="80" height="60" alt="logo" />
-                        </a>
-                        <ul className="nav justify-content-end">
+
+            <ul class="navbar-nav">
+                        <li>
+                            <Link to="/shareInput" className="btn btn-link">
+                                <a className="nav-link-share">HAVE SOMETHING TO SHARE?</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <a className="navbar-brand" href="/">
+                                <img src={logo} className="App-logo" width="85" height="60" alt="logo" />
+                            </a>
+                        </li>
                             <li>
                                 <Link to="#" className="btn btn-link nav-item nav-link" onClick={this.logout}>
                                     LOGOUT
@@ -54,25 +59,25 @@ class Navbar extends Component {
             )
         } else {
 
-        return (
-            <div>
-                <nav className="navbar navbar-light bg-light">
-                    <Link to="/shareInput" className="btn btn-link">
-                        <span className="nav-link-share">HAVE SOMETHING TO SHARE?</span>
-                    </Link>
-                    <a className="navbar-brand" href="/">
-                        <img src={logo} className="App-logo" width="80" height="60" alt="logo" />
-                    </a>
-                    <ul className="nav justify-content-end">
-                        <li>
-                            <Link to="/login" className="btn btn-link nav-item active nav-link">
-                                LOGIN
+            return (
+                <div>
+                    <nav className="navbar navbar-light bg-light">
+                        <Link to="/shareInput" className="btn btn-link">
+                            <span className="nav-link-share">HAVE SOMETHING TO SHARE?</span>
+                        </Link>
+                        <a className="navbar-brand" href="/">
+                            <img src={logo} className="App-logo" width="80" height="60" alt="logo" />
+                        </a>
+                        <ul className="nav justify-content-end">
+                            <li>
+                                <Link to="/login" className="btn btn-link nav-item active nav-link">
+                                    LOGIN
                             </Link>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        );
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            );
         }
     }
 }
