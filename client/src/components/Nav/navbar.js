@@ -32,47 +32,62 @@ class Navbar extends Component {
         console.log('navbar render, props: ')
         console.log(this.props);
 
-        if(loggedIn) {
+        if (loggedIn) {
             return (
                 <div>
-                    <nav className="navbar navbar-light bg-light">
-                        <Link to="/shareInput" className="btn btn-link">
-                            <span className="nav-link-share">HAVE SOMETHING TO SHARE?</span>
-                        </Link>
-                        <a className="navbar-brand" href="/">
-                            <img src={logo} className="App-logo" width="80" height="60" alt="logo" />
-                        </a>
-                        <ul className="nav justify-content-end">
-                            <li>
-                                <Link to="#" className="btn btn-link nav-item nav-link" onClick={this.logout}>
-                                    LOGOUT
+                    <nav class="navbar bg-faded">
+                        <div class="container">
+
+                            <ul class="nav navbar-nav pull-sm-left">
+                                <li className="nav-item">
+                                    <Link to="/shareInput" className="btn btn-link">
+                                        <a className="nav-link-share">HAVE SOMETHING TO SHARE?</a>
+                                    </Link>
+                                </li>
+                            </ul>
+                            <a className="navbar-brand mx-auto" href="/">
+                                <img src={logo} className="App-logo" alt="logo" />
+                            </a>
+                            <ul class="nav navbar-nav pull-sm-left">
+                                <li className="nav-item">
+                                    <Link to="#" className="btn btn-link nav-item nav-link" onClick={this.logout}>
+                                        LOGOUT
                                 </Link>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </nav>
                 </div>
             )
         } else {
 
-        return (
-            <div>
-                <nav className="navbar navbar-light bg-light">
-                    <Link to="/shareInput" className="btn btn-link">
-                        <span className="nav-link-share">HAVE SOMETHING TO SHARE?</span>
-                    </Link>
-                    <a className="navbar-brand" href="/">
-                        <img src={logo} className="App-logo" width="80" height="60" alt="logo" />
-                    </a>
-                    <ul className="nav justify-content-end">
-                        <li>
-                            <Link to="/login" className="btn btn-link nav-item active nav-link">
-                                LOGIN
+            return (
+                <div>
+                    <nav class="navbar bg-faded">
+                        <div class="container">
+
+                            <ul class="nav navbar-nav pull-sm-left">
+                                <li className="nav-item">
+                                    <Link to="/shareInput" className="btn btn-link">
+                                        <a className="nav-link-share">HAVE SOMETHING TO SHARE?</a>
+                                    </Link>
+                                </li>
+                            </ul>
+                            <a className="navbar-brand mx-auto" href="/">
+                                <img src={logo} className="App-logo" alt="logo" />
+                            </a>
+                            <ul class="nav navbar-nav pull-sm-left">
+                                <li className="nav-item">
+                                <Link to="/login" className="btn btn-link nav-item nav-link">
+                                    LOGIN
                             </Link>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        );
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+              
+            );
         }
     }
 }
