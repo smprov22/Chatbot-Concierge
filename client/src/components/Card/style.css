@@ -7,10 +7,11 @@
 }
 
 .card{
-    margin-top: 50px !important;
-    margin-bottom: 50px !important;
+    margin-top: 25px !important;
+    margin-bottom: 100px !important;
 }
 
-.card .mb-4{
-    margin-top: 100px !important;
-} 
+
+.mt-4 {
+    margin-bottom: 100px !important;
+}
