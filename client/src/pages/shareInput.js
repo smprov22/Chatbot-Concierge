@@ -37,17 +37,6 @@ class ShareInput extends Component {
         this.handleNewChange = this.handleNewChange.bind(this)
     }
 
-    // getSubmissions = () => {
-    //     API.getSubmissions(this.state.approved)
-    //         .then(res =>
-    //             this.setState({
-    //                 events: res.data
-    //             })
-    //         )
-    //         .catch(err => console.log(err));
-    // }
-
-
     // scrollToMyRef = () => window.scrollTo(0, this.myRef.current.offsetTop) 
 
     handleNewChange(event) {
@@ -62,22 +51,7 @@ class ShareInput extends Component {
         const event = this.state
 
         console.log(event)
-        // let date = event.date
 
-        // this.setState(
-        //     {
-        //         approved: event.approved,
-        //         title: event.title,
-        //         ages: event.ages,
-        //         duration: event.duration,
-        //         location: event.location,
-        //         activityLevel: event.activityLevel,
-        //         price: event.price,
-        //         description: event.description,
-        //         date: date.toDateString,
-        //         value: event.value
-        //     }
-        // )
         API.saveSubmission({
             title: event.title,
             ages: event.ages,
