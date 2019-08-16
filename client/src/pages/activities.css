@@ -71,11 +71,9 @@
     font-size: 30px;
   }
 
-  .createActivity{
-    width: 100%;
-    margin: 0 auto;
+  .form-control{
+   width: 250px !important;
   }
-
 
 }
 

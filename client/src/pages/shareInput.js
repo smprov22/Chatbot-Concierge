@@ -80,11 +80,11 @@ class ShareInput extends Component {
             <div className="Wrapper">
                 <Container>
                     <Row>
-                    <Col size="md-1"></Col>
-                        <Col size="md-3">
+                    <Col size="md-1 sm-0"></Col>
+                        <Col size="md-3 sm-12">
                             <h1 className="titleQ animated bounceInLeft slow">SHARE AN ACTIVITY WITH HOTEL GUESTS</h1>
                         </Col>
-                        <Col size="md-1">
+                        <Col size="md-1 sm-3">
                             <h6 className="descriptionsRight"></h6><br></br>
                             <h6 className="descriptionsRight">Kids</h6><br></br>
                             <h6 className="descriptionsRight">An hour</h6><br></br>
@@ -92,7 +92,7 @@ class ShareInput extends Component {
                             <h6 className="descriptionsRight">Sloth</h6><br></br>
                             <h6 className="descriptionsRight">Budget Friendly</h6><br></br>
                         </Col>
-                        <Col size="md-5">
+                        <Col size="md-5 sm-6">
                         <div>
                             <form>
                                 <select value={this.state.value} onChange={this.handleNewChange}>
@@ -165,7 +165,7 @@ class ShareInput extends Component {
                             </form>
                             <SubmitBtn onClick={() => this.handleEventSubmit()} />
                         </Col>
-                        <Col size="md-2">
+                        <Col size="md-1 sm-3">
                             <h6 className="descriptionsLeft"></h6><br></br>
                             <h6 className="descriptionsLeft">Cocktails</h6><br></br>
                             <h6 className="descriptionsLeft">All day</h6><br></br>
@@ -173,7 +173,7 @@ class ShareInput extends Component {
                             <h6 className="descriptionsLeft">Cheetah</h6><br></br>
                             <h6 className="descriptionsLeft">Living Large</h6><br></br>
                         </Col>
-                        
+                        <Col size="md-1 sm-0"></Col> 
                     </Row>
                     {/* {this.state.approved === true ? */}
                       {this.state.events.map(event => (
