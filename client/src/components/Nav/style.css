@@ -1,4 +1,4 @@
- .text-secondary{
+.text-secondary{
     color: black;
 }
 
@@ -20,5 +20,34 @@ color: gray !important;
   left: 50%;
   margin-left: -50px !important; 
   margin-top: -20px !important; 
-  /* display: block; */
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar .navbar-nav{
+    width: 100%;
+  }
+
+  .navbar {
+    padding: 0 !important;
+  }
+
+  .App-logo{
+    width: 60px;
+    height: 40px;
+    left: 50%;
+    margin-left: -30px !important; 
+    /* margin-top: -50px !important;  */
+  }
+  
+
+  li, a{
+    width: 100%;
+    margin: 2px;
+  }
+
+}
+
+
+@media only screen and (max-width: 400px) {
+
 }
