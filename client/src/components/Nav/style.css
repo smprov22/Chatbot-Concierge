@@ -31,13 +31,13 @@ color: gray !important;
 
 }
 
-ul{
-  display: block;
+li{
+  margin: 20%;
 }
-
-
 .navbar {
-  width: 100%;
 
-  justify-content: center !important;
+  align-items: center !important;
+  padding-left: 5%;
+  padding-right: 5%;
+
 }

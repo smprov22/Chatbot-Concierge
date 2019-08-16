@@ -28,10 +28,19 @@ h4{
   color: white !important;
 }
 
+
 @media only screen and (max-width: 768px) {
   #frontPage{
     height: auto;
   }
+
+.loginBtn{
+  /* margin: 20px; */
+}
+
+.form-input{
+  max-width: 100px !important;
+}
 
 }
 
