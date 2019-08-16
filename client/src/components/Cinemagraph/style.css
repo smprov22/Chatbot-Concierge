@@ -60,12 +60,39 @@ iframe{
 
 }
 
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) { 
+	.ipad{
+		width: 440px;
+		height: 300px;
+		margin: 0 auto;
+		padding-left: 15%;
+		animation: float 7s ease-in-out infinite;
+	}
+	.containerIpad{
+		margin-top: 10%;
+		padding-left: 2%;
+		width: 100%;
+		
+		}
+
+}
+
 
 @media only screen and (max-width: 400px) {
 
 	.ipad{
-		width: 400px;
-		height: 200px;
+		width:380px;
+		height: 270px;
+		animation: float 7s ease-in-out infinite;
 	}
+	.containerIpad{
+		margin-top: 20%;
+		margin-left: 10%;
+		padding-left: 2%;
+		width: 100%;
+		
+		}
 
 }

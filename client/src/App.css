@@ -32,11 +32,26 @@
 @media only screen and (max-width: 768px) {
 
 
+  .App {
+    -webkit-mask-image: -webkit-gradient(linear, left 95%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  }
+
+
+}
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) { 
+
+  .homeTitle{
+    margin: 2.5em 1em .5em 1em !important;
+  }  
 
 }
 
 
 @media only screen and (max-width: 400px) {
+
+
 
 }
 

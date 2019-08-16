@@ -34,9 +34,6 @@ h4{
     height: auto;
   }
 
-.loginBtn{
-  /* margin: 20px; */
-}
 
 .form-input{
   max-width: 100px !important;
@@ -46,6 +43,8 @@ h4{
 
 
 @media only screen and (max-width: 400px) {
-
+  #frontPage{
+    height: 650px;
+  }
 
 }
