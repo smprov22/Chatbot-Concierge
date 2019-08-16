@@ -36,22 +36,21 @@ class Activities extends Component {
     }
   }
 
-  componentDidMount() {
-    this.getSubmissions();
-  }
+  // componentDidMount() {
+  //   this.getSubmissions();
+  // }
 
-  getSubmissions = () => {
-    API.getSubmissions()
-      .then(res =>  
-        this.setState({
-          events: res.data
-        })
-      )
-      .catch(err => console.log(err));
-  }
+  // getSubmissions = () => {
+  //   API.getSubmissions()
+  //     .then(res =>  
+  //       this.setState({
+  //         events: res.data
+  //       })
+  //     )
+  //     .catch(err => console.log(err));
+  // }
 
-  handleFormSubmit = event => {
-    event.preventDefault();
+  handleFormSubmit = () => {
     let activity = this.state
 
     let params = {
@@ -61,11 +60,16 @@ class Activities extends Component {
         activityLevel: activity.activityLevel,
         price: activity.price
     }
-
-    API.getSubmissions(params)
-    this.show()
+    console.log(params);
+    API.getFilterSubmissions(params)
+      .then(res => 
+        this.setState({
+          events: res.data
+        })
+        )
+        .then(this.show())
+        .catch(err => console.log(err));
   }
-
 
   show() {
     this.setState({
@@ -146,7 +150,7 @@ class Activities extends Component {
                     orientation="horizontal"
                     onChange={(value) => { this.setState({ price: value }) }}
                 />
-              <SubmitBtn handleFormSubmit = {this.handleFormSubmit} ></SubmitBtn>
+              <SubmitBtn onClick={() => this.handleFormSubmit()} ></SubmitBtn>
             </Col>
             <Col size="md-1">
               <h6 className="descriptionsLeft"></h6><br></br>
