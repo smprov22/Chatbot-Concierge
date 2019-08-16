@@ -15,12 +15,14 @@ module.exports = {
     db.AddEvent
       .find()
       .then((eventData) => {
-        console.log(eventData.length)
-        // console.log("form line 18                ",eventData)
         let results = [];
-        for (let i =0; i<eventData.length;i++) {
-          console.log('hi im paul')
-          if (req.query.ages == eventData[i].ages && req.query.duration >= eventData[i].duration && req.query.activityLevel >= eventData[i].activityLevel && req.query.price >= eventData[i].price) {
+        for (let i = 0; i < eventData.length; i++) {
+          if (req.query.ages == eventData[i].ages && req.query.duration >= eventData[i].duration && req.query.activityLevel >= eventData[i].activityLevel && req.query.price >= eventData[i].price && (req.query.location == 1 || req.query.location == eventData[i].location)) {
+            // if (req.query.location == 1) {
+            //   results.push(eventData[i])
+            // } else if (req.query.location == eventData[i].location) {
+            //   results.push(eventData[i])
+            // }
             console.log(eventData[i])
             results.push(eventData[i])
           }
