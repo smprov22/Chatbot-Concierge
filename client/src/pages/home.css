@@ -29,15 +29,18 @@ h4{
 }
 
 
+
+
 @media only screen and (max-width: 768px) {
   #frontPage{
-    height: auto;
+    height: 700px;
   }
 
 
 .form-input{
   max-width: 100px !important;
 }
+
 
 }
 
