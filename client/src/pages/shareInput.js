@@ -37,18 +37,6 @@ class ShareInput extends Component {
         this.handleNewChange = this.handleNewChange.bind(this)
     }
 
-    
-    getSubmissions = () => {
-        API.getSubmissions(this.state.approved)
-            .then(res =>
-                this.setState({
-                    events: res.data
-                })
-            )
-            .catch(err => console.log(err));
-    }
-
-
     // scrollToMyRef = () => window.scrollTo(0, this.myRef.current.offsetTop) 
 
     handleNewChange(event) {
@@ -98,19 +86,19 @@ class ShareInput extends Component {
             <div className="Wrapper">
                 <Container>
                     <Row>
-                    <Col size="md-1"></Col>
-                        <Col size="md-3">
+                    <Col size="md-1 sm-0"></Col>
+                        <Col size="md-3 sm-12">
                             <h1 className="titleQ animated bounceInLeft slow">SHARE AN ACTIVITY WITH HOTEL GUESTS</h1>
                         </Col>
-                        <Col size="md-1">
-                            <h6 className="descriptionsRight">  </h6><br></br>  
+                        <Col size="md-1 sm-3">
+                            <h6 className="descriptionsRight"></h6><br></br>
                             <h6 className="descriptionsRight">Kids</h6><br></br>
                             <h6 className="descriptionsRight">An hour</h6><br></br>
                             <h6 className="descriptionsRight">Indoors</h6><br></br>
                             <h6 className="descriptionsRight">Sloth</h6><br></br>
                             <h6 className="descriptionsRight">Budget Friendly</h6><br></br>
                         </Col>
-                        <Col size="md-5">
+                        <Col size="md-5 sm-6">
                         <div>
                             <form>
                                 <select value={this.state.value} onChange={this.handleNewChange}>
@@ -199,15 +187,15 @@ class ShareInput extends Component {
                             </form>
                             <SubmitBtn onClick={() => this.handleEventSubmit()} />
                         </Col>
-                        <Col size="md-2">
-                            <h6 className="descriptionsRight">  </h6><br></br>
+                        <Col size="md-1 sm-3">
+                            <h6 className="descriptionsLeft"></h6><br></br>
                             <h6 className="descriptionsLeft">Cocktails</h6><br></br>
                             <h6 className="descriptionsLeft">All day</h6><br></br>
                             <h6 className="descriptionsLeft">Outdoors</h6><br></br>
                             <h6 className="descriptionsLeft">Cheetah</h6><br></br>
                             <h6 className="descriptionsLeft">Living Large</h6><br></br>
                         </Col>
-                        
+                        <Col size="md-1 sm-0"></Col> 
                     </Row>
                     {/* {this.state.approved === true ? */}
                       {this.state.events.map(event => (

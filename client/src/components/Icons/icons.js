@@ -35,14 +35,15 @@ class Icons extends Component {
                 <FontAwesomeIcon icon={faHourglassStart} className="icons" size="lg"/>
                 : <FontAwesomeIcon icon={faHourglassEnd} className="icons" size="lg"/>
             }
-              {this.state.activityLevel >= 1 ?
-                <FontAwesomeIcon icon={faHiking} className="icons" size="lg"/>
-                : <FontAwesomeIcon icon={faBed} className="icons" size="lg"/>
-            }
               {this.state.location >= 1 ?
                 <FontAwesomeIcon icon={faTree} className="icons" size="lg"/>
                 : <FontAwesomeIcon icon={faHome} className="icons" size="lg"/>
             }
+              {this.state.activityLevel >= 1 ?
+                <FontAwesomeIcon icon={faHiking} className="icons" size="lg"/>
+                : <FontAwesomeIcon icon={faBed} className="icons" size="lg"/>
+            }
+            
               {this.state.price >= 1 ?
                 <FontAwesomeIcon icon={faMoneyBillAlt}  className="icons" size="lg"/>
                 : <FontAwesomeIcon icon={faPiggyBank}className="icons" size="lg"/>

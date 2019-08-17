@@ -6,7 +6,7 @@ import Icons from "../Icons/icons"
 function ActivityCard({ title, description, link, image, city }) {
 
             return (
-                <div className="card mb-3"  >
+                <div className="card mb-3 activityCard"  >
                     <div className="row no-gutters">
                         <div className="col-md-4">
                             <img src={image} className="card-img img-thumbnail img-fluid w-100" alt={title}></img>
