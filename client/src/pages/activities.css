@@ -60,7 +60,7 @@
 
 @media only screen and (max-width: 768px) {
   .Wrapper{
-    padding-top: 1px;
+    padding-top: 25%;
 
   }
 
@@ -74,8 +74,14 @@
   .form-control{
    width: 250px !important;
   }
+  .titleQ{
+    margin-top: 95% !important;
+    text-align: left;
+
+  }
 
 }
+
 
 
 @media only screen and (max-width: 400px) {
