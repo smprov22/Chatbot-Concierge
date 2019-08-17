@@ -69,7 +69,7 @@ class Navbar extends Component {
                             <ul class="nav navbar-nav pull-sm-left">
                                 <li className="nav-item">
                                     <Link to="/shareInput" className="btn btn-link">
-                                        <a className="nav-link-share">HAVE SOMETHING TO SHARE?</a>
+                                        <a className="nav-link-share">CONTRIBUTE</a>
                                     </Link>
                                 </li>
                             </ul>
