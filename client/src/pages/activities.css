@@ -84,7 +84,17 @@
 
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
+  .titleQ{
+    margin: 5%  auto !important;
+    text-align: center;
+    padding: 5px;
+
+  }
+
+  .form-control{
+    width: 180px !important;
+   }
 
 }
 

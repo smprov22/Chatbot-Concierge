@@ -43,6 +43,8 @@ iframe{
 	}
 }
 
+
+
 @media only screen and (max-width: 768px) {
 
 	.ipad{
@@ -80,13 +82,14 @@ and (max-device-width : 736px) {
 }
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
 
 	.ipad{
-		width:380px;
-		height: 270px;
+		width:350px;
+		height: 240px;
 		animation: float 7s ease-in-out infinite;
 	}
+	
 	.containerIpad{
 		margin-top: 20%;
 		margin-left: 10%;

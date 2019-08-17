@@ -30,7 +30,6 @@ h4{
 
 
 
-
 @media only screen and (max-width: 768px) {
   #frontPage{
     height: 700px;
@@ -49,12 +48,21 @@ h4{
 }
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
   #frontPage{
-    height: 650px;
+    height: 540px;
   }
   .form-input{
     max-width: 100px !important;
+  }
+
+  .loginBtn{
+    margin-left: 25%;
+  }
+
+  .loginForm{
+    margin-top: 60%;
+    margin-bottom: 60%;
   }
 
 }
