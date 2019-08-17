@@ -66,7 +66,7 @@ class Navbar extends Component {
                     <ul className="nav justify-content-end">
                         <li>
                             <Link to="/login" className="btn btn-link nav-item active nav-link">
-                                LOGIN
+                                ADMIN
                             </Link>
                         </li>
                     </ul>

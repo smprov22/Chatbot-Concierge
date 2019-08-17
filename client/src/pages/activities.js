@@ -93,7 +93,7 @@ class Activities extends Component {
             </Col>
       
             <Col size="md-1">
-              <h6 className="descriptionsRight"></h6><br></br>
+              <h6 className="descriptionsRight">  </h6><br></br>
               <h6 className="descriptionsRight">Kids</h6><br></br>
               <h6 className="descriptionsRight">An hour</h6><br></br>
               <h6 className="descriptionsRight">Indoors</h6><br></br>
@@ -156,7 +156,7 @@ class Activities extends Component {
               <SubmitBtn onClick={() => this.handleFormSubmit()} ></SubmitBtn>
             </Col>
             <Col size="md-1">
-              <h6 className="descriptionsLeft"></h6><br></br>
+              <h6 className="descriptionsRight">  </h6><br></br>
               <h6 className="descriptionsLeft">Cocktails</h6><br></br>
               <h6 className="descriptionsLeft">All day</h6><br></br>
               <h6 className="descriptionsLeft">Outdoors</h6><br></br>
@@ -172,7 +172,7 @@ class Activities extends Component {
                 <List>
                   {this.state.events.map(event => (
                     <ActivityCard
-                      key={event.id}
+                      key={event._id}
                       title={event.title}
                       city={event.city}
                       ages={event.ages}

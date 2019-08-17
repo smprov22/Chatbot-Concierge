@@ -37,8 +37,10 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   approve: function(req, res) {
+    console.log("Updating and Approving")
+    console.log(req.body)
     db.AddEvent
-      .findOneAndUpdate({ _id: req.params.id }, {approved : true})
+      .findOneAndUpdate({ _id: req.params.id }, req.body)
       .then(eventData => res.json(eventData))
       .catch(err => res.status(422).json(err));
   },
