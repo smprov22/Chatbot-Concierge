@@ -36,11 +36,15 @@ h4{
     height: 700px;
   }
 
-
+/* 
 .form-input{
   max-width: 100px !important;
-}
+} */
 
+.loginForm{
+  margin-top: 40%;
+  margin-bottom: 40%;
+}
 
 }
 
@@ -48,6 +52,9 @@ h4{
 @media only screen and (max-width: 400px) {
   #frontPage{
     height: 650px;
+  }
+  .form-input{
+    max-width: 100px !important;
   }
 
 }
