@@ -170,7 +170,7 @@ class Activities extends Component {
                 <List>
                   {this.state.events.map(event => (
                     <ActivityCard
-                      key={event.id}
+                      key={event._id}
                       title={event.title}
                       city={event.city}
                       ages={event.ages}
