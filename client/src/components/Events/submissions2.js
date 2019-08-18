@@ -12,6 +12,8 @@ class Submissions extends React.Component {
         location: this.props.submission.location,
         activityLevel: this.props.submission.activityLevel,
         price: this.props.submission.price,
+        image: this.props.submission.image,
+        link: this.props.submission.link,
         approved: true
     }
 
