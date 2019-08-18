@@ -9,7 +9,7 @@ import { Container, Row, Col } from '../components/Grid'
 import { SubmitBtn } from '../components/Button/button'
 import '../components/Slider/style.css'
 import '../pages/activities.css'
-import FormInput from '../components/FormInput';
+// import FormInput from '../components/FormInput';
 import Forum from '../components/Forum'
 import '../components/Forum'
 // import CitySearch from "../components/CitySearch/citysearch"
@@ -22,7 +22,6 @@ class ShareInput extends Component {
 
         this.state = {
             events: [],
-            approved: true,
             title: "",
             ages: 1,
             duration: 1,
@@ -31,7 +30,9 @@ class ShareInput extends Component {
             price: 1,
             description: "",
             date: "",
-            value: "Sacramento, CA"
+            value: "Sacramento, CA",
+            link: "",
+            image: ""
         }
         this.handleNewChange = this.handleNewChange.bind(this)
     }
@@ -49,6 +50,8 @@ class ShareInput extends Component {
 
         const event = this.state
 
+
+
         console.log(event)
 
         API.saveSubmission({
@@ -59,8 +62,22 @@ class ShareInput extends Component {
             activityLevel: event.activityLevel,
             price: event.price,
             description: event.description,
-            city: event.value
-        });
+            city: event.value,
+            link: event.link,
+            image: event.image
+        }).then(
+            this.setState({
+                title: "",
+                description: "",
+                ages: 1,
+                duration: 1,
+                location: 1,
+                activityLevel: 1,
+                price: 1,
+                link: "",
+                image: ""
+            })
+        );
     };
 
 
@@ -147,8 +164,24 @@ class ShareInput extends Component {
                                         className="form-control "
                                         placeholder="Description"
                                         type="text"
-                                        description={this.state.description}
+                                        value={this.state.description}
                                         onChange={(event) => { this.setState({ description: event.target.value }) }}
+                                    />
+                                    <br />
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="Link"
+                                        value={this.state.link}
+                                        onChange={(event) => { this.setState({ link: event.target.value }) }}
+                                    />
+                                    <br />
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="Image Link"
+                                        value={this.state.image}
+                                        onChange={(event) => { this.setState({ image: event.target.value }) }}
                                     />
                                 </label>
                             </form>
