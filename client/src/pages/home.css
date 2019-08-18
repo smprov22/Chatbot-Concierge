@@ -11,3 +11,58 @@ h4{
   margin-top: 15%;
   margin-bottom: 15%;
 }
+
+.managerPage{
+  margin-bottom: 25%;
+}
+
+.list-group-item{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.manager-signup{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #5755d9;
+  color: white !important;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  #frontPage{
+    height: 700px;
+  }
+
+/* 
+.form-input{
+  max-width: 100px !important;
+} */
+
+.loginForm{
+  margin-top: 40%;
+  margin-bottom: 40%;
+}
+
+}
+
+
+@media only screen and (max-width: 414px) {
+  #frontPage{
+    height: 540px;
+  }
+  .form-input{
+    max-width: 100px !important;
+  }
+
+  .loginBtn{
+    margin-left: 25%;
+  }
+
+  .loginForm{
+    margin-top: 60%;
+    margin-bottom: 60%;
+  }
+
+}

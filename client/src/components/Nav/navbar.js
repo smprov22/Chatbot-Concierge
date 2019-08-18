@@ -32,35 +32,63 @@ class Navbar extends Component {
         console.log('navbar render, props: ')
         console.log(this.props);
 
-        return (
-            <div>
+        if (loggedIn) {
+            return (
+                <div>
+                    <nav class="navbar bg-faded">
+                        <div class="container">
 
-                <nav className="navbar navbar-light bg-light">
-                    <Link to="/shareInput" className="btn btn-link">
-                        <span className="nav-link-share">HAVE SOMETHING TO SHARE?</span>
-                    </Link>
-                    <a className="navbar-brand" href="/">
-                        <img src={logo} className="App-logo" width="80" height="60" alt="logo" />
-                    </a>
-                    <ul className="nav justify-content-end">
-                    <li>
-                    <Link to="/login" className="btn btn-link nav-item active nav-link">
-                       LOGIN
-                    </Link>
-                
-                    <Link to="#" className="btn btn-link nav-item nav-link2 " onClick={this.logout}>
-                       LOGOUT
-                      </Link> 
-                      </li>
-                    </ul>
-                </nav>
+                            <ul class="nav navbar-nav pull-sm-left">
+                                <li className="nav-item">
+                                    <Link to="/shareInput" className="btn btn-link">
+                                        <a className="nav-link-share">HAVE SOMETHING TO SHARE?</a>
+                                    </Link>
+                                </li>
+                            </ul>
+                            <a className="navbar-brand mx-auto" href="/">
+                                <img src={logo} className="App-logo" alt="logo" />
+                            </a>
+                            <ul class="nav navbar-nav pull-sm-left">
+                                <li className="nav-item">
+                                    <Link to="#" className="btn btn-link nav-item nav-link" onClick={this.logout}>
+                                        LOGOUT
+                                </Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            )
+        } else {
 
+            return (
+                <div>
+                    <nav class="navbar bg-faded">
+                        <div class="container">
 
-
-            </div>
-
-        );
-
+                            <ul class="nav navbar-nav pull-sm-left">
+                                <li className="nav-item">
+                                    <Link to="/shareInput" className="btn btn-link">
+                                        <a className="nav-link-share">CONTRIBUTE</a>
+                                    </Link>
+                                </li>
+                            </ul>
+                            <a className="navbar-brand mx-auto" href="/">
+                                <img src={logo} className="App-logo" alt="logo" />
+                            </a>
+                            <ul class="nav navbar-nav pull-sm-left">
+                                <li className="nav-item">
+                                <Link to="/login" className="btn btn-link nav-item nav-link">
+                                    LOGIN
+                            </Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+              
+            );
+        }
     }
 }
 

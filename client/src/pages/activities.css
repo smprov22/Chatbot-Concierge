@@ -1,5 +1,5 @@
 .descriptionsLeft{
-  margin-top: 3.2em;
+  margin-top: 2.5em;
   font-size: 12px;
   color: white;
   text-align:left;
@@ -7,7 +7,7 @@
 }
 
 .descriptionsRight{
-  margin-top: 3.2em;
+  margin-top: 2.5em;
   font-size: 12px;
   color: white;
   text-align:right;
@@ -53,13 +53,48 @@
   background: url('../pages/background2.png') no-repeat center center fixed;
 }
 
-/* .Wrapper-2{
-  background-color: blue;
-} */
 
 .backgroundRight{
   background-color: lightblue;
 }
 
+@media only screen and (max-width: 768px) {
+  .Wrapper{
+    padding-top: 25%;
 
+  }
+
+  .titleQ{
+    margin-top: 40px !important;
+    margin-bottom: 80px !important;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .form-control{
+   width: 250px !important;
+  }
+  .titleQ{
+    margin-top: 95% !important;
+    text-align: left;
+
+  }
+
+}
+
+
+
+@media only screen and (max-width: 414px) {
+  .titleQ{
+    margin: 5%  auto !important;
+    text-align: center;
+    padding: 5px;
+
+  }
+
+  .form-control{
+    width: 180px !important;
+   }
+
+}
 

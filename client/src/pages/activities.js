@@ -12,7 +12,8 @@ import '../components/Slider/style.css'
 import '../pages/activities.css'
 import List from '../components/List/index'
 import Card from '../components/Card/index'
-import CitySearch from '../components/CitySearch/citysearch'
+
+// import CitySearch from '../components/CitySearch/citysearch'
 // import { set } from 'mongoose';
 
 
@@ -36,31 +37,39 @@ class Activities extends Component {
     }
   }
 
-  componentDidMount() {
-    this.getSubmissions();
-  }
+  // componentDidMount() {
+  //   this.getSubmissions();
+  // }
 
-  getSubmissions = () => {
-    API.getSubmissions()
-      .then(res =>
+  // getSubmissions = () => {
+  //   API.getSubmissions()
+  //     .then(res =>  
+  //       this.setState({
+  //         events: res.data
+  //       })
+  //     )
+  //     .catch(err => console.log(err));
+  // }
+
+  handleFormSubmit = () => {
+    let activity = this.state
+
+    let params = {
+        ages: activity.ages,
+        location: activity.location,
+        duration: activity.duration,
+        activityLevel: activity.activityLevel,
+        price: activity.price
+    }
+    console.log(params);
+    API.getFilterSubmissions(params)
+      .then(res => 
         this.setState({
           events: res.data
         })
-      )
-      .catch(err => console.log(err));
-  }
-
-  handleFormSubmit = event => {
-    event.preventDefault();
-    let activity = this.state
-    let ages = activity.ages
-    let location = activity.location
-    let duration = activity.duration
-    let level = activity.activityLevel
-    let price = activity.price
-
-    API.getSubmissions(ages, location, duration, level, price)
-    this.show()
+        )
+        .then(this.show())
+        .catch(err => console.log(err));
   }
 
 
@@ -73,16 +82,16 @@ class Activities extends Component {
 
 
   render() {
+ 
     return (
       <div className="Wrapper">
         <Container>
-          <Row >
-          <Col size="md-1"></Col>
-            <Col size="md-3">
+          <Row className="rows">
+          <Col size="md-1 sm-0"></Col>
+            <Col size="md-3 sm-12">
               <h1 className="titleQ animated bounceInLeft slow">WHAT TYPE OF ACTIVITY SHOULD WE PLAN?</h1>
             </Col>
-      
-            <Col size="md-1">
+            <Col size="md-1 sm-3">
               <h6 className="descriptionsRight"></h6><br></br>
               <h6 className="descriptionsRight">Kids</h6><br></br>
               <h6 className="descriptionsRight">An hour</h6><br></br>
@@ -91,8 +100,18 @@ class Activities extends Component {
               <h6 className="descriptionsRight">Budget Friendly</h6><br></br>
             </Col>
 
-            <Col className="slider" size="md-5">
-            <CitySearch />
+            <Col className="slider" size="md-5 sm-6">
+            <div>
+                <form>
+                    <select>
+                        <option value="1">Sacramento, CA</option>
+                        <option value="2">Austin, TX</option>
+                        <option value="3">New Orleans, LA</option>
+                        <option value="4">New York, NY</option>
+                        <option value="5">Chicago, IL</option>
+                    </select>
+                </form>
+            </div>
               <p className="questions">Kid Friendly?</p>
               <Slider
                     min={0}
@@ -133,9 +152,9 @@ class Activities extends Component {
                     orientation="horizontal"
                     onChange={(value) => { this.setState({ price: value }) }}
                 />
-              <SubmitBtn handleFormSubmit = {this.handleFormSubmit} ></SubmitBtn>
+              <SubmitBtn onClick={() => this.handleFormSubmit()} ></SubmitBtn>
             </Col>
-            <Col size="md-1">
+            <Col size="md-1 sm-3">
               <h6 className="descriptionsLeft"></h6><br></br>
               <h6 className="descriptionsLeft">Cocktails</h6><br></br>
               <h6 className="descriptionsLeft">All day</h6><br></br>
@@ -143,8 +162,7 @@ class Activities extends Component {
               <h6 className="descriptionsLeft">Cheetah</h6><br></br>
               <h6 className="descriptionsLeft">Living Large</h6><br></br>
             </Col>
-            <Col size="md-1"></Col>
-
+            <Col size="md-1 sm-0"></Col>
           </Row>
           {this.state.showEvents ?
             <Card ref={this.myRef} >
@@ -152,7 +170,7 @@ class Activities extends Component {
                 <List>
                   {this.state.events.map(event => (
                     <ActivityCard
-                      key={event.id}
+                      key={event._id}
                       title={event.title}
                       city={event.city}
                       ages={event.ages}

@@ -9,10 +9,10 @@ import { Container, Row, Col } from '../components/Grid'
 import { SubmitBtn } from '../components/Button/button'
 import '../components/Slider/style.css'
 import '../pages/activities.css'
-import FormInput from '../components/FormInput';
+// import FormInput from '../components/FormInput';
 import Forum from '../components/Forum'
 import '../components/Forum'
-import CitySearch from "../components/CitySearch/citysearch"
+// import CitySearch from "../components/CitySearch/citysearch"
 
 
 class ShareInput extends Component {
@@ -22,63 +22,38 @@ class ShareInput extends Component {
 
         this.state = {
             events: [],
-            approved: true,
             title: "",
             ages: 1,
             duration: 1,
             location: 1,
             activityLevel: 1,
             price: 1,
-            description: ""
+            description: "",
+            date: "",
+            value: "Sacramento, CA",
+            link: "",
+            image: ""
         }
-        this.handleEventSubmit = this.handleEventSubmit.bind(this)
-        this.handleChange = this.handleChange.bind(this)
+        this.handleNewChange = this.handleNewChange.bind(this)
     }
-
-    handleChange(event) {
-        this.setState({
-            [event.target.name]: event.target.value
-        })
-    }
-
-    componentDidMount() {
-        this.getSubmissions();
-    }
-
-    getSubmissions = () => {
-        API.getSubmissions(this.state.approved)
-            .then(res =>
-                this.setState({
-                    events: res.data
-                })
-            )
-            .catch(err => console.log(err));
-    }
-
 
     // scrollToMyRef = () => window.scrollTo(0, this.myRef.current.offsetTop) 
 
+    handleNewChange(event) {
+        this.setState({value: event.target.value});
+      }
 
-    handleEventSubmit = id => {
+
+    handleEventSubmit = () => {
 
         alert('Thank you! Your activity was submitted for review.');
 
         const event = this.state
 
+
+
         console.log(event)
 
-        this.setState(
-            {
-                approved: event.approved,
-                title: event.title,
-                ages: event.ages,
-                duration: event.duration,
-                location: event.location,
-                activityLevel: event.activityLevel,
-                price: event.price,
-                description: event.description
-            }
-        )
         API.saveSubmission({
             title: event.title,
             ages: event.ages,
@@ -86,8 +61,23 @@ class ShareInput extends Component {
             location: event.location,
             activityLevel: event.activityLevel,
             price: event.price,
-            description: event.description
-        });
+            description: event.description,
+            city: event.value,
+            link: event.link,
+            image: event.image
+        }).then(
+            this.setState({
+                title: "",
+                description: "",
+                ages: 1,
+                duration: 1,
+                location: 1,
+                activityLevel: 1,
+                price: 1,
+                link: "",
+                image: ""
+            })
+        );
     };
 
 
@@ -96,11 +86,11 @@ class ShareInput extends Component {
             <div className="Wrapper">
                 <Container>
                     <Row>
-                    <Col size="md-1"></Col>
-                        <Col size="md-3">
+                    <Col size="md-1 sm-0"></Col>
+                        <Col size="md-3 sm-12">
                             <h1 className="titleQ animated bounceInLeft slow">SHARE AN ACTIVITY WITH HOTEL GUESTS</h1>
                         </Col>
-                        <Col size="md-1">
+                        <Col size="md-1 sm-3">
                             <h6 className="descriptionsRight"></h6><br></br>
                             <h6 className="descriptionsRight">Kids</h6><br></br>
                             <h6 className="descriptionsRight">An hour</h6><br></br>
@@ -108,8 +98,18 @@ class ShareInput extends Component {
                             <h6 className="descriptionsRight">Sloth</h6><br></br>
                             <h6 className="descriptionsRight">Budget Friendly</h6><br></br>
                         </Col>
-                        <Col size="md-5">
-                        <CitySearch />
+                        <Col size="md-5 sm-6">
+                        <div>
+                            <form>
+                                <select value={this.state.value} onChange={this.handleNewChange}>
+                                    <option value="Sacramento, CA">Sacramento, CA</option>
+                                    <option value="Austin, TX">Austin, TX</option>
+                                    <option value="New Orleans, LA">New Orleans, LA</option>
+                                    <option value="New York, NY">New York, NY</option>
+                                    <option value="Chicago, IL">Chicago, IL</option>
+                                </select>
+                            </form>
+                        </div>
                             <p className="questions">Kid Friendly?</p>
                             <Slider
                                 min={0}
@@ -150,19 +150,52 @@ class ShareInput extends Component {
                                 orientation="horizontal"
                                 onChange={(value) => { this.setState({ price: value }) }}
                             /><br></br><br></br>
-                                <FormInput value={this.state.title}
-                                onChange={this.handleChange} />
+                                <form>
+                                <label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="Title"
+                                        value={this.state.title}
+                                        onChange={(event) => { this.setState({ title: event.target.value }) }}
+                                    />
+                                    <br />
+                                    <textarea
+                                        className="form-control "
+                                        placeholder="Description"
+                                        type="text"
+                                        value={this.state.description}
+                                        onChange={(event) => { this.setState({ description: event.target.value }) }}
+                                    />
+                                    <br />
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="Link"
+                                        value={this.state.link}
+                                        onChange={(event) => { this.setState({ link: event.target.value }) }}
+                                    />
+                                    <br />
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="Image Link"
+                                        value={this.state.image}
+                                        onChange={(event) => { this.setState({ image: event.target.value }) }}
+                                    />
+                                </label>
+                            </form>
                             <SubmitBtn onClick={() => this.handleEventSubmit()} />
                         </Col>
-                        <Col size="md-1">
-                             <h6 className="descriptionsLeft"></h6><br></br>
+                        <Col size="md-1 sm-3">
+                            <h6 className="descriptionsLeft"></h6><br></br>
                             <h6 className="descriptionsLeft">Cocktails</h6><br></br>
                             <h6 className="descriptionsLeft">All day</h6><br></br>
                             <h6 className="descriptionsLeft">Outdoors</h6><br></br>
                             <h6 className="descriptionsLeft">Cheetah</h6><br></br>
                             <h6 className="descriptionsLeft">Living Large</h6><br></br>
                         </Col>
-                        <Col size="md-1"></Col>
+                        <Col size="md-1 sm-0"></Col> 
                     </Row>
                     {/* {this.state.approved === true ? */}
                       {this.state.events.map(event => (
@@ -177,6 +210,7 @@ class ShareInput extends Component {
                         price={event.price}
                         description={event.description}
                         link={event.link}
+                        date={event.date}
                         />
                         ))}
                         : null

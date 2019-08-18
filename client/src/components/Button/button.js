@@ -12,31 +12,12 @@ export function StartBtn(props) {
 
 export function SubmitBtn(props) {
   return (
-    <button type="submit" className="submit-btn btn btn-primary" onClick={props.handleFormSubmit} >
+    <button type="submit" className="submit-btn btn btn-primary" {...props} >
     Submit
     </button>
   );
 }
 
-
-// export function BookBtn(props) {
-//   return (
-//     <button  className="book-btn btn btn-outline-info" {...props} >
-//     Book
-//     </button>
-//   );
-// }
-
-export class BookBtns extends React.Component{
-  btnClick() {
-    window.open("https://www.google.com");
-}
-render() {
-  return (<div>
-          <button  className="book-btn btn btn-outline-info "  onClick={this.btnClick.bind(this)}> Book </button>
-      </div>);
-}
-}
 
 
 // export function ApproveBtn(props) {

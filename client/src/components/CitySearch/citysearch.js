@@ -12,7 +12,7 @@ const CitySearch = () => {
                 <option value="2">Austin, TX</option>
                 <option value="3">New Orleans, LA</option>
                 <option value="4">New York, NY</option>
-                <option value="5">Chicago, Illinois</option>
+                <option value="5">Chicago, IL</option>
             </select>
 
 

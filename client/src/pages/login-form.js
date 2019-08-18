@@ -58,13 +58,13 @@ class LoginForm extends Component {
         } else {
             return (
                 <div className="loginForm">
-                    <h4 classNmae="loginTitle">LOGIN</h4>
+                    <h4 className="loginTitle">LOGIN</h4>
                     <form className="form-horizontal">
                         <div className="form-group">
-                            <div className="col-1 col-ml-auto">
+                            <div className="col-md-1 col-sm-3  col-ml-auto">
                                 <label className="form-label" htmlFor="username">Username</label>
                             </div>
-                            <div className="col-3 col-mr-auto">
+                            <div className="col-md-3 col-sm-6  col-mr-auto">
                                 <input className="form-input"
                                     type="text"
                                     id="username"
@@ -76,10 +76,10 @@ class LoginForm extends Component {
                             </div>
                         </div>
                         <div className="form-group">
-                            <div className="col-1 col-ml-auto">
+                            <div className="col-md-1 col-sm-3 col-ml-auto">
                                 <label className="form-label" htmlFor="password">Password: </label>
                             </div>
-                            <div className="col-3 col-mr-auto">
+                            <div className="col-md-3 col-sm-6 col-mr-auto">
                                 <input className="form-input"
                                     placeholder="password"
                                     type="password"
@@ -90,9 +90,9 @@ class LoginForm extends Component {
                             </div>
                         </div>
                         <div className="form-group">
-                            <div className="col-7"></div>
+                            <div className="col-md-7 "></div>
                             <button
-                                className="btn btn-primary col-1 col-mr-auto"
+                                className="btn btn-primary col-md-1 col-sm-6 col-mr-auto loginBtn"
 
                                 onClick={this.handleSubmit}
                                 type="submit">Login</button>

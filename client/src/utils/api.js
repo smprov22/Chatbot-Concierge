@@ -9,6 +9,13 @@ export default {
   getSubmission: function(id) {
     return axios.get("/api/submissions/" + id);
   },
+  getFilterSubmissions: function(filters) {
+    console.log("In API");
+    console.log(filters);
+    return axios.get("api/submissions/filter", {
+      params: filters
+    })
+  },
   // Deletes the book with the given id
   deleteSubmission: function(id) {
     return axios.delete("/api/submissions/" + id);
@@ -20,8 +27,8 @@ export default {
 
   },
   // Approves a submission to the database
-  approveSubmission: function(id) {
-    return axios.put("/api/submissions/" + id);
+  approveSubmission: function(id, submission) {
+    return axios.put("/api/submissions/" + id, submission);
   }
 };
 

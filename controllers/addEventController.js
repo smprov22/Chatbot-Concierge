@@ -9,16 +9,28 @@ module.exports = {
       .then(eventData => res.json(eventData))
       .catch(err => res.status(422).json(err));
   },
-  findByParams: function(req, res) {
+  findFilter: function(req, res) {
+    // console.log("Find Filter")
+    // console.log(req.query)
     db.AddEvent
-      .find({
-        ages: req.params.ages,
-        location: req.params.location,
-        duration: req.params.duration,
-        activityLevel: req.params.activityLevel,
-        price: req.params.price
+      .find()
+      .then((eventData) => {
+        let results = [];
+        for (let i = 0; i < eventData.length; i++) {
+          if (req.query.ages == eventData[i].ages && req.query.duration >= eventData[i].duration && req.query.activityLevel >= eventData[i].activityLevel && req.query.price >= eventData[i].price && (req.query.location == 1 || req.query.location == eventData[i].location)) {
+            // if (req.query.location == 1) {
+            //   results.push(eventData[i])
+            // } else if (req.query.location == eventData[i].location) {
+            //   results.push(eventData[i])
+            // }
+            console.log(eventData[i])
+            results.push(eventData[i])
+          }
+        }
+        // console.log(results)
+        res.json(results)
+
       })
-      .then(eventData => res.json(eventData))
       .catch(err => res.status(422).json(err));
   },
   findById: function(req, res) {
@@ -41,8 +53,10 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   approve: function(req, res) {
+    console.log("Updating and Approving")
+    console.log(req.body)
     db.AddEvent
-      .findOneAndUpdate({ _id: req.params.id }, {approved : true})
+      .findOneAndUpdate({ _id: req.params.id }, req.body)
       .then(eventData => res.json(eventData))
       .catch(err => res.status(422).json(err));
   },
