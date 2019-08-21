@@ -1143,7 +1143,7 @@ const eventSeed = [
     description: "Discover a state-of-the-art collection of architecture, landscape design and art that provide the backdrop for hundreds of free cultural programs including concerts, exhibitions, tours, and family activities. In Millennium Park, you’ll find a new kind of town square – a lively, spectacular gathering spot located in the heart of the city and a destination for Chicagoans and visitors alike."
   },
   {
-    title: "Navy Pier,
+    title: "Navy Pier",
     city: "Chicago, IL",
     link: "https://navypier.org/",
     image: "https://navypier.org/",

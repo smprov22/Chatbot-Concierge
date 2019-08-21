@@ -103,7 +103,10 @@ class Submissions extends React.Component {
                     value={this.state.image}
                     onChange={(event) => { this.setState({ image: event.target.value }) }}
                 ></input>
-            <p><strong>Approved: </strong>{this.props.submission.approved ? "true" : "false"}</p>
+                <br></br>
+                <img src={this.state.image} width="200px"></img>
+            {/* <p><strong>Approved: </strong>{this.props.submission.approved ? "true" : "false"}</p> */}
+            <br></br>
             <button className="approve-btn btn btn-primary " submission={this.state} onClick={(event) => this.handleApproveButton(this.props.submission._id, this.state, event)}>
                 Approve
             </button>
