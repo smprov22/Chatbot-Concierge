@@ -27,8 +27,8 @@ export default {
 
   },
   // Approves a submission to the database
-  approveSubmission: function(id) {
-    return axios.put("/api/submissions/" + id);
+  approveSubmission: function(id, submission) {
+    return axios.put("/api/submissions/" + id, submission);
   }
 };
 

@@ -27,7 +27,7 @@ class Icons extends Component {
 
         return (
             <div className="inonsContainer">
-            {this.state.ages >= 1 ?
+            {this.state.ages > 1 ?
                  <FontAwesomeIcon icon={faCocktail} className="icons" size="lg"/>
                  : <FontAwesomeIcon icon={faBaby} className="icons" size="lg"/>
             }

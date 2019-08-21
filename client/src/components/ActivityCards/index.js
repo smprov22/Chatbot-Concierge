@@ -17,7 +17,7 @@ function ActivityCard({ title, description, link, image, city }) {
                                     <p className="card-text">{description}</p>
                                     <p className="card-text"><small className="text-muted"> Location: {city} </small></p>
                                     <Icons /><br></br>
-                                    <a href={link} className="bookBtn">BOOK</a>
+                                    <a href={link} target="_blank" rel="noopener noreferrer" className="bookBtn">BOOK</a>
                                
                                 </div>
                             </div>

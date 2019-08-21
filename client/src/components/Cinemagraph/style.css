@@ -1,22 +1,26 @@
 .containerIpad{
 margin: 0 auto;
 padding-left: 15%;
-width: 100%;
 animation: float 3s ease-in-out infinite;
+
 }
 
+.containerIpad:last-child{
+	margin: 0 auto;
+}
 
 #cinemagraph{
-    position:absolute; 
-    top:7.5%; 
-    width:510px; 
-    height:330px;
+	position:absolute; 
+	z-index: 1;
+	top:7.5%; 
+    /* width:510px; 
+    height:330px; */
 }
 
 .ipad{
+	z-index: 0;
     position:relative; 
-	overflow: hidden;
-	/* animation: float 3s ease-in-out infinite; */
+	/* overflow: hidden; */
 	width: 800px;
 	height: 600px;
 }
