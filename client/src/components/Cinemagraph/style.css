@@ -13,8 +13,9 @@ animation: float 3s ease-in-out infinite;
 	position:absolute; 
 	z-index: 1;
 	top:7.5%; 
-    /* width:510px; 
-    height:330px; */
+	left: 32%;
+    width:510px; 
+    height:330px;
 }
 
 .ipad{

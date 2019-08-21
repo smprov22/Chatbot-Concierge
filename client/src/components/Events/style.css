@@ -1,0 +1,60 @@
+.editBox{
+    text-align: left !important;
+    width: 100%;
+}
+
+.managerView{
+    margin-top: 100px;
+}
+
+.numberInput{
+    width: 100%;
+    margin: 0 auto !important;
+}
+
+.numberTotals{
+    margin: 0 auto;
+}
+
+.descInput{
+height: auto;
+overflow: scroll;
+text-align: left !important;
+
+}
+
+.titles{
+    margin-top: 20px;
+}
+
+/* .center{
+    text-align: center !important;
+    justify-content: center;
+} */
+
+.approved{
+    color: red;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .numberInput{
+        margin: 1px !important;
+    }
+    .col-md-12 {
+        text-align: left !important;
+        justify-content: left !important;
+    }
+  
+  }
+  
+  
+  
+  @media only screen and (max-width: 414px) {
+    .numberInput{
+        margin: 1px !important;
+    }
+  
+  }
+  
+  

@@ -11,9 +11,19 @@ h4{
   margin-top: 15%;
   margin-bottom: 15%;
 }
-
+.mt-4{
+  /* margin: 200px !important; */
+  width: 800px;
+  margin: 0 auto;
+}
 .managerPage{
-  margin-bottom: 25%;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 95%;
+}
+
+input{
+  font-size: 14px !important;
 }
 
 .list-group-item{
@@ -35,10 +45,9 @@ h4{
     height: 700px;
   }
 
-/* 
-.form-input{
-  max-width: 100px !important;
-} */
+.parentCard{
+  background-color: rgba(247, 247, 247, 0.295) !important;
+}
 
 .loginForm{
   margin-top: 40%;
