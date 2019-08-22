@@ -37,9 +37,20 @@ input{
   background-color: #5755d9;
   color: white !important;
 }
+@media only screen and (max-width: 1024px) {
+
+  .mt-4{
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .numberInput{
+    width: 10px !important;
+  }
 
 
 
+}
 @media only screen and (max-width: 768px) {
   #frontPage{
     height: 700px;
@@ -58,6 +69,10 @@ input{
 
 
 @media only screen and (max-width: 414px) {
+
+  h1{
+    font-size: 1.3rem !important;
+  }
   #frontPage{
     height: 540px;
   }
@@ -72,6 +87,11 @@ input{
   .loginForm{
     margin-top: 60%;
     margin-bottom: 60%;
+  }
+
+  .mt-4{
+    width: 215px;
+    margin: 0 auto;
   }
 
 }
