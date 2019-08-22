@@ -52,15 +52,17 @@ animation: float 3s ease-in-out infinite;
 @media only screen and (max-width: 768px) {
 
 	.ipad{
+		top: 20px;
 		width: 600px;
 		height: 400px;
 		margin: 20px auto;
 	}
 
 	#cinemagraph{
+		top: 70px;
 		width: 380px;
 		height: 220px;
-		left: 21%;
+		left: 180px;;
 	}
 
 	.containerIpad{
