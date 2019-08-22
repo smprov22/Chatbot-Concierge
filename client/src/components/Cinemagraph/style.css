@@ -54,7 +54,7 @@ animation: float 3s ease-in-out infinite;
 	.ipad{
 		width: 600px;
 		height: 400px;
-		margin: 0 auto;
+		margin: 20px auto;
 	}
 
 	#cinemagraph{
@@ -72,19 +72,15 @@ animation: float 3s ease-in-out infinite;
 
 }
 
-@media only screen 
-and (min-device-width : 414px) 
-and (max-device-width : 736px) { 
+@media only screen and (max-width : 736px) { 
 	.ipad{
 		width: 440px;
 		height: 300px;
 		margin: 0 auto;
-		/* padding-left: 10%; */
-		animation: float 7s ease-in-out infinite;
+
 	}
 	.containerIpad{
 		margin-top: 10%;
-		/* padding-left: 2%; */
 		width: 100%;
 		
 		}
@@ -101,15 +97,19 @@ and (max-device-width : 736px) {
 @media only screen and (max-width: 414px) {
 
 	.ipad{
+		top: 40px;
 		width:350px;
 		height: 240px;
-		animation: float 7s ease-in-out infinite;
+		left: 25px;
 	}
 
 	#cinemagraph{
-		width:350px;
-		height: 240px;
+		width:220px;
+		height: 130px;
+		left: 85px;
+		top: 58px;
 		margin: 0 auto;
+
 	}
 
 	
@@ -121,5 +121,26 @@ and (max-device-width : 736px) {
 		width: 100%;
 		
 		}
+
+}
+
+
+@media only screen and (max-width: 375px) {
+
+	.ipad{
+		width:350px;
+		height: 240px;
+		left: 25px;
+		/* animation: float 7s ease-in-out infinite; */
+	}
+
+	#cinemagraph{
+		width:220px;
+		height: 130px;
+		left: 65px;
+		top: 38px;
+		margin: 0 auto;
+
+	}
 
 }
