@@ -31,30 +31,22 @@ class Activities extends Component {
         location: 1,
         activityLevel: 1,
         price: 1,
-        city: "",
+        value: "Sacramento, CA",
         showEvents: false,
         myRef: React.createRef()
     }
+    this.handleNewChange = this.handleNewChange.bind(this)
   }
 
-  // componentDidMount() {
-  //   this.getSubmissions();
-  // }
-
-  // getSubmissions = () => {
-  //   API.getSubmissions()
-  //     .then(res =>  
-  //       this.setState({
-  //         events: res.data
-  //       })
-  //     )
-  //     .catch(err => console.log(err));
-  // }
+  handleNewChange(event) {
+    this.setState({value: event.target.value})
+  }
 
   handleFormSubmit = () => {
     let activity = this.state
 
     let params = {
+        city: activity.value,
         ages: activity.ages,
         location: activity.location,
         duration: activity.duration,
@@ -103,12 +95,12 @@ class Activities extends Component {
             <Col className="slider" size="md-5 sm-6">
             <div>
                 <form>
-                    <select>
-                        <option value="1">Sacramento, CA</option>
-                        <option value="2">Austin, TX</option>
-                        <option value="3">New Orleans, LA</option>
-                        <option value="4">New York, NY</option>
-                        <option value="5">Chicago, IL</option>
+                    <select value={this.state.value} onChange={this.handleNewChange}>
+                      <option value="Sacramento, CA">Sacramento, CA</option>
+                      <option value="Austin, TX">Austin, TX</option>
+                      <option value="New Orleans, LA">New Orleans, LA</option>
+                      <option value="New York, NY">New York, NY</option>
+                      <option value="Chicago, IL">Chicago, IL</option>
                     </select>
                 </form>
             </div>

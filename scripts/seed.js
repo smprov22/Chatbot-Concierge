@@ -19,7 +19,7 @@ const eventSeed = [
     location: 0,
     activityLevel: 1,
     price: 0,
-    approved: false,
+    approved: true,
     description: "At the State Capitol, the past, present and future of California interact with equal force. The building serves as both a museum and the state’s working seat of government. Visitors to the Capitol can experience California’s rich history and witness the making of history through the modern lawmaking process."
     
   },
@@ -33,7 +33,7 @@ const eventSeed = [
     location: 2,
     activityLevel: 2,
     price: 0,
-    approved: false,
+    approved: true,
     description: "32 mile bike trail that starts in Discovery Park in Old Sac and ends near Folsom Lake at Beal's Point."
   },
   {
@@ -46,7 +46,7 @@ const eventSeed = [
     location: 1,
     activityLevel: 1,
     price: 0,
-    approved: false,
+    approved: true,
     description: "On the 2nd Saturday of every month, Sacramento galleries and local businesses host an open house evening starting at around 5:30pm until 9pm or later. Enjoy the art exhibits, local artists, food and wine, live music, street fairs and special events."
     
   },
@@ -60,7 +60,7 @@ const eventSeed = [
     location: 0,
     activityLevel: 0,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Historic Folsom is a destination offering a wide variety of things to do. Visit our art galleries and live theatre. Listen to live music and dance the night away at one of our nightclubs. It's also the place to go for a unique shopping experience."
   },
   {
@@ -73,14 +73,14 @@ const eventSeed = [
     location: 2,
     activityLevel: 0,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Representing over 50 local, family farms, the Apple Hill Growers are dedicated to supporting agriculture in our community.  Founded in 1964 with just 16 apple ranches, we’ve now grown to include unique fruit & veggie farms, wineries, B&Bs, flower gardens, Christmas tree farms, and even a day spa. Our winding roads and scenic beauty have been a popular destination for over 50 years.   Come enjoy the fruits of our Apple Hill Growers any time of year!"
   },
   {
     title: "Sacramento River Delta",
     city: "Sacramento, CA",
     link: "https://visitcadelta.com/",
-    image: "https://regionalchange.ucdavis.edu/sites/g/files/dgvnsk986/files/styles/sf_landscape_16x9/public/images/article/Aerial%20Photo%20Sac.jpg?h=0b568681&itok=8jZhs9s6",
+    image: "http://deltacalifornia.com/wp-content/uploads/2016/12/historicDelta1-1.jpg",
     ages: 0,
     duration: 1,
     location: 2,
@@ -100,7 +100,7 @@ const eventSeed = [
     location: 1,
     activityLevel: 1,
     price: 1,
-    approved: false,
+    approved: true,
     description: "The Sacramento Zoo inspires appreciation, respect and a connection with wildlife and nature through education, recreation and conservation. A few of the programs we offer are: summer camp, family and group overnights, ZooMobile, wildlife stage shows, keeper chats, zoo previews, animal encounters and much more."
   },
   {
@@ -113,7 +113,7 @@ const eventSeed = [
     location: 1,
     activityLevel: 0,
     price: 1,
-    approved: false,
+    approved: true,
     description: "For 60 years, Fairytale Town has offered children and families a safe place to imagine, play and learn. With 26 playsets based on nursery rhymes and fairytales, a friendly flock of farm animals, two performing arts stages and several gardens, learning has never been more fun!"
   },
   {
@@ -126,7 +126,7 @@ const eventSeed = [
     location: 2,
     activityLevel: 0,
     price: 1,
-    approved: false,
+    approved: true,
     description: "SeaQuest is a complete hands-on, interactive experience - not only with animals, but also with the community. SeaQuest strives to be an integral part of nearby neighborhoods by supporting local nonprofits, hosting field trips for kids, educating students of all ages and even acting as a tropical pet rescue for animals."
   },
   {
@@ -139,7 +139,7 @@ const eventSeed = [
     location: 1,
     activityLevel: 0,
     price: 1,
-    approved: false,
+    approved: true,
     description: "Experience the feats of engineering and ingenuity that have kept the Golden State steaming along for nearly 200 years – from immaculately restored engines and cars to exciting events and exhibits that bring the railroad to life."
   },
   {
@@ -152,7 +152,7 @@ const eventSeed = [
     location: 0,
     activityLevel: 0,
     price: 1,
-    approved: false,
+    approved: true,
     description: "With art ranging from European drawings and Native American ceramics to California paintings and Chinese tomb figures, there is much to discover. If you are hoping to see the whole museum in one visit, we recommend you allow for at least three hours."
   },
   {
@@ -165,7 +165,7 @@ const eventSeed = [
     location: 2,
     activityLevel: 0,
     price: 1,
-    approved: false,
+    approved: true,
     description: "In this Sacramento river cruise, we’ll sail past Old Sacramento's famous historical sites, including the Delta King, the I Street Bridge, the Tower Bridge, and the Air Force Docks. As we tour, we’ll hear fascinating stories—from John Sutter, the founder of Sacramento to the wild days of the Gold Rush. California's capital city is filled with lively history and beautiful sights, and you’ll have the perfect view on this cruise. "
   },
   {
@@ -178,7 +178,7 @@ const eventSeed = [
     location: 2,
     activityLevel: 1,
     price: 1,
-    approved: false,
+    approved: true,
     description: "This popular park, surrounding the California State Capitol, has trees from around the world and memorials to significant state events."
   },
   {
@@ -191,7 +191,7 @@ const eventSeed = [
     location: 0,
     activityLevel: 0,
     price: 1,
-    approved: false,
+    approved: true,
     description: "This small plates restaurant and lounge creates an inviting social scene with a rooftop patio featuring fire pits and spacious bars, an intimate dance floor, plush lounge seating, expansive couches and semi-private booths."
   },
   {
@@ -204,33 +204,33 @@ const eventSeed = [
     location: 0,
     activityLevel: 1,
     price: 1,
-    approved: false,
+    approved: true,
     description: "Badlands is Sacramento’s Premier LGBT Nightclub, Voted #1 LGBT Bar 8 Years in a Row!"
   },
   {
     title: "Sac Brew Boat",
     city: "Sacramento, CA",
     link: "https://www.sacbrewboat.com/",
-    image: "https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/37238891_198118534194023_31908716496289792_o.jpg?_nc_cat=104&_nc_oc=AQnlihZmhUGANBBvEV_Z0vnDSbOBok1wtf3ubiVzfd-V1Hlo0J4zeUCfUVW5iMiTNLo&_nc_ht=scontent-lax3-2.xx&oh=c4e703038930dbe392ad326b95a0f2cc&oe=5DE807AF",
+    image: "https://media-cdn.tripadvisor.com/media/photo-s/13/f3/07/d2/bring-your-own-beer-cider.jpg",
     ages: 2,
     duration: 0,
     location: 2,
     activityLevel: 2,
     price: 1,
-    approved: false,
+    approved: true,
     description: "Sacramento’s 16 passenger Brew Boat provides 1.5 hour pedal-powered party boat tours on the Sacramento River. Groups can bring their own beer/cider/wine aboard the chartered boat (limit 3 drinks per guest) as we cruise, pedal, and have fun on the river."
   },
   {
     title: "Riot Fest 15 Years",
     city: "Chicago, IL",
     link: "https://riotfest.org/chicago/lineup/",
-    image: "http://static1.squarespace.com/static/5282904fe4b06dd1d21607b7/t/5ceeb5191905f44d03067142/1559147808736/riotfest2019poster.jpg?format=1500w",
+    image: "https://www.jambase.com/wp-content/uploads/2019/05/riot-fest-2019-logo.jpg",
     ages: 2,
     duration: 2,
     location: 2,
     activityLevel: 2,
     price: 2,
-    approved: false,
+    approved: true,
     description: "The 2019 Riot Fest will be held at Douglas Park in Chicago, IL on September 13-15. Here’s the artists set to perform: The 2019 Riot Fest will be held at Douglas Park in Chicago, IL on September 13-15. Here’s the artists set to perform: Blink-182, Slayer (final Chicago/Milwaukee show), Bikini Kill, The Racounters, Rise Against, The Flaming Lips (performing “Yoshimi Battles The Pink Robots“), Jawbreaker, Ween (performing “The Mollusk“), Bloc Party (performing “Silent Alarm“), Die Antwoord, Patti Smith And Her Band, Taking Back Sunday (performing “Tell All Your Friends“/”Louder Now“), Rancid, Violent Femmes, Descendents, Manchester Orchestra and many more…"
   },
   {
@@ -243,7 +243,7 @@ const eventSeed = [
     location: 2,
     activityLevel: 2,
     price: 1,
-    approved: false,
+    approved: true,
     description: "Taste some of the best desserts in Chicago while taking in views of the zoo’s amazing animals and gardens. And don’t forget the champagne, beer, and wine (for those of age)! Tickets include admission, dessert tastings from some of Chicago's most famous bakeries, interactive games, live entertainment, giveaways, and more! A large portion of the proceeds will benefit Lincoln Park Zoo, helping to keep the zoo free and open to all 365 days a year. Be a party animal while support the animals! Get your tickets now!  6:30–11 p.m. Discounted early bird tickets available All ages"
   },
   {
@@ -256,46 +256,46 @@ const eventSeed = [
     location: 2,
     activityLevel: 2,
     price: 0,
-    approved: false,
+    approved: true,
     description: "This annual Labor Day weekend taste fest in Chicago offers non-stop LIVE MUSIC, food, and fun for four days.  It’s a must-do family event with enough scheduling to keep both little kids & adults happy. The Taste of Polonia Festival is a popular one-of-a-kind food festival in Chicago because of all the added entertainment."
   },
   {
     title: "OktoberFest",
     city: "New York, NY",
     link: "https://www.eventbrite.com/e/oktoberfest-nyc-2019-at-watermark-tickets-59949067274",
-    image: "https://s.evbuc.com/https_proxy?url=http%3A%2F%2Foktober-fest.nyc%2Fad%2Foktoberfest-2019-nyc-ad-landscape-v2-2160x1080px.jpg&sig=ADR2i7_THWgqnFNixyrphoKQmWUUaCdeSg",
+    image: "http://www.downtownmagazinenyc.com/wp-content/uploads/2016/09/Watermark-Oktoberfest-Weekend-1-9951-copy.jpg",
     ages: 2,
     duration: 1,
     location: 2,
     activityLevel: 1,
     price: 1,
-    approved: false,
+    approved: true,
     description: "Includes: 5 Food/Beer Tickets Priority Access With Online Package Purchase One ticket costs $10 One ticket includes one beer or one food item Giant Pretzel is 2 tickets To fill a large stein is 2 tickets Food/Beer Tickets can be used any date of the event"
   },
   {
-    title: "Minnewaska Stat Park-Sam's Point Area",
+    title: "Minnewaska State Park-Sams Point Area",
     city: "Minnewaska, NY",
     link: "https://www.alltrails.com/us/new-york/backpacking",
-    image: "https://www.alltrails.com/api/alltrails/photos/19245858/image?size=extra_large&api_key=3p0t5s6b5g4g0e8k3c1j3w7y5c3m4t8i",
+    image: "https://www.hikeformentalhealth.org/wp-content/uploads/2015/07/Sams-Point-Preserve-01.jpg",
     ages: 1,
     duration: 2,
     location: 2,
     activityLevel: 2,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Explore the most popular Backpacking trails in New York with hand-curated trail maps and driving directions as well as detailed reviews and photos from hikers, campers and nature lovers like you."
   },
   {
-    title: "ClubGetaway",
+    title: "Club Getaway",
     city: "Minnewaska, NY",
     link: "https://events.com/r/en_US/registration/club-getaway---fall-finale-2019-kent-october-757980",
-    image: "https://youtu.be/OPv5hx9rhqs?t=8",
+    image: "https://d3emaq2p21aram.cloudfront.net/media/cache/venue_roundup_single_image_flex/uploads/%200Regular_Roundup/NYCorporate2017/ClubGetaway-01.jpg",
     ages: 2,
     duration: 2,
     location: 2,
     activityLevel: 2,
     price: 2,
-    approved: false,
+    approved: true,
     description: "Join us for our End of Season FALL FINALE!! Filled with mulled cider, pumpkin carving, hayrides, apple pie making, Touch Football games, haunted house and themed costume Party, this is the BEST way to kick off your fall celebrations.tember to help you schedule all the happenings you don’t want to miss like some of the best things to on Labor day, the West Indian Day Parade, and the one of the best NYC street fairs: Atlantic Antic. Sure, summer is nearly over, but the warm-weather isn’t going anywhere anytime soon. So make sure to enjoy all of the wonderful things to outside in New York before the cold front sweeps in!"
   },
   {
@@ -308,33 +308,33 @@ const eventSeed = [
     location: 0,
     activityLevel: 2,
     price: 2,
-    approved: false,
+    approved: true,
     description: "The Museum’s 110,000 square feet of exhibition space is located within the archaeological heart of the World Trade Center site – telling the story of 9/11 through multimedia displays, archives, narratives and a collection of monumental and authentic artifacts. The lives of every victim of the 2001 and 1993 attacks are commemorated as visitors have the opportunity to learn about the lives of the men, women and children who died"
   },
   {
     title: "Niagara Falls",
     city: "Niagara Falls, NY",
     link: "https://www.niagarafallsstatepark.com/plan-your-trip/more-to-do",
-    image: "https://www.niagarafallsstatepark.com/~/media/parks/niagara-falls/attractions-and-tours/aquarium/gallery-aquarium.jpg?mw=1500&hash=D81FF93DFC607DDDF3C1417378F787C3DE13C689",
+    image: "https://www.niagarafallsstatepark.com/~/media/parks/niagara-falls/homepage/banner-niagara1.jpg",
     ages: 0,
     duration: 1,
     location: 2,
     activityLevel: 2,
     price: 2,
-    approved: false,
+    approved: true,
     description: "If you are driving to Niagara Falls, NY, there are several ways to access the park and plenty of parking options. With four lots at the Park and several city lots just footsteps from the Park, you will be ready to start your Niagara Falls adventure just as soon as you get out of the car!"
   },
   {
     title: "Statue of Liberty",
     city: "New York, NY ",
     link: "https://www.nps.gov/stli/index.htm",
-    image: "https://www.nps.gov/stli/learn/historyculture/images/statue_history.jpg?maxwidth=1200&maxheight=1200&autorotate=false",
-    ages: 0,
+    image: "https://freetoursbyfoot.com/wp-content/uploads/2018/04/Statue-of-Liberty-Ticket-Options.jpg",
+    ages: 1,
     duration: 1,
     location: 1,
     activityLevel: 2,
     price: 0,
-    approved: false,
+    approved: true,
     description: "The Statue of Liberty Enlightening the World was a gift of friendship from the people of France to the United States and is recognized as a universal symbol of freedom and democracy. The Statue of Liberty was dedicated on October 28, 1886.  It was designated as a National Monument in 1924.  Employees of the National Park Service have been caring for the colossal copper statue since 1933."
   },
   {
@@ -347,7 +347,7 @@ const eventSeed = [
     location: 0,
     activityLevel: 0,
     price: 2,
-    approved: false,
+    approved: true,
     description: "They were just four guys from Jersey, until they sang their very first note. They had a sound nobody had ever heard… and the radio just couldn’t get enough of. But while their harmonies were perfect on stage, off stage it was a very different story -- a story that has made them an international sensation all over again.  Go behind the music and inside the story of Frankie Valli and The Four Seasons in the Tony Award®-winning true-life musical phenomenon, JERSEY BOYS. From the streets of New Jersey to the Rock and Roll Hall of Fame, this is the musical that’s just too good to be true."
   },
   {
@@ -373,50 +373,50 @@ const eventSeed = [
     location: 0,
     activityLevel: 1,
     price: 2,
-    approved: false,
+    approved: true,
     description: "Leaves you gasping in wonder at the magic of it all! - TIME Magazine  Unprecedented stagecraft.  Thrilling storytelling.  Magic like you've never seen on stage."
   },
   {
     title: "Standard Central Park Horse Carriage Ride",
     city: "New York, NY ",
     link: "https://www.centralpark.com/tours/horse-carriage-rides",
-    image: "https://www.centralpark.com/downloads/7996/download/Horse%20Carriage%20riders.JPG?cb=c646d57e74c95949370a4b474b132b4e&w=800&h=450",
+    image: "https://previews.123rf.com/images/americanspirit/americanspirit1306/americanspirit130609908/20491612-horse-carriage-ride-in-central-park-manhattan-new-york-city-ny-after-winter-snowstorm.jpg",
     ages: 0,
     duration: 1,
     location: 2,
     activityLevel: 1,
     price: 1,
-    approved: false,
+    approved: true,
     description: "Horse-drawn carriages are a unique and historical way to experience the beauty of Central Park. Visit well-known attractions like Belvedere Castle, Strawberry Fields, Bethesda Fountain and the Mall. Customized rides for weddings, proposals, birthdays, anniversaries, and other special occasions."
   },
   {
     title: "Macy's Thanksgiving Day Parade",
     city: "New York, NY ",
     link: "https://www.macys.com/social/parade/",
-    image: "https://assets.mcomnyapps.net/parade/1.0.6/images/landing/intro_animation/balloons_elf_red.svg",
+    image: "https://www.usmagazine.com/wp-content/uploads/2018/11/macys-thanksgiving-day-parade-2.jpg",
     ages: 0,
     duration: 1,
     location: 2,
     activityLevel: 1,
     price: 0,
-    approved: false,
+    approved: true,
     description: "The most amazing parade.  Entertainment and the newest ballons.  Magic of past parades-discover our proud history.."
   },
   {
     title: "New York International Auto Show",
     city: "New York, NY ",
     link: "https://www.autoshowny.com/",
-    image: "https://www.autoshowny.com/",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/NY_Auto_Show_2013.JPG/1200px-NY_Auto_Show_2013.JPG",
     ages: 1,
     duration: 1,
     location: 1,
     activityLevel: 1,
     price: 1,
-    approved: false,
+    approved: true,
     description: "The New York International Auto Show is easy to get to from anywhere in the tri-state area. There are many parking facilities in the area, plus mass transit (Metro North, LIRR, NY Waterway Ferry, Subways and Buses)."
   },
   {
-    title: "FREE SUNRISE YOGA AT RIVERWALK",
+    title: "Free Sunrise Yoga at Riverside",
     city: "New Orleans, LA",
     link: "https://www.neworleans.com/event/free-sunrise-yoga-at-riverwalk/18558/",
     image: "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_251,q_50,w_380/https://assets.simpleviewinc.com/simpleview/image/upload/crm/neworleans/yoga0_98636d31-5056-b365-ab93058c01dd09ed.png",
@@ -425,7 +425,7 @@ const eventSeed = [
     location: 2,
     activityLevel: 1,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Yoga will be held inside the mall near the Julia Street entrance, or if weather permits, on the balcony overlooking the scenic Mississippi River. Guests are encouraged to bring a mat, a water bottle, and any other preferred personal yoga equipment. Guests will receive a free parking pass at the end of the class. Donations to @jaibhaktiyoga are greatly appreciated."
   },
   {
@@ -438,7 +438,7 @@ const eventSeed = [
     location: 2,
     activityLevel: 2,
     price: 0,
-    approved: false,
+    approved: true,
     description: "The 2019 SAINTS KICKOFF RUN is back for its 8th year! New this year... the race will START on the field at the 50-yard line inside the Mercedes-Benz Superdome and FINISH in Champions Square! PARTICIPANT PERKS Start the Kickoff 5K Run inside the Mercedes-Benz Superdome at 7:30am"
   },
   {
@@ -451,20 +451,20 @@ const eventSeed = [
     location: 0,
     activityLevel: 1,
     price: 1,
-    approved: false,
+    approved: true,
     description: "You ready for some fun in the hot, steamy swamp? What adventures await you on the bayou? On Sunday, September 2, from 2 to 5 p.m., we close the entire bar for the most exclusive private party of Southern Decadence. We are proud to welcome Atlas Grant and Bennett Anthony for XXL: The Party. Only a limited number of tickets will be available. This event has sold out each year. Don’t delay! Enjoy an open bar for well cocktails and domestic beers. A coat check will be available. No refunds. No cell phones or cameras permitted."
   },
   {
     title: "Summer of Sustainability",
     city: "New Orleans, LA",
     link: "https://sustainablesummer.org/",
-    image: "https://sustainablesummer.org/",
+    image: "http://middlebrookcenter.com/elsee/wp-content/uploads/2013/06/08.jpg",
     ages: 2,
     duration: 1,
     location: 0,
     activityLevel: 1,
     price: 2,
-    approved: false,
+    approved: true,
     description: "Time to Dine with the Sharks! Audubon Nature Institute’s sustainable seafood program, Gulf United for Lasting Fisheries (G.U.L.F.,) is celebrating the bounty of the Gulf of Mexico all summer. Our annual Summer of Sustainability dinner series will be hosted at Audubon Aquarium of the Americas and features the chefs of the G.U.L.F. Chef Council and Restaurant Partnership Program."
   },
   {
@@ -477,12 +477,12 @@ const eventSeed = [
     location: 2,
     activityLevel: 1,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Located just northeast of New Orleans, Bayou Sauvage National Wildlife Refuge is a marsh and wetland habitat rich in wildlife and recreation opportunities. The Refuge is a popular place to enjoy fishing, hiking, paddling, bird watching, nature photography, youth waterfowl hunting, self-guided tours, and interpretive and educational programs."
   },
   {
     title: "Congress Bridge Bats",
-    city: "New Orleans, LA",
+    city: "Austin, TX",
     link: "https://www.austintexas.org/things-to-do/outdoors/bat-watching/",
     image: "https://d3qvqlc701gzhm.cloudfront.net/full/65e346558e598b6040ffd4952057720fb39239b04a1153cfaf41653f22f91d55.jpg",
     ages: 0,
@@ -490,12 +490,12 @@ const eventSeed = [
     location: 2,
     activityLevel: 0,
     price: 0,
-    approved: false,
+    approved: true,
     description: "A 1980 renovation transformed the Congress Avenue Bridge into an ideal bat cave, soon attracting migrating Mexican free-tailed bats. Decades later, Austin's bat numbers have swelled and locals have adopted the beloved creatures as neighbors who happily handle the city's bug mitigation and provide an amazing nightly show."
   },
   {
     title: "Your Biker Gang",
-    city: "austin tx",
+    city: "Austin, TX",
     link: "https://yourbikergang.com/book-austin/",
     image: "http://www.videocityguide.com/sites/blog_vcg/thingstodo/your_biker_gang_2.jpg",
     ages: 1,
@@ -503,12 +503,12 @@ const eventSeed = [
     location: 2,
     activityLevel: 0,
     price: 1,
-    approved: false,
+    approved: true,
     description: "Most memorable experience in Austin! Join our professional guide and see Austin like you have never seen it before. Amazing experience for family, friends, couples or coworkers.  If you are looking for one of the funnest things to do in Austin.  Hit the brakes right here!  You've found it.  A Texas exclusive that's sure to be the most memorably activity you'll do here."
   },
   {
     title: "Live Love Paddle",
-    city: "austin tx",
+    city: "Austin, TX",
     link: "https://www.livelovepaddle.com/",
     image: "https://www.livelovepaddle.com/assets/images/gallery/g7.jpg",
     ages: 1,
@@ -516,7 +516,7 @@ const eventSeed = [
     location: 2,
     activityLevel: 2,
     price: 1,
-    approved: false,
+    approved: true,
     description: "Spend an evening kayaking or paddle boarding to a secluded island on Lady Bird Lake under the light of a full moon! On the island, you will be treated to a live music acoustic set from Jeremy Booth and the Wanderers, a sunset from the water, a campfire, and s'mores! This is as local Austin as Austin gets! We recommend you bring a blanket or small camp chair and bug spray. This is a BYOB event, small collapsible coolers work best."
   },
   {
@@ -529,7 +529,7 @@ const eventSeed = [
     location: 2,
     activityLevel: 2,
     price: 2,
-    approved: false,
+    approved: true,
     description: "We are the art of celebration. A community of committed people creating great drinks to honor the world. Through fresh, natural ingredients, know-how and the will to make and share our art, we create joy in a bottle."
   },
   {
@@ -542,13 +542,14 @@ const eventSeed = [
     location: 2,
     activityLevel: 2,
     price: 2,
-    approved: false,
+    approved: true,
     description: "When you’re out with us on a limousine wine tour, we know the best wineries and the best spots for lunch. We’ll tailor your itinerary to your personal tastes. Let us show you the wineries of Napa, Sonoma, Amador, Lodi or El Dorado. There’s no better way to make the day enjoyable—and relaxing—than with a chauffeured limo from Platinum Limousine. Be the envy of everyone in the tasting room when you pull up in an elegant limousine. With multiple HD screens and high-end sound system, your party will be cruising in style"
   },
   {
     title: "Chicago Wine Tasting Cruise",
     city: "Chicago, IL",
     link: "https://www.wendellaboats.com/schedule-tickets/",
+    image: "https://cdn.getyourguide.com/img/tour_img-716617-148.jpg",
     ages: 2,
     duration: 1,
     location: 2,
@@ -559,7 +560,7 @@ const eventSeed = [
   },
   {
     title: "Austin Wine Tours",
-    city: "Austin tx",
+    city: "Austin, TX",
     link: "https://winetoursaustintx.com/",
     image: "http://www.videocityguide.com/sites/blog_vcg/thingstodo/austinwinetours.jpg",
     ages: 2,
@@ -567,12 +568,12 @@ const eventSeed = [
     location: 2,
     activityLevel: 2,
     price: 2,
-    approved: false,
+    approved: true,
     description: "Austin marks the beginning of the Texas hill country where arid weather, small valleys, and micro climates are home to a handful of excellent vineyards that give Napa Valley a run for its money. The team at Austin Wine Tours will arrange tours to a select group of top vineyards complete with transportation and a few inside touches to make for a delightful afternoon/evening that boasts hints of black pepper, bold charisma, and stylish sophistication."
   },
   {
     title: "Circuit of the Amerca's COTA Karting",
-    city: "Austin tx",
+    city: "Austin, TX",
     link: "http://www.circuitoftheamericas.com/karting",
     image: "http://ea80e97cace747c2c244-5483548c70a81fe49af7816b21fff1c8.r64.cf1.rackcdn.com/track-rental1_180220_124002.jpg",
     ages: 2,
@@ -580,76 +581,76 @@ const eventSeed = [
     location: 2,
     activityLevel: 0,
     price: 2,
-    approved: false,
+    approved: true,
     description: "It's hard to make the F1 circuit but you'll never know if you've got what it takes unless you get behind the wheel. Circuit of the Americas now offers a Karting experience that is out of this world! With karts that go up to 55mph and a track that features 15 turns, this is an exceptional way to see the one and only F1 track in the United States."
   },
   {
     title: "Barton Creek Greenbelt",
-    city: "Austin tx",
+    city: "Austin, TX",
     link: "https://austinparks.org/barton-creek-greenbelt/",
-    image: "https://austinparks.org/barton-creek-greenbelt/",
+    image: "https://assets3.thrillist.com/v1/image/1746225/size/tmg-article_default_mobile;jpeg_quality=20.jpg",
     ages: 1,
     duration: 2,
     location: 2,
     activityLevel: 2,
     price: 1,
-    approved: false,
+    approved: true,
     description: "Starting at Barton Springs Pool, the Barton Creek Greenbelt is one of Austin's best treasures with areas known as the Flats, Twin Falls, and Sculpture Falls.  The Flats is known to host large gatherings, even the occasional drum circle. Twin Falls offers one of the better waterfalls, and Sculpture Falls is known for a little solitude. There's also great rock climbing, mountain biking, hiking, and other outdoor activities that appeal to a wide array of outdoorsy types. It's best when the water if flowing, even if it's low just 15 - 20 cfs. You can check out a flow gauge at Loop 360 bridge here."
   },
   {
     title: "Inner Space Cavern",
-    city: "Austin tx",
+    city: "Austin, TX",
     link: "https://innerspacecavern.com/",
-    image: "https://innerspacecavern.com/tours",
+    image: "https://www.theflashlist.com/assets/venues/usa/tx-texas/central/georgetown/living/recreation/caves/inner-space-cavern/images/InnerSpaceCavern-Interior-AustinCameraGuy-1000.jpg",
     ages: 1,
     duration: 1,
     location: 1,
     activityLevel: 2,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Located about 25 north of Austin lies Inner Space Caverns. You and your friends, family, or crew can tour below the ground and explore a natural cavern formed millions of years ago beneath one of Texas' busiest interstate highways. Inner Space Cavern is filled with history, mystery and chemistry! This all season activity caters to large groups and offers one of the most engaging afternoon activities in Texas."
   },
   {
     title: "California Academy of Sciences",
     city: "Sacramento, CA",
     link: "https://www.calacademy.org/nightlife/fermented-nightlife",
-    image: "https://www.calacademy.org/sites/default/files/styles/manual_crop_standard_960x540/public/uploads/images/nl-2400x1800-ortiz-hero-062618.jpg?itok=jIksKxI3&c=65676c8079afde71e7f87b1486ff395b",
+    image: "https://s3-media1.fl.yelpcdn.com/bphoto/kYwAj-TMFeMzHHXj8gceRA/348s.jpg",
     ages: 0,
     duration: 1,
     location: 0,
     activityLevel: 0,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Enjoy music, creatures, and cocktails as you set out with friends on a journey to the stars and the depths of the sea. Featuring a new theme each week, after-hours access to all exhibits, and special programming, NightLife is your ticket to the nocturnal side of the Academy."
   },
   {
     title: "Urbon Cow Half Marathon",
     city: "Sacramento, CA",
     link: "https://www.urbancowhalf.com/",
-    image: "https://images.squarespace-cdn.com/content/v1/5b0f32788ab7223197bf8875/1528409301827-R6NGNTU82W3TOMXFF8XH/ke17ZwdGBToddI8pDm48kNbLqx_FIYjfhtEsCHEHzad7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UX_hdIVndeO72MD00jTnc1n42Pd5vs4VrV4yXG_EV_fzwRAeN1AbZG4OR41R6pDVyg/IMG_4386.JPG?format=1500w",
+    image: "http://nextbib.s3.amazonaws.com/photos/files/000/000/196/large/14.jpg?1415152855",
     ages: 1,
     duration: 1,
     location: 2,
     activityLevel: 2,
     price: 1,
-    approved: false,
+    approved: true,
     description: "From Raceroster.com: Urban Cow Half Marathon, 2-Person Relay & 5K William Land Park, Land Park Drive, Sacramento, California, United States - You've herd about Urban Cow! You've seen the bumper… - October 6, 2019"
   },
   {
     title: "Effie Yeaw Nature Center",
     city: "Sacramento, CA",
     link: "https://www.sacnaturecenter.net/",
-    image: "https://images.squarespace-cdn.com/content/v1/5b0f32788ab7223197bf8875/1528409301827-R6NGNTU82W3TOMXFF8XH/ke17ZwdGBToddI8pDm48kNbLqx_FIYjfhtEsCHEHzad7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UX_hdIVndeO72MD00jTnc1n42Pd5vs4VrV4yXG_EV_fzwRAeN1AbZG4OR41R6pDVyg/IMG_4386.JPG?format=1500w",
+    image: "https://www.sacnaturecenter.net/images/trails.jpg",
     ages: 0,
     duration: 1,
     location: 2,
     activityLevel: 2,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Effie Yeaw Nature Center is located in low rolling hills on the banks of the bubbling American River. In addition to  the Maidu village (an outdoor display of local Native American culture, including a grinding rock), the park offers nature talks with resident animal experts on weekends and is home to plenty hiking trails that lead down to the river where, in fall months, you may see salmon returning to spawn. No matter the season, you’re sure to spot deer, woodpeckers and wild turkeys."
   },
   {
-    title: "Nor Cal Bats sighting",
+    title: "Nor Cal Bats Sighting",
     city: "Sacramento, CA",
     link: "http://norcalbats.org/",
     image: "http://norcalbats.org/wp-content/uploads/2017/12/BAT_Mexican_Free_tailed.jpg",
@@ -658,12 +659,12 @@ const eventSeed = [
     location: 2,
     activityLevel: 1,
     price: 1,
-    approved: false,
+    approved: true,
     description: "Learn about these animals and their importance as insect control. Inform others and help protect our natural world. Dispel misconceptions and save these highly valuable mammals with education and rescue."
   },
   {
     title: "Playland Skate Center",
-    city: "Austin tx",
+    city: "Austin, TX",
     link: "https://playlandskatecenter.net/",
     image: "https://public-realtyaustin.netdna-ssl.com/resources/Images/realty-austin-indoor-activities-grab-your-skates.jpg",
     ages: 0,
@@ -671,7 +672,7 @@ const eventSeed = [
     location: 0,
     activityLevel: 1,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Playland Skate Center offers the finest in skating entertainment with an impressive light show, fog machine and state of the art sound system playing a wide variety of music."
   },
   {
@@ -685,7 +686,7 @@ const eventSeed = [
     activityLevel: 1,
     price: 1,
     approved: false,
-    description: "There are plenty of action-packed adventures for the adrenaline junkie in Austin! iFLY is where the dream of flight becomes a reality and a part of something bigger than yourself. K1 Speed offers highly-advanced and environmentally-friendly electric go-karts as well as authentic racing memorabilia, pit cafes, meeting rooms and pool tables, perfect for a place to visit with family and friends or place to host a corporate event or party! Or you and a group of friends or coworkers can solve a series of puzzles using deduction skills and clues all while locked in a room and only having 60 minutes to escape at The Escape Game and Austin Panic Room!"
+    description: "There are plenty of action-packed adventures for the adrenaline junkie in New Orleans! iFLY is where the dream of flight becomes a reality and a part of something bigger than yourself. K1 Speed offers highly-advanced and environmentally-friendly electric go-karts as well as authentic racing memorabilia, pit cafes, meeting rooms and pool tables, perfect for a place to visit with family and friends or place to host a corporate event or party! Or you and a group of friends or coworkers can solve a series of puzzles using deduction skills and clues all while locked in a room and only having 60 minutes to escape at The Escape Game and Panic Room!"
   },
   {
     title: "The Escape Game",
@@ -697,8 +698,8 @@ const eventSeed = [
     location: 0,
     activityLevel: 1,
     price: 1,
-    approved: false,
-    description: "There are plenty of action-packed adventures for the adrenaline junkie in Austin! iFLY is where the dream of flight becomes a reality and a part of something bigger than yourself. K1 Speed offers highly-advanced and environmentally-friendly electric go-karts as well as authentic racing memorabilia, pit cafes, meeting rooms and pool tables, perfect for a place to visit with family and friends or place to host a corporate event or party! Or you and a group of friends or coworkers can solve a series of puzzles using deduction skills and clues all while locked in a room and only having 60 minutes to escape at The Escape Game and Austin Panic Room!"
+    approved: true,
+    description: "There are plenty of action-packed adventures for the adrenaline junkie in Chicago! iFLY is where the dream of flight becomes a reality and a part of something bigger than yourself. K1 Speed offers highly-advanced and environmentally-friendly electric go-karts as well as authentic racing memorabilia, pit cafes, meeting rooms and pool tables, perfect for a place to visit with family and friends or place to host a corporate event or party! Or you and a group of friends or coworkers can solve a series of puzzles using deduction skills and clues all while locked in a room and only having 60 minutes to escape at The Escape Game and Panic Room!"
   },
   {
     title: "The Escape Game",
@@ -710,12 +711,12 @@ const eventSeed = [
     location: 0,
     activityLevel: 1,
     price: 1,
-    approved: false,
-    description: "There are plenty of action-packed adventures for the adrenaline junkie in Austin! iFLY is where the dream of flight becomes a reality and a part of something bigger than yourself. K1 Speed offers highly-advanced and environmentally-friendly electric go-karts as well as authentic racing memorabilia, pit cafes, meeting rooms and pool tables, perfect for a place to visit with family and friends or place to host a corporate event or party! Or you and a group of friends or coworkers can solve a series of puzzles using deduction skills and clues all while locked in a room and only having 60 minutes to escape at The Escape Game and Austin Panic Room!"
+    approved: true,
+    description: "There are plenty of action-packed adventures for the adrenaline junkie in New York! iFLY is where the dream of flight becomes a reality and a part of something bigger than yourself. K1 Speed offers highly-advanced and environmentally-friendly electric go-karts as well as authentic racing memorabilia, pit cafes, meeting rooms and pool tables, perfect for a place to visit with family and friends or place to host a corporate event or party! Or you and a group of friends or coworkers can solve a series of puzzles using deduction skills and clues all while locked in a room and only having 60 minutes to escape at The Escape Game and Panic Room!"
   },
   {
     title: "The Escape Game",
-    city: "Austin tx",
+    city: "Austin, TX",
     link: "https://theescapegame.com",
     image: "https://booking.theescapegame.com/slir/h500/https://booking.theescapegame.com/media/experiences/5b7ee72de2ac9ff56e8b456b.jpg",
     ages: 1,
@@ -723,38 +724,38 @@ const eventSeed = [
     location: 0,
     activityLevel: 1,
     price: 1,
-    approved: false,
+    approved: true,
     description: "There are plenty of action-packed adventures for the adrenaline junkie in Austin! iFLY is where the dream of flight becomes a reality and a part of something bigger than yourself. K1 Speed offers highly-advanced and environmentally-friendly electric go-karts as well as authentic racing memorabilia, pit cafes, meeting rooms and pool tables, perfect for a place to visit with family and friends or place to host a corporate event or party! Or you and a group of friends or coworkers can solve a series of puzzles using deduction skills and clues all while locked in a room and only having 60 minutes to escape at The Escape Game and Austin Panic Room!"
   },
   {
-    title: "Austin City Limits Music Festivile",
-    city: "Austin tx",
+    title: "Austin City Limits Music Festival",
+    city: "Austin, TX",
     link: "https://www.aclfestival.com/",
-    image: "https://www.aclfestival.com/wp-www-aclfestival-com/wp/wp-content/uploads/2019/06acl19-homepage-480x650-full-lineup-0624-v1-6fe93a21.jpg",
+    image: "https://austinot.com/wp-content/uploads/2016/10/acl-entrance-at-dusk-1024x683.jpg",
     ages: 1,
     duration: 1,
     location: 2,
     activityLevel: 1,
     price: 2,
-    approved: false,
+    approved: true,
     description: "The Austin City Limits Music Festival is an annual music festival held in Zilker Park in Austin, Texas on two consecutive three-day weekends. Inspired by the KLRU/PBS music series of the same name, the festival is produced by Austin-based company C3 Presents, which also produces Lollapalooza"
   },
   {
     title: "Austin Speed Dating",
-    city: "Austin tx",
+    city: "Austin, TX",
     link: "https://docbsrestaurant.com/locations/austin/",
-    image: "https://docbsrestaurant.com/static/708da105d5640496462ea0308886b497/cc4e7/3rd%20Size%20Happy%20Hour.webp",
+    image: "https://onspeeddating.com/images/about/AboutUs.png",
     ages: 2,
     duration: 1,
     location: 0,
     activityLevel: 0,
     price: 2,
-    approved: false,
+    approved: true,
     description: "From signature Cocktails to speed dating.  Doc B's has fun for your style"
   },
   {
-    title: "Friedns of River Place Trail",
-    city: "Austin tx",
+    title: "Friends of River Place Trail",
+    city: "Austin, TX",
     link: "http://friendsofriverplacetrail.com/",
     image: "http://friendsofriverplacetrail.com/wp-content/uploads/2015/04/2012-09-29-21.38.45.jpg",
     ages: 1,
@@ -762,12 +763,12 @@ const eventSeed = [
     location: 2,
     activityLevel: 2,
     price: 0,
-    approved: false,
+    approved: true,
     description: "We have three trails in the River Place Neighborhood:  Little Fern, Canyon, and Panther Hollow. The trails all converge at Panther Junction."
   },
   {
     title: "LakeTravis",
-    city: "Austin tx",
+    city: "Austin, TX",
     link: "https://laketravis.com/top-5-things-to-do-on-lake-travis/",
     image: "https://laketravis.com/listify/wp-content/uploads/2016/10/oasis-11-1.jpg",
     ages: 0,
@@ -775,25 +776,25 @@ const eventSeed = [
     location: 1,
     activityLevel: 1,
     price: 0,
-    approved: false,
+    approved: true,
     description: "We’ve looked at our site analytics. We’ve found the Top 5 things to do on Lake Travis ranked by pageviews. We’ve said it before, Lake Travis is a BIG lake. It’s 63.75 miles long, has over 271 miles of shoreline. It’s also the the most commercially active reservoir in the state. It’s crystal clear blue waters, it’s proximity to Austin proper and it’s status as a non Corps of Engineers lake (allowing private lakeside property), have it number one, by a long shot, in available recreation activities and lake related businesses. While Austin locals eventually find and bookmark the “go to” spots and activities on the lake, we find may prospective visitors are almost overwhelmed by the options (and the options within options) available for fun on Lake Travis."
   },
   {
     title: "Rhythm of the Water: Whisky",
-    city: "Austin tx",
+    city: "Austin, TX",
     link: "https://simsfoundation.org/events/",
-    image: "https://simsfoundation.org/events/",
+    image: "https://foodanddrink.scotsman.com/wp-content/uploads/2017/06/11500-SS_thomas-telford-bridge-craigellachie_158387885-7-750x400.jpg",
     ages: 2,
     duration: 2,
     location: 2,
     activityLevel: 1,
     price: 1,
-    approved: false,
+    approved: true,
     description: "Live music is the heart and soul of Austin, but living as a musician can be a real challenge. Musicians and music professionals are at higher risk for mental illness and substance abuse, working under the stress of an unstable income, a skyrocketing cost of living, erratic tour schedules, distance from family and support, and constant proximity to drugs and alcohol."
   },
   {
     title: "Mayfield Nature Preserve",
-    city: "Austin tx",
+    city: "Austin, TX",
     link: "https://mayfieldpark.org/",
     image: "https://mayfieldpark.org/wp-content/uploads/2015/05/MP_PeacockFan-960x332.jpg",
     ages: 1,
@@ -801,12 +802,12 @@ const eventSeed = [
     location: 2,
     activityLevel: 2,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Don’t be surprised if you feel a little underdressed when you arrive at the mouth of the trailhead: The historic cottage and wandering peacocks make Mayfield a popular wedding destination. But walk past the frequent parties and there are 24 acres to explore, including a path that takes you down to a dock overlooking Lake Austin and several small lily ponds filled with turtles. Be warned that this hike isn’t going to build up your quads. But if you are looking to unwind after a stressful week, it can’t be beat."
   },
   {
     title: "Austin Zoo",
-    city: "Austin tx",
+    city: "Austin, TX",
     link: "https://austinzoo.org",
     image: "https://austinzoo.org/wp-content/uploads/2017/12/Tiger-e1512597132163.jpg",
     ages: 0,
@@ -814,72 +815,72 @@ const eventSeed = [
     location: 1,
     activityLevel: 0,
     price: 0,
-    approved: false,
+    approved: true,
     description: "The mission of Austin Zoo is to assist animals in need through rescue, rehabilitation and education.  Located on the southwest edge of Austin off Highway 290 West and Circle Drive, Austin Zoo is a pleasant Hill Country zoo where visitors from around the world can come to learn about animals close-up, spend some time outdoors getting exercise, and have fun.."
   },
   {
     title: "Museum of the Weird",
-    city: "Austin tx",
+    city: "Austin, TX",
     link: "https://www.museumoftheweird.com/",
-    image: "https://i2.wp.com/www.museumoftheweird.com/wp-content/uploads/2018/03/MOTW-Torn-Poster.jpg?w=600&ssl=1",
+    image: "https://pm1.narvii.com/6792/8cc34afc5ce950073d99cd2a9bb2bfe51b47d517v2_hq.jpg",
     ages: 0,
     duration: 1,
     location: 0,
     activityLevel: 0,
     price: 0,
-    approved: false,
+    approved: true,
     description: "In the heart of Austin's famous Sixth Street lies the city's most curious and mysterious gift shop.  In the back of the shop is what some call Austin's best kept secret..."
   },
   {
     title: "Murder Walk",
-    city: "Austin tx",
+    city: "Austin, TX",
     link: "https://www.touratx.com/",
-    image: "https://images.squarespace-cdn.com/content/v1/58f641d637c58165beac86dc/1558631268032-PPEY03GJF8R9ONN9AZ57/ke17ZwdGBToddI8pDm48kPZoFzfdH-BtuMfavJKf2H9Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI6uq3lIRrTFlZLAXXG0jAbzUCoswZ2f3i4aYUGxdW5WAKMshLAGzx4R3EDFOm1kBS/content-murder-walk-1.jpg?format=2500w",
+    image: "http://48tx1q1rrcysi4t7l687xbtt.wpengine.netdna-cdn.com/wp-content/uploads/chapel-default.jpg",
     ages: 2,
     duration: 1,
     location: 1,
     activityLevel: 1,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Austin's (true crime) walking tour! The Murder Walk Austin tour will begin on June 7, 2019. This tour is only offered on Fridays and Saturdays. This tour will depart at 8:00 pm from the intersection of Bowie and West 6th,  at the corner of Whole Foods in downtown Austin, Texas. "
   },
   {
     title: "Audubon Nature Zoo",
     city: "New Orleans, LA",
     link: "https://audubonnatureinstitute.org/tickets",
-    image: "https://coolzoo.audubonnatureinstitute.org/",
+    image: "https://audubonnatureinstitute.org/images/600x450/aquarium/iguana-girl-600.jpg",
     ages: 0,
     duration: 1,
     location: 2,
     activityLevel: 1,
     price: 1,
-    approved: false,
+    approved: true,
     description: "Located in historic Uptown New Orleans Audubon Zoo offers an exotic mix of animals from around the globe, engaging educational programs, hands-on animal encounters and lush gardens. Unique natural habitat exhibits such as the award-winning Louisiana Swamp and Jaguar Jungle showcase the relationship between people and nature. Don't miss the daily animal presentations, chats and feeds; our highly endangered whooping cranes, Amur leopards, and orangutans; our tiger; and our mysterious white alligators. Audubon Zoo is often ranked among the country's best for innovation and entertainment value!.  Gets hot out visit the Cool Zoo.."
   },
   {
     title: "Audubon Aquairum",
     city: "New Orleans, LA",
     link: "https://audubonnatureinstitute.org/aquarium/explore-aquarium",
-    image: "https://audubonnatureinstitute.org/tickets",
+    image: "http://naturally-glam.com/wp-content/uploads/2017/08/Audubon-Aquarium-New-Orleans_03.jpg",
     ages: 0,
     duration: 1,
     location: 0,
     activityLevel: 1,
     price: 1,
-    approved: false,
+    approved: true,
     description: "Located on the Mississippi River adjacent to the French Quarter Audubon Aquarium of the Americas immerses you in an underwater world. The colors of the Great Maya Reef come alive in our walk-through tunnel, while our penguins and Southern sea otters are visitor favorites. Touch a stingray, feed a parakeet, and marvel at our gigantic sharks and rays in the 400,000-gallon Gulf of Mexico Exhibit. Watch for sea turtles throughout the Aquarium as coordinator of the Louisiana Marine Mammal and Sea Turtle Rescue Program, we prepare many of them for release to the wild."
   },
   {
-    title: "French Quarters Tour",
+    title: "French Quarter Tour",
     city: "New Orleans, LA",
     link: "https://www.frenchquarterkidstours.com/",
-    image: "https://audubonnatureinstitute.org/tickets",
+    image: "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_800,q_75,w_640/v1/clients/neworleans/NOTMC_49353_d4610c3e-6118-4851-b2dd-1e3b940601f9.jpg",
     ages: 0,
     duration: 1,
     location: 1,
     activityLevel: 1,
     price: 1,
-    approved: false,
+    approved: true,
     description: "Located on the Mississippi River adjacent to the French Quarter Audubon Aquarium of the Americas immerses you in an underwater world. The colors of the Great Maya Reef come alive in our walk-through tunnel, while our penguins and Southern sea otters are visitor favorites. Touch a stingray, feed a parakeet, and marvel at our gigantic sharks and rays in the 400,000-gallon Gulf of Mexico Exhibit. Watch for sea turtles throughout the Aquarium as coordinator of the Louisiana Marine Mammal and Sea Turtle Rescue Program, we prepare many of them for release to the wild."
   },
   {
@@ -892,7 +893,7 @@ const eventSeed = [
     location: 2,
     activityLevel: 0,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Serving the New Orleans community since 1972 and bringing you a casual and curious experience intended to preserve the legacy of New Orleans' Voodoo history and culture while educating and entertaining visitors."
   },
   {
@@ -912,13 +913,13 @@ const eventSeed = [
     title: "Steamboat Natchez",
     city: "New Orleans, LA",
     link: "https://www.steamboatnatchez.com/",
-    image: "data:image/webp;base64,UklGRkoAAABXRUJQVlA4TD0AAAAvP0aQEAcQEREwkLbN/Nvf/kT0P8N//vOf//znP//5z3/+85///Oc///nPf/7zn//85z//+c9//vOf/1UFAA==",
+    image: "https://pbs.twimg.com/media/DxqikzLXgAA_s6Q.jpg",
     ages: 1,
     duration: 0,
     location: 1,
     activityLevel: 0,
     price: 2,
-    approved: false,
+    approved: true,
     description: "The New Orleans Steamboat Company locally owns and operates the last authentic Steamboat on the Mighty Mississippi River: The Steamboat NATCHEZ Dinner Jazz and Daytime jazz cruises … run daily, year round, in the style of authentic steamboats in New Orleans for centuries! Steam Engine Room visitation, calliope, live jazz and optional Creole food and local beverages. Come aboard and enjoy New Orleans hospitality….. Steamboat Style!"
   },
   {
@@ -931,46 +932,46 @@ const eventSeed = [
     location: 2,
     activityLevel: 0,
     price: 1,
-    approved: false,
+    approved: true,
     description: "With so much culture, history and entertainment, you’ll find a unique and exciting experience around every corner with choices from museums, tours, riverboat rides and so much more."
   },
   {
     title: "SightSeeing New Orleans",
     city: "New Orleans, LA",
     link: "https://city-sightseeing.com/en/33/new-orleans/266/hop-on-hop-off-new-orleans?utm_source=google&utm_medium=cpc&gclid=Cj0KCQjwy97qBRDoARIsAITONTJFFe52ZAI1NCAuCrl5vaOIf2UeMaV1tnvzWbCx3A9KqVI9hTIP-NMaAjo4EALw_wcB",
-    image: "https://d2i7eq829tbbje.cloudfront.net/large/NewOrleans-02_P_266_70ec27aa-3073-4b3a-967e-04c402ab8b83",
+    image: "https://www.bigeasy.com/uploads/images/CSS%20map.png",
     ages: 0,
     duration: 1,
     location: 2,
     activityLevel: 0,
     price: 1,
-    approved: false,
+    approved: true,
     description: "Make your New Orleans adventure as remarkable as it can be. Take in the 19 diverse hop-off stops of this bus tour. You will be pleasantly surprised at the variety of attractions in the city and how it changes throughout your open-top bus trip, from the sensational stadium, to the magnificent War Museum - not to mention the grand Harrah's Casino. New Orleans really does have it all."
   },
   {
     title: "The National WWII Museum",
     city: "New Orleans, LA",
     link: "https://www.nationalww2museum.org",
-    image: "https://www.nationalww2museum.org/visit/exhibits",
+    image: "https://www.nationalww2museum.org/sites/default/files/styles/wide_medium/public/2017-06/group_sales_campus_aerial.jpg",
     ages: 0,
     duration: 1,
     location: 2,
     activityLevel: 0,
     price: 1,
-    approved: false,
+    approved: true,
     description: "The National WWII Museum tells the story of the American experience in the war that changed the world—why it was fought, how it was won, and what it means today—so that all generations will understand the price of freedom and be inspired by what they learn."
   },
   {
     title: "Canoe & Trails Adventures",
     city: "New Orleans, LA",
     link: "https://www.canoeandtrail.com/",
-    image: "https://www.filepicker.io/api/file/LQlbTZZmTro30QHOddmA",
+    image: "https://media-cdn.tripadvisor.com/media/photo-s/07/ae/74/1e/canoe-and-trail-adventures.jpg",
     ages: 2,
     duration: 1,
     location: 2,
     activityLevel: 1,
     price: 1,
-    approved: false,
+    approved: true,
     description: "New Orleans Kayak Swamp Tours, Kayak Rentals, Moonlight Paddles & more Guided by Louisiana Master Naturalist. Most experienced guides in Louisiana.  45 Years of swamp tours have helped guest make memories that last a lifetime. "
   },
   {
@@ -983,7 +984,7 @@ const eventSeed = [
     location: 2,
     activityLevel: 0,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Stretching from Bayou St. John to Lake Pontchartrain, the 1,300-acre New Orleans City Park is one of Orleans Parish’s two green jewels. (The other is Audubon Park in Uptown.) The entire city united to restore the park after Hurricane Katrina shredded its landscaping, downing many of its 600-year-old live oaks. The cleanup is transcendent, with new walking and biking paths, a great lawn for concerts, and a revival of beloved attractions, such as Story Land and Carousel Gardens Amusement Park, that have entertained children since 1906. "
   },
   {
@@ -996,59 +997,59 @@ const eventSeed = [
     location: 0,
     activityLevel: 0,
     price: 1,
-    approved: false,
+    approved: true,
     description: "Join this tour through New Orleans’ historic and fascinating history of cocktails, and sample them along the way."
   },
   {
     title: "Night out at Marigny Brasserie",
     city: "New Orleans, LA",
     link: "https://www.fws.gov/refuge/Bayou_Sauvage/",
-    image: "https://www.google.com/maps/place/Clark+Creek+Natural+Area/@31.0718537,-91.5136923,17z/data=!3m1!4b1!4m5!3m4!1s0x8625b80610bb7ca7:0x58b29ca32f403d19!8m2!3d31.0718537!4d-91.5115036",
+    image: "https://gonola.com/images/marigny-brasserie.jpg",
     ages: 2,
     duration: 1,
     location: 0,
     activityLevel: 1,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Going through Baton Rouge from New Orleans, it takes about an hour and 45 minutes to drive to this beautiful, one of a kind destination just over the Mississippi border.  This hiking trail features more than a half-doxen small water falls.  You can easily spend an entire day here, making this well worth your drive."
   },
   {
-    title: "North Avenue Beach ",
+    title: "North Avenue Beach",
     city: "Chicago, IL",
     link: "https://www.chicagoparkdistrict.com/parks-facilities/north-avenue-beach",
-    image: "https://assets.chicagoparkdistrict.com/s3fs-public/styles/558x314/public/images/locations/fbea0dd8c3324a58940054a898671d6b1.jpg?itok=9ezcltre",
+    image: "https://patch.com/img/cdn20/users/22965241/20180620/031250/styles/raw/public/processed_images/volleywood_2-1529521962-7530.jpg",
     ages: 0,
     duration: 2,
     location: 2,
     activityLevel: 0,
     price: 0,
-    approved: false,
+    approved: true,
     description: "North Avenue Beach is situated in Lincoln Park and is one of the most popular beach destinations in Chicago. The beach features a unique beach house with over 22,000- square feet, which offers activities for all ages and some of the best views in Chicago. If you want to enjoy lunch on North Avenue Beach, head over to Castaways Bar and Grill for some seaside burgers, ice-cream and tasty beverages on their rooftop. You can rent bikes on the beach or step it up a notch and rent a wakeboard or paddleboard. Take a stroll among the different vendors selling clothes, sandals and other unique souvenirs."
   }, 
   {
     title: "Oak Street Beach",
     city: "Chicago, IL",
     link: "https://www.chicagoparkdistrict.com/parks-facilities/oak-street-beach",
-    image: "https://assets.chicagoparkdistrict.com/s3fs-public/styles/558x314/public/images/locations/1794d9ec25c64ac5a62c484a057bef911.JPG?itok=EGA3g6rR",
+    image: "https://assets3.thrillist.com/v1/image/1508587/size/tmg-venue_carousel_mobile.jpg",
     ages: 0,
     duration: 2,
     location: 2,
     activityLevel: 0,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Spend some time at Oak Street Beach and it’s easy to imagine you are actually in the Caribbean. The white sand beach and crystal clear waters make this the perfect place to swim, rent chairs or bikes, play volleyball and take in the magnificent views across the horizon. You can access the beach from 6:00 am to 11:00 pm – this is a great place to enjoy the sunset. You are only permitted to swim when the lifeguard is present between 11:00 am and 7:00 pm daily."
   },
   {
     title: "North Park Village Nature Center",
     city: "Chicago, IL",
     link: "https://www.chicagoparkdistrict.com/parks-facilities/north-park-village-nature-center",
-    image: "https://assets.chicagoparkdistrict.com/s3fs-public/styles/558x314/public/images/locations/np%20nature%20center%20walk%202016.jpg?itok=-pd3Vyr1",
+    image: "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_396,q_75,w_971/https://Chicago.simpleviewcrm.com/images/listings/original_88000-nparknature-140.jpg",
     ages: 0,
     duration: 1,
     location: 2,
     activityLevel: 1,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Call it a hidden gem, but this 155-acre escape is in walking (or should we say hiking) distance of the city. Seriously, when’s the last time you walked in an open meadow? Quiet paths, boardwalks, and some undisturbed woodland make this a serene hike that lasts about an hour or two."
   },
   {
@@ -1061,7 +1062,7 @@ const eventSeed = [
     location: 0,
     activityLevel: 1,
     price: 0,
-    approved: false,
+    approved: true,
     description: "With over 30,000 square feet of indoor trampolines and other attractions, Altitude Trampoline Park is jumping! We're giving you a shot to jump around with no kids! This event is 21+ only."
   },
   {
@@ -1074,7 +1075,7 @@ const eventSeed = [
     location: 2,
     activityLevel: 0,
     price: 1,
-    approved: false,
+    approved: true,
     description: "Out on Lake Michigan and along the Chicago River you can sit back and give Chicago’s cityscape the attention it deserves. The Chicago River Architecture Cruise has a more sedate pace, and gives you a clear view of more than 40 listed landmarks, accompanied by live commentary from an expert guide."
   },
   {
@@ -1087,7 +1088,7 @@ const eventSeed = [
     location: 0,
     activityLevel: 0,
     price: 1,
-    approved: false,
+    approved: true,
     description: "The 442-metre Willis Tower was the tallest building in the world for 25 years, and is is still among the top 25. With the Chicago Skydeck Experience Ticket, you can waste no time, skipping the line and speeding up to the Skydeck 412.4 metres above the west side of the Loop. On the meandering route to the elevator, there’s a movie detailing the 45-year history of the Willis Tower and Chicago’s other architectural wonders. After a swift ride you’ll be struck by a view extending over 50 miles and four states. The Ledge at the Skydeck will either give you a buzz or make your stomach flutter: This is a set of four all-glass boxes projecting over a sheer drop of more than 100 storeys."
   },
   {
@@ -1100,14 +1101,14 @@ const eventSeed = [
     location: 0,
     activityLevel: 0,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Located in downtown Chicago, the Art Institute is one of the world’s great art museums, housing a collection that spans centuries and the globe."
   },
   {
     title: "Disco NightLife",
     city: "Chicago, IL",
     link: "https://www.discochicago.com/",
-    image: "https://www.discochicago.com/",
+    image: "https://theculturetrip.com/wp-content/uploads/2017/06/mid-4.jpg",
     ages: 2,
     duration: 0,
     location: 0,
@@ -1120,13 +1121,13 @@ const eventSeed = [
     title: "The Second City",
     city: "Chicago, IL",
     link: "https://www.secondcity.com/",
-    image: "https://i2.wp.com/www.secondcity.com/wp-content/uploads/2014/12/TC_CHICAGO_WEB_HEADER_1440x450_001.png?zoom=2.5&fit=1440%2C450&ssl=1",
+    image: "https://us-east.manta.joyent.com/condenast/public/cnt-services/production/2015/06/26/558d7bb03f478ebd25626c2e_chicago-second-city-cr-courtesy.jpg",
     ages: 2,
     duration: 0,
     location: 0,
     activityLevel: 0,
     price: 2,
-    approved: false,
+    approved: true,
     description: "What is it? Where Bill Murray, Tina Fey, Gilda Radner, Chris Farley and Steve Carell cut their comedic teeth.  Why go? Before they joined the cast of Saturday Night Live or became big-screen stars, those folks above practiced their craft on the mainstage at the Second City. The venue's premiere revue features some of the institutions most talented performers in a series of loosely-connected, topical comedy sketches. "
   },
   {
@@ -1139,20 +1140,20 @@ const eventSeed = [
     location: 0,
     activityLevel: 0,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Discover a state-of-the-art collection of architecture, landscape design and art that provide the backdrop for hundreds of free cultural programs including concerts, exhibitions, tours, and family activities. In Millennium Park, you’ll find a new kind of town square – a lively, spectacular gathering spot located in the heart of the city and a destination for Chicagoans and visitors alike."
   },
   {
-    title: "Navy Pier,
+    title: "Navy Pier",
     city: "Chicago, IL",
     link: "https://navypier.org/",
-    image: "https://navypier.org/",
+    image: "http://s3.amazonaws.com/architecture-org/files/buildings/navy-pier-marco-verch-cc.jpg",
     ages: 0,
     duration: 0,
     location: 0,
     activityLevel: 0,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Set where the Chicago Portage enters Lake Michigan, the Navy Pier is a multifaceted visitor attraction extending over the water for six city blocks. As one of the top days out in the Midwest, an attraction of this magnitude is hard to sum up in one paragraph. But in 50 acres you’ll come across the vast multisensory Funhouse Maze and the 65-metre Centennial Wheel, footed by fairground rides and amusements. There’s also weekly fireworks in summer, an IMAX Theatre, the Chicago Children’s Museum and the Crystal Gardens botanical garden with more than 80 palms."
   },
   {
@@ -1165,7 +1166,7 @@ const eventSeed = [
     location: 0,
     activityLevel: 0,
     price: 0,
-    approved: false,
+    approved: true,
     description: "A mainstay of Chicago’s silhouette, 875 North Michigan Avenue (formerly the John Hancock Center) is a 344-metre skyscraper on the Magnificent Mile. Tapering as it rises, the tower was topped off in 1969 and appears in pretty much any movie that needs an establishing shot for Chicago. Up close you can watch its characteristic X-shaped bracing zigzag up the facades. The view from 360 Chicago on the 94th floor has been rated as one of the best in the country, and the ride up there takes less than 40 seconds. There’s a cafe and bar up, as well as interactive displays labelling the landmarks on the horizon in each direction. If you have a steely disposition try “Tilt”, a glass capsule that tilts forward at 15°, 25° and 40° for a bird’s eye view of the city streets 300 metres below."
   },
   {
@@ -1178,7 +1179,7 @@ const eventSeed = [
     location: 0,
     activityLevel: 0,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Formerly the home of the Chicago Public Library, in 1991 this striking Neoclassical building in The Loop became the first free municipal cultural centre in the United States. There are more than 1,000 exhibitions and programmes here every year and they’re as diverse as you’d expect from a city like Chicago. All for free, you can catch theatre, dance, music, lectures, film screenings and family-oriented events."
   },
   {
@@ -1191,7 +1192,7 @@ const eventSeed = [
     location: 2,
     activityLevel: 0,
     price: 0,
-    approved: false,
+    approved: true,
     description: "When it comes to Chicago landmarks, perhaps none is so loved as Wrigley Field. Step inside this historic stadium on a Wrigley Field Tour and learn what makes this ballpark unique from guides who bleed Cubbie blue.On these 75- to 90-minute tours, you will have the opportunity to sit in the fan-favorite bleachers, view the field from the press box, enter the clubhouses where your favorite players have been, and even step out onto the hallowed field. Whether you’re a fan of the Chicago Cubs, baseball in general, or just Chicago history, the 90 minutes you'll spend on a Wrigley Field tour is time well spent. Here’s a few highlights from my recent game-day tour."
   },
   {
@@ -1204,7 +1205,7 @@ const eventSeed = [
     location: 0,
     activityLevel: 0,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Limitless inspiration for kids, the Museum of Science and Industry has show-stopping exhibits on an amazing scale. The venue is the old Palace of Fine Arts, built in 1933 in Jackson Park for the World’s Columbian Exposition. Some of the jaw-dropping sights here are a full-size German U-505 submarine captured during the Second World War, the Pioneer Zephyr, a glorious stainless steel diesel locomotive from 1934 and the first Boeing 727 to enter commercial service. Young scientists can wrap their heads around big concepts at the Science Storms exhibit, which has a Tesla coil, Foucault pendulum and Wimshurst machine. There are relics from the Apollo missions at the Henry Crown Space Centre, while the central pavilion has a replica of a deep-shaft bituminous coal mine, in which you’ll take a mine train and see historic equipment from the 1930s."
   },
   {
@@ -1217,7 +1218,7 @@ const eventSeed = [
     location: 2,
     activityLevel: 1,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Explore 70,000 acres of wild & wonderful in the Forest Preserves of Cook County"
   },
   {
@@ -1230,33 +1231,33 @@ const eventSeed = [
     location: 0,
     activityLevel: 0,
     price: 1,
-    approved: false,
+    approved: true,
     description: "Now their misdeeds are in the distant past, there’s no denying the fascination evoked by Chicago’s prohibition-era mobsters. Names like Al Capone, Bugs Moran and Dion Johnny Torrio remain household names. The city has changed so much in the last century that you’d never guess that benign looking neighbourhoods witnessed a bitter war that claimed scores of lives in the 1920s and 30s. So you have to turn to local historians, and GetYourGuide.com offers a 90-minute Mob and Crime Bus Tour."
   },
   {
     title: "Chicago Symphony Orchestra",
     city: "Chicago, IL",
     link: "https://cso.org",
-    image: "https://youtu.be/3j7CHI0xBVQ",
+    image: "https://s3-prod.chicagobusiness.com/CSO%20lede.jpg",
     ages: 1,
     duration: 1,
     location: 0,
     activityLevel: 0,
     price: 2,
-    approved: false,
+    approved: true,
     description: "As one of America’s “Big Five”, the Chicago Symphony Orchestra is among the most prestigious classical ensembles on the planet. You can see them at the Symphony Center, a National Historic Landmark on South Michigan Avenue. This venue is a complex made up of the Grainger Ballroom, Buntrock Hall and the 2,522-seater Orchestra Hall. On the frieze above the facade’s arches windows you’ll read the names “Bach, Mozart, Beethoven, Schubert and Wagner”. By 2018 Riccardo Muti had been the conductor for eight years."
   },
   {
     title: "Chicago History Museum",
     city: "Chicago, IL",
     link: "https://www.chicagohistory.org/",
-    image: "https://www.chicagohistory.org/",
+    image: "https://static.reservedirect.com/media/product/gallery/original/Chicago_History_Museum_(56334).jpg",
     ages: 0,
     duration: 0,
     location: 0,
     activityLevel: 0,
     price: 0,
-    approved: false,
+    approved: true,
     description: ""
   },
   {
@@ -1269,20 +1270,20 @@ const eventSeed = [
     location: 0,
     activityLevel: 0,
     price: 1,
-    approved: false,
+    approved: true,
     description: "It's where Ella Fitzgerald pined for the man she loved, the Rolling Stones couldn't get no satisfaction and Lady Gaga had a (Bad Romance.) Among performers, there's no New York concert venue that's quite like Radio City Music Hall. You can visit the space for a performance or to get a dose of its lengthy, melodious history on a one-hour Stage Door Tour"
   },
   {
-    title: "ConeyIsland",
+    title: "Coney Island",
     city: "New York, NY ",
     link: "http://coneyislandfunguide.com/",
-    image: "http://coneyislandfunguide.com/wp-content/uploads/2015/04/about_03.png",
+    image: "https://www.tripsavvy.com/thmb/ZaEC5p_aJpJ7OiUrk-SElURly34=/400x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAM_9187-5c7ed3f846e0fb0001edc925.jpg",
     ages: 0,
     duration: 2,
     location: 2,
     activityLevel: 0,
     price: 1,
-    approved: false,
+    approved: true,
     description: "From roller-coasters to go-karts, to live entertainment and boardwalk games, beachfront Coney Island has it all! The world famous Coney Island is a year-round destination full of fun things to do, both historic and new.  The birthplace of the amusement park, Coney Island is home to an Aquarium, Action-Packed Rides, Restaurants, Shops and Sideshows, Coney Island has something for everyone."
   },
   {
@@ -1299,16 +1300,16 @@ const eventSeed = [
     description: "Wander along Brooklyn's Washington Avenue, and you can't avoid stumbling upon this verdant 52-acre park. A main highlight here is the Japanese Hill-and-Pond Garden, punctuated by wooden bridges and Japanese maples. And if you arrive at the end of April, you can't miss the Cherry Esplanade (Sakura Matsuri) when rosy cherry blossoms burst into bloom."
   },
   {
-    title: "Crhysler Building Skyscraper Center",
+    title: "Chrysler Building Skyscraper Center",
     city: "New York, NY ",
     link: "http://www.skyscrapercenter.com/building/chrysler-building/422",
-    image: "https://freetoursbyfoot.com/visit-the-chrysler-building/",
+    image: "https://cdn.cnn.com/cnnnext/dam/assets/190109075400-01-chrysler-building-file-exlarge-169.jpg",
     ages: 1,
     duration: 1,
     location: 0,
     activityLevel: 1,
     price: 0,
-    approved: false,
+    approved: true,
     description: "The Chrysler Building was the first supertall building taking the title of World's Tallest Building after winning a height battle with The Bank of Manhattan. The building claimed the title when it raised an 125-foot spire in just 90 minutes after constructing it in secret. It lost the title of World's Tallest Building 11 months later to the Empire State Building but enjoyed commercial success due to its location next to Grand Central Terminal. In 2009, the Chrysler Building went through a retrofit, gaining the certification LEED Gold for Existing Buildings."
   },
   {
@@ -1321,20 +1322,20 @@ const eventSeed = [
     location: 0,
     activityLevel: 0,
     price: 0,
-    approved: false,
+    approved: true,
     description: "You really can't miss seeing the Empire State (it's the second-tallest building in New York City only to the recently topped-out One World Trade Center), but in case you do, look toward midtown Manhattan at the intersection of Fifth Avenue and West 34th Street (take the B, D, F, M, N, Q, or R train to 34th Street). The 86th- and 102nd-floor observatories are open every day from 8 a.m. until 2 a.m.; the last elevator is at 1:15 a.m. Tickets to the 86th floor cost $36 for adults, $35 for seniors and $31 for children, or $69 for the Express Pass (where you can bypass the line). "
   },
   {
     title: "Grand Central Terminal",
     city: "New York, NY ",
     link: "https://www.grandcentralterminal.com/",
-    image: "https://imgc.allpostersimages.com/img/print/u-g-PZ59EI0.jpg?w=550&h=550&p=0",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Grand_Central_Terminal_celing_view.jpg/220px-Grand_Central_Terminal_celing_view.jpg",
     ages: 0,
     duration: 0,
     location: 0,
     activityLevel: 0,
     price: 0,
-    approved: false,
+    approved: true,
     description: "Be transported by the iconic beauty and lasting legacy of Grand Central Terminal. This historic world-famous landmark in Midtown Manhattan is not simply a transportation hub—it’s also a shopping, dining, and cultural destination with 60 shops, 35 places to eat, and a full calendar of events all under one magnificent roof. Opened to the public in February 1913, Grand Central Terminal is a story of great engineering, survival, and rebirth. In 1978, architect Philip Johnson and First Lady Jacqueline Kennedy Onassis campaigned to secure landmark status for the Terminal, ensuring the building would serve New Yorkers for generations to come. "
   },
   {
@@ -1347,7 +1348,7 @@ const eventSeed = [
     location: 0,
     activityLevel: 0,
     price: 0,
-    approved: false,
+    approved: true,
     description: "No museum in the United States is as celebrated as the Metropolitan Museum of Art. Spilling over with masterpieces from all over the world, including notable collections from Ancient Egypt and classical antiquity, the Met is an art experience unlike any other, and like much in New York, it's impossible to see all the museum has to offer in one day (or even two days, for that matter)."
   },
   {
@@ -1360,7 +1361,7 @@ const eventSeed = [
     location: 1,
     activityLevel: 0,
     price: 1,
-    approved: false,
+    approved: true,
     description: "According to travelers, these 265 acres sheltering more than 4,000 animals should be near the top of every young family's itinerary in New York. And if you're an older visitor, the Bronx Zoo could be a great way to escape the nonstop activity in Manhattan. If you're not an animal lover, however, stay far away – this zoo's claim to fame is that it's the largest metropolitan animal park in the country."
   },
 ]
