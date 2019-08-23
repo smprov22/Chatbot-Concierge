@@ -76,8 +76,7 @@ class App extends Component {
           />
           <Route
             path="/signup"
-            render={() =>
-              <Signup />}
+            component={Signup}
           />
           <Route
             path="/manager"
@@ -120,7 +119,7 @@ class App extends Component {
             render={() =>
               <Activities />}
           />
-          <Route
+         <Route
             path="/shareInput"
             render={() =>
               <ShareInput />}
