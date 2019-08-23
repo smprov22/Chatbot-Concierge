@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import { Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 // components
 import Signup from './pages/sign-up'
 import LoginForm from './pages/login-form'
@@ -57,13 +57,13 @@ class App extends Component {
     if (this.state.loggedIn) {
       return (
         <div className="App">
-
           <Navbar updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
           {/* greet user if logged in: */}
           {this.state.loggedIn &&
             <p>You are logged in, {this.state.username}!</p>
           }
           {/* Routes to different components */}
+          <Router>
           <Route
             exact path="/"
             component={Home} />
@@ -77,16 +77,12 @@ class App extends Component {
           <Route
             exact path="/signup"
             render={() =>
-              <Signup 
-                updateUser={this.updateUser}  
-              />}
+              <Signup />}
           />
           <Route
             exact path="/manager"
             render={() =>
-              <Manager 
-                updateUser={this.updateUser}
-              />}
+              <Manager />}
           />
           <Route
             exact path="/activities"
@@ -98,6 +94,7 @@ class App extends Component {
             render={() =>
               <ShareInput />}
           />
+          </Router>
         </div>
       );
     } else {
@@ -109,6 +106,7 @@ class App extends Component {
             <p>Join the party, {this.state.username}!</p>
           }
           {/* Routes to different components */}
+          <Router>
           <Route
             exact path="/"
             component={Home} />
@@ -129,6 +127,7 @@ class App extends Component {
             render={() =>
               <ShareInput />}
           />
+          </Router>
         </div>
       );
     }
