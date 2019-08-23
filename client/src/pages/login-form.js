@@ -62,7 +62,7 @@ class LoginForm extends Component {
                     <form className="form-horizontal">
                         <div className="form-group">
                             <div className="col-md-1 col-sm-3  col-ml-auto">
-                                <label className="form-label" htmlFor="username">Username</label>
+                                <label className="form-label" htmlFor="username">Username:</label>
                             </div>
                             <div className="col-md-3 col-sm-6  col-mr-auto">
                                 <input className="form-input"

@@ -61,11 +61,11 @@
 	}
 
 	.imgDiv{
-		width: 500px;
+		width: 430px;
 	}
 
 	.cineDiv{
-		margin-left: -120px !important;
+		margin-left: -140px !important;
 	}
 
 	#cinemagraph{
@@ -89,28 +89,23 @@
 	.ipad{
 		width: 320px;
 		height: 200px !important;
-		margin-left: -350px;
 		margin-top: 50px !important;
+		margin-left: -60px;
 	
 	}
 
 	.imgDiv{
-		width: 500px;
+		width: 100%;
 	}
 
-
-
+	.cineDiv{
+		margin-left: -39px !important;
+	}
+	
 	#cinemagraph{
 		width: 200px;
-		padding-top: 60px;
-		padding-right: -380px;
-	
+		padding-top: 60px;	
 	}
-
-	.containerIpad{
-		width: 100px;
-		
-		}
 
 }
 
@@ -120,18 +115,20 @@
 	.ipad{
 		margin-top: 50px !important;
 		width: 300px;
-		margin-left: -400px;
+		margin-left: -65px;
 	
 	}
 
 	.imgDiv{
-		width: 570px;
+		width: 100%;
+	}
+
+	.cineDiv{
+		margin-left: -50px !important;
 	}
 	#cinemagraph{
 		width: 200px;
-		padding-top: 110px;
-		padding-right: -180px;
-	
+		padding-top: 60px;	
 	}
 
 	.containerIpad{
