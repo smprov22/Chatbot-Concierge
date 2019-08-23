@@ -7,12 +7,12 @@ h4{
    font-weight: bold;
 }
 
+
 .loginForm{
-  margin-top: 15%;
-  margin-bottom: 15%;
+  margin-top: 20%;
+  margin-bottom: 20%;
 }
 .mt-4{
-  /* margin: 200px !important; */
   width: 800px;
   margin: 0 auto;
 }
@@ -37,6 +37,7 @@ input{
   background-color: #5755d9;
   color: white !important;
 }
+
 @media only screen and (max-width: 1024px) {
 
   .mt-4{
@@ -49,8 +50,8 @@ input{
   }
 
 
-
 }
+
 @media only screen and (max-width: 768px) {
   #frontPage{
     height: 700px;
@@ -59,6 +60,15 @@ input{
 .parentCard{
   background-color: rgba(247, 247, 247, 0.295) !important;
 }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .loginBtn{
+    width: 50%;
+    margin: 0 auto;
+  }
+
 
 .loginForm{
   margin-top: 40%;
@@ -74,7 +84,7 @@ input{
     font-size: 1.3rem !important;
   }
   #frontPage{
-    height: 540px;
+    height: 520px;
   }
   .form-input{
     max-width: 100px !important;
@@ -95,3 +105,4 @@ input{
   }
 
 }
+

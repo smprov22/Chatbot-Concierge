@@ -53,18 +53,25 @@
 @media only screen and (max-width: 768px) {
 
 	.ipad{
-		width: 400px;
-		height: 300px !important;
+		width: 550px;
+		height: 400px !important;
 		margin-top: 100px;
-		margin-left: -100px;;
+		margin-left: -200px;;
 	
 	}
 
 	.imgDiv{
-		width: 300px;
+		width: 430px;
+	}
+
+	.cineDiv{
+		margin-left: -140px !important;
 	}
 
 	#cinemagraph{
+		width: 400px;
+		padding-top: 120px;
+		padding-right: -200px;
 	
 	}
 
@@ -75,55 +82,30 @@
 
 }
 
-/* @media only screen and (max-width : 736px) { 
-	.ipad{
-		width: 440px;
-		height: 300px;
-		margin: 0 auto;
-
-	}
-	.containerIpad{
-		margin-top: 10%;
-		width: 100%;
-		
-		}
-
-		#cinemagraph{
-			width: 440px;
-			height: 300px;
-			margin: 0 auto;
-		}
-
-}
 
 
 @media only screen and (max-width: 414px) {
 
 	.ipad{
-		top: 40px;
-		width:350px;
-		height: 240px;
-		left: 25px;
+		width: 320px;
+		height: 200px !important;
+		margin-top: 50px !important;
+		margin-left: -60px;
+	
 	}
 
-	#cinemagraph{
-		width:220px;
-		height: 130px;
-		left: 85px;
-		top: 58px;
-		margin: 0 auto;
-
-	}
-
-	
-	
-	.containerIpad{
-		margin-top: 20%;
-		margin-left: 10%;
-		padding-left: 2%;
+	.imgDiv{
 		width: 100%;
-		
-		}
+	}
+
+	.cineDiv{
+		margin-left: -39px !important;
+	}
+	
+	#cinemagraph{
+		width: 200px;
+		padding-top: 60px;	
+	}
 
 }
 
@@ -131,18 +113,29 @@
 @media only screen and (max-width: 375px) {
 
 	.ipad{
-		width:350px;
-		height: 240px;
-		left: 25px;
+		margin-top: 50px !important;
+		width: 300px;
+		margin-left: -65px;
+	
 	}
 
+	.imgDiv{
+		width: 100%;
+	}
+
+	.cineDiv{
+		margin-left: -50px !important;
+	}
 	#cinemagraph{
-		width:220px;
-		height: 130px;
-		left: 65px;
-		top: 58px;
-		margin: 0 auto;
-
+		width: 200px;
+		padding-top: 60px;	
 	}
 
-}  */
+	.containerIpad{
+		width: 100px;
+		
+		}
+
+
+
+}  

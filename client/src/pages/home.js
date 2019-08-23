@@ -1,21 +1,14 @@
 import React, { Component } from 'react'
 import StartBtn from '../components/Button/button'
-// import { Redirect } from 'react-router-dom'
-// import { Link } from 'react-router-dom'
 import '../App.css'
 import Cinemagraph from '../components/Cinemagraph/cinemagraph'
 import "../pages/home.css"
-// import CitySearch from '../components/CitySearch/citysearch'
+
 
 
 class Home extends Component {
-    // constructor() {
-    //     super()
-    // }
-
-
-
-    onStartBtn = event => {
+ 
+       onStartBtn = event => {
         event.preventDefault();
         let path = "/activities"
         this.props.history.push(path)
@@ -29,12 +22,9 @@ class Home extends Component {
                     <p className="homeTitle">Let's do <br></br>something fun <br></br>  </p>
                     <StartBtn
                         onClick={this.onStartBtn} />
-                  
-                 
-                    <Cinemagraph />
-                  
+                    <Cinemagraph />    
             </div>
-
+  
         )
 
     }
