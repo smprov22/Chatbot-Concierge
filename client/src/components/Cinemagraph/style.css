@@ -26,7 +26,7 @@
 .ipad{
 	width: 800px;
 	height: 600px !important;
-	margin-left: -25px;
+	margin-left: -30px;
 }
 
 
@@ -50,31 +50,32 @@
 
 
 
-/* @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
 	.ipad{
-		top: 20px;
-		width: 600px;
-		height: 400px;
-		margin: 20px auto;
+		width: 400px;
+		height: 300px !important;
+		margin-top: 100px;
+		margin-left: -100px;;
+	
+	}
+
+	.imgDiv{
+		width: 300px;
 	}
 
 	#cinemagraph{
-		top: 70px;
-		width: 380px;
-		height: 220px;
-		left: 180px;;
+	
 	}
 
 	.containerIpad{
-		margin: 15% auto;
-		width: 100%;
+		width: 100px;
 		
 		}
 
 }
 
-@media only screen and (max-width : 736px) { 
+/* @media only screen and (max-width : 736px) { 
 	.ipad{
 		width: 440px;
 		height: 300px;
@@ -144,4 +145,4 @@
 
 	}
 
-} */
+}  */
