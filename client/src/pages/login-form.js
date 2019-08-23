@@ -61,7 +61,7 @@ class LoginForm extends Component {
                     <h4 className="loginTitle">LOGIN</h4>
                     <form className="form-horizontal">
                         <div className="form-group">
-                            <div className="col-md-1 col-sm-3  col-ml-auto">
+                            <div className="col-md-2 col-sm-3  col-ml-auto">
                                 <label className="form-label" htmlFor="username">Username:</label>
                             </div>
                             <div className="col-md-3 col-sm-6  col-mr-auto">
@@ -76,7 +76,7 @@ class LoginForm extends Component {
                             </div>
                         </div>
                         <div className="form-group">
-                            <div className="col-md-1 col-sm-3 col-ml-auto">
+                            <div className="col-md-2 col-sm-3 col-ml-auto">
                                 <label className="form-label" htmlFor="password">Password: </label>
                             </div>
                             <div className="col-md-3 col-sm-6 col-mr-auto">
