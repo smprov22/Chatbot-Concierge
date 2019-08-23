@@ -1,15 +1,16 @@
 
 
 .containerIpad{
-	margin: 10px 29%;
+	margin: 10px auto;
 	animation: float 3s ease-in-out infinite;
+	width: 500px;
 }
 
 
 #cinemagraph{
 	padding-top: 45px;
-	padding-left: 10px;
 }
+
 .cineDiv{
 	width: 100%;
 	max-width: 100%;
@@ -25,6 +26,7 @@
 .ipad{
 	width: 800px;
 	height: 600px !important;
+	margin-left: -25px;
 }
 
 
