@@ -14,6 +14,10 @@
   font-weight: bold;
 }
 
+.form-control{
+  font-size: 14px;
+  width: 375px;
+}
 .sliderRight{
   margin-left: 60px;
   padding-right: 60px;
