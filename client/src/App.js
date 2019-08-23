@@ -76,8 +76,7 @@ class App extends Component {
           />
           <Route
             path="/signup"
-            render={() =>
-              <Signup />}
+            component={Signup}>}
           />
           <Route
             path="/manager"
