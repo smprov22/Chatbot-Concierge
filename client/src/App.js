@@ -68,28 +68,33 @@ class App extends Component {
             exact path="/"
             component={Home} />
           <Route
-            path="/login"
+            exact path="/login"
             render={() =>
               <LoginForm
                 updateUser={this.updateUser}
               />}
           />
           <Route
-            path="/signup"
-            component={Signup}
-          />
-          <Route
-            path="/manager"
+            exact path="/signup"
             render={() =>
-              <Manager />}
+              <Signup 
+                updateUser={this.updateUser}  
+              />}
           />
           <Route
-            path="/activities"
+            exact path="/manager"
+            render={() =>
+              <Manager 
+                updateUser={this.updateUser}
+              />}
+          />
+          <Route
+            exact path="/activities"
             render={() =>
               <Activities />}
           />
           <Route
-            path="/shareInput"
+            exact path="/shareInput"
             render={() =>
               <ShareInput />}
           />
@@ -108,19 +113,19 @@ class App extends Component {
             exact path="/"
             component={Home} />
           <Route
-            path="/login"
+            exact path="/login"
             render={() =>
               <LoginForm
                 updateUser={this.updateUser}
               />}
           />
           <Route
-            path="/activities"
+            exact path="/activities"
             render={() =>
               <Activities />}
           />
-         <Route
-            path="/shareInput"
+          <Route
+            exact path="/shareInput"
             render={() =>
               <ShareInput />}
           />
