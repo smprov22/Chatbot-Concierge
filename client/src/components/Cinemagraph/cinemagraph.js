@@ -1,20 +1,24 @@
 import React from 'react'
 import "./style.css";
 import ipad from './ipad3.png'
+import {Row, Col} from "../Grid/index"
 
 
 const Cinemagraph = () => {
     return (
+      <Row className="wrapAll">
+        <Col size="12">
         <div className= "containerIpad">
-      <img src={ipad} className="ipad" alt="ipad" />
-      <div className="flx-embed">
-      <div className="cineDiv">
-        {/* <iframe src="https://images.squarespace-cdn.com/content/v1/51c748abe4b0c275d0aa86bf/1519577354952-08TNJ0KLBH5KUWUGU945/ke17ZwdGBToddI8pDm48kPQXnCelw_ZHZHJ0S_zUYJFZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpyNwX1LwSyygiAUvLkdvd06aTywZWHJZvTFXmZ1EWjDNXW-iOY3h16vp-WNE8aWbRI/Armani-Central-Park-6151.gif?format=2500w" frameBorder="0" allowFullScreen allow='autoplay'> */}
-          {/* </iframe> */}
+          <div className="imgDiv">
+          <img src={ipad} className="ipad " alt="ipad" />
           </div>
+              <div className="cineDiv">
+                 <img src="https://joetowey.files.wordpress.com/2015/07/ferry-takeoff-landing.gif" frameBorder="0" allowFullScreen allow='autoplay'className="" id="cinemagraph" alt="cine">
+                </img> 
           </div>
-  
         </div>
+        </Col>
+      </Row>
       )
     }
   

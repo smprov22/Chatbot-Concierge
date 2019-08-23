@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { List } from '../components/Events/submissions'
 import Submissions from '../components/Events/submissions2'
 import API from '../utils/api'
+import Card from "../components/Card/index"
 import "./home.css"
 
 class Manager extends Component {
@@ -36,19 +37,25 @@ class Manager extends Component {
                 <div>
                     <a className="manager-signup" href="/signup">+ Add a New Manager</a>
                 </div>
-                <div>
+                <div className="edit-boxes">
                     {this.state.submissions.length ? (
+           
                         <List>
                             {this.state.submissions
                             .filter(submission => (!submission.approved))
                             .map((submission) => (
+                                <Card className="parentCard">
                                 <Submissions key={submission._id} submission = {submission} componentDidMount = {()=>this.componentDidMount()} loadSubmissions={()=>this.loadSubmissions()}>  
                                 </Submissions>
+                                </Card>
                             ))}
+                
                         </List>
+            
                     ) : (
                             <h3>No Results to Display</h3>
                         )}
+                        
                 </div>
             </div>
         )

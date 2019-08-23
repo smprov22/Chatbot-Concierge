@@ -35,20 +35,20 @@ class Navbar extends Component {
         if (loggedIn) {
             return (
                 <div>
-                    <nav class="navbar bg-faded">
-                        <div class="container">
+                    <nav className="navbar bg-faded">
+                        <div className="container">
 
-                            <ul class="nav navbar-nav pull-sm-left">
+                            <ul className="nav navbar-nav pull-sm-left">
                                 <li className="nav-item">
                                     <Link to="/shareInput" className="btn btn-link">
-                                        <a className="nav-link-share">HAVE SOMETHING TO SHARE?</a>
+                                        <a className="nav-link-share">CONTRIBUTE</a>
                                     </Link>
                                 </li>
                             </ul>
                             <a className="navbar-brand mx-auto" href="/">
                                 <img src={logo} className="App-logo" alt="logo" />
                             </a>
-                            <ul class="nav navbar-nav pull-sm-left">
+                            <ul className="nav navbar-nav pull-sm-left">
                                 <li className="nav-item">
                                     <Link to="#" className="btn btn-link nav-item nav-link" onClick={this.logout}>
                                         LOGOUT
@@ -63,20 +63,20 @@ class Navbar extends Component {
 
             return (
                 <div>
-                    <nav class="navbar bg-faded">
-                        <div class="container">
+                    <nav className="navbar bg-faded">
+                        <div className="container">
 
-                            <ul class="nav navbar-nav pull-sm-left">
+                            <ul className="nav navbar-nav pull-sm-left">
                                 <li className="nav-item">
                                     <Link to="/shareInput" className="btn btn-link">
-                                        <a className="nav-link-share">CONTRIBUTE</a>
+                                        <p>CONTRIBUTE</p>
                                     </Link>
                                 </li>
                             </ul>
                             <a className="navbar-brand mx-auto" href="/">
                                 <img src={logo} className="App-logo" alt="logo" />
                             </a>
-                            <ul class="nav navbar-nav pull-sm-left">
+                            <ul className="nav navbar-nav pull-sm-left">
                                 <li className="nav-item">
                                 <Link to="/login" className="btn btn-link nav-item nav-link">
                                     LOGIN

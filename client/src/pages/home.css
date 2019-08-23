@@ -11,9 +11,19 @@ h4{
   margin-top: 15%;
   margin-bottom: 15%;
 }
-
+.mt-4{
+  /* margin: 200px !important; */
+  width: 800px;
+  margin: 0 auto;
+}
 .managerPage{
-  margin-bottom: 25%;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 95%;
+}
+
+input{
+  font-size: 14px !important;
 }
 
 .list-group-item{
@@ -27,18 +37,28 @@ h4{
   background-color: #5755d9;
   color: white !important;
 }
+@media only screen and (max-width: 1024px) {
+
+  .mt-4{
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .numberInput{
+    width: 10px !important;
+  }
 
 
 
+}
 @media only screen and (max-width: 768px) {
   #frontPage{
     height: 700px;
   }
 
-/* 
-.form-input{
-  max-width: 100px !important;
-} */
+.parentCard{
+  background-color: rgba(247, 247, 247, 0.295) !important;
+}
 
 .loginForm{
   margin-top: 40%;
@@ -49,6 +69,10 @@ h4{
 
 
 @media only screen and (max-width: 414px) {
+
+  h1{
+    font-size: 1.3rem !important;
+  }
   #frontPage{
     height: 540px;
   }
@@ -63,6 +87,11 @@ h4{
   .loginForm{
     margin-top: 60%;
     margin-bottom: 60%;
+  }
+
+  .mt-4{
+    width: 215px;
+    margin: 0 auto;
   }
 
 }

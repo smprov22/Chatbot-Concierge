@@ -29,11 +29,14 @@
   background-size: cover;
 }
 
+
+
 @media only screen and (max-width: 768px) {
 
 
   .App {
-    -webkit-mask-image: -webkit-gradient(linear, left 95%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    -webkit-mask-image: -webkit-gradient(linear, left 80%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    width: 100%;
   }
 
   .homeTitle{
@@ -54,7 +57,18 @@ and (max-device-width : 736px) {
 
 @media only screen and (max-width: 414px) {
 
+  .App{
+    width: 100%;
+  }
 
 
 }
+
+@media only screen and (max-width: 475px) {
+
+  .App {
+  -webkit-mask-image: -webkit-gradient(linear, left 85%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  }
+}
+
 
