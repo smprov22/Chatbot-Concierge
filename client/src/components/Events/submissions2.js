@@ -117,7 +117,10 @@ class Submissions extends React.Component {
                 </div>
                 <Row>
                     <Col className="center" size="md-12 ">
-                        {/* <p className="approved"><strong>Approved: </strong>{this.props.submission.approved ? "true" : "false"}</p> */}
+                    <br></br>
+                    <img src={this.state.image} width="200px" alt="cityImg" className="cityImg" ></img>
+                    <br></br>
+                    <br></br>
                         <button className="approve-btn btn btn-primary " submission={this.state} onClick={(event) => this.handleApproveButton(this.props.submission._id, this.state, event)}>
                             Approve
             </button>
