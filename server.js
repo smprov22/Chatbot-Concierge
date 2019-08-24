@@ -20,8 +20,8 @@ app.use(
 	session({
 		secret: 'fraggle-rock', //pick a random string to make the hash that is generated secure
 		store: new MongoStore({ mongooseConnection: dbConnection }),
-		resave: false, //required
-		saveUninitialized: false //required
+		resave: true, //required
+		saveUninitialized: true //required
 	})
 )
 
