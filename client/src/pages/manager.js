@@ -38,7 +38,7 @@ class Manager extends Component {
                 </div>
                 <div>
                     <Link to={baseUrl +"/signup"} className="btn btn-link">
-                        + Add a New Manager
+                        <button>+ Add a New Manager</button>
                     </Link>
                 </div>
                 <div className="edit-boxes">
