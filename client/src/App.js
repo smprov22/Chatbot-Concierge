@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 // components
 import Signup from './pages/sign-up'
 import LoginForm from './pages/login-form'
@@ -10,6 +10,7 @@ import Activities from './pages/activities'
 import ShareInput from './pages/shareInput'
 import Manager from './pages/manager'
 
+const baseUrl = process.env.PUBLIC_URL; // will be /hypercomp
 
 class App extends Component {
   constructor() {
@@ -70,29 +71,29 @@ class App extends Component {
             exact path="/"
             component={Home} />
           <Route
-            exact path="/login"
+            exact path= {baseUrl + "/login"}
             render={() =>
               <LoginForm
                 updateUser={this.updateUser}
               />}
           />
           <Route
-            exact path="/signup"
+            exact path= {baseUrl + "/signup"}
             render={() =>
               <Signup />}
           />
           <Route
-            exact path="/manager"
+            exact path= {baseUrl + "/manager"}
             render={() =>
               <Manager />}
           />
           <Route
-            exact path="/activities"
+            exact path= {baseUrl + "/activities"}
             render={() =>
               <Activities />}
           />
           <Route
-            exact path="/shareInput"
+            exact path= {baseUrl + "/shareInput"}
             render={() =>
               <ShareInput />}
           />
@@ -116,19 +117,19 @@ class App extends Component {
             exact path="/"
             component={Home} />
           <Route
-            exact path="/login"
+            exact path= {baseUrl + "/login"}
             render={() =>
               <LoginForm
                 updateUser={this.updateUser}
               />}
           />
           <Route
-            exact path="/activities"
+            exact path= {baseUrl + "/activities"}
             render={() =>
               <Activities />}
           />
           <Route
-            exact path="/shareInput"
+            exact path= {baseUrl + "/shareInput"}
             render={() =>
               <ShareInput />}
           />
