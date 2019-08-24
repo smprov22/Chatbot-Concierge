@@ -6,6 +6,8 @@ import API from '../utils/api'
 import Card from "../components/Card/index"
 import "./home.css"
 
+const baseUrl = process.env.PUBLIC_URL; 
+
 class Manager extends Component {
 
     state = {
@@ -26,7 +28,7 @@ class Manager extends Component {
             .then(res => this.setState({ submissions: res.data }))
             .catch(err => console.log(err));
     };
-
+    
 
     render() {
         return (
@@ -35,7 +37,7 @@ class Manager extends Component {
                     <h1>MANAGER VIEW</h1>
                 </div>
                 <div>
-                    <a className="manager-signup" href="/signup">+ Add a New Manager</a>
+                    <a className="manager-signup" href={baseUrl + "/signup"}>+ Add a New Manager</a>
                 </div>
                 <div className="edit-boxes">
                     {this.state.submissions.length ? (
