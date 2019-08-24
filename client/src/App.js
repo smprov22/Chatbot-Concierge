@@ -54,10 +54,8 @@ class App extends Component {
   }
 
   render() {
-    if (this.state.loggedIn) {
       return (
         <div className="App">
-
           {/* greet user if logged in: */}
           {this.state.loggedIn &&
             <p>You are logged in, {this.state.username}!</p>
@@ -101,43 +99,7 @@ class App extends Component {
           
         </div>
       );
-    } else {
-      return (
-        <div className="App">
-          {/* greet user if logged in: */}
-          {this.state.loggedIn &&
-            <p>Join the party, {this.state.username}!</p>
-          }
-          {/* Routes to different components */}
-          <Router>
-            <div>
-            <Navbar updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
-          <Route
-            exact path="/"
-            component={Home} />
-          <Route
-            exact path="/login"
-            render={() =>
-              <LoginForm
-                updateUser={this.updateUser}
-              />}
-          />
-          <Route
-            exact path="/activities"
-            render={() =>
-              <Activities />}
-          />
-          <Route
-            exact path="/shareInput"
-            render={() =>
-              <ShareInput />}
-          />
-          </div>
-          </Router>
-        </div>
-      );
     }
-  }
 }
 
 export default App;
