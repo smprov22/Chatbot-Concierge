@@ -64,6 +64,7 @@ class App extends Component {
           }
           {/* Routes to different components */}
           <Router>
+            <div>
           <Route
             exact path="/"
             component={Home} />
@@ -94,7 +95,9 @@ class App extends Component {
             render={() =>
               <ShareInput />}
           />
+          </div>
           </Router>
+          
         </div>
       );
     } else {
@@ -107,6 +110,7 @@ class App extends Component {
           }
           {/* Routes to different components */}
           <Router>
+            <div>
           <Route
             exact path="/"
             component={Home} />
@@ -127,6 +131,7 @@ class App extends Component {
             render={() =>
               <ShareInput />}
           />
+          </div>
           </Router>
         </div>
       );
