@@ -51,6 +51,13 @@ class Navbar extends Component {
                             </a>
                             <ul className="nav navbar-nav pull-sm-left">
                                 <li className="nav-item">
+                                    <Link to={baseUrl +"/manager"} className="btn btn-link">
+                                        <a className="nav-link-share">MANAGER</a>
+                                    </Link> 
+                                </li>
+                            </ul>
+                            <ul className="nav navbar-nav pull-sm-left">
+                                <li className="nav-item">
                                     <Link to={baseUrl +"/#"} className="btn btn-link nav-item nav-link" onClick={this.logout}>
                                         <a className="nav-link-share">LOGOUT</a>
                                     </Link> 
