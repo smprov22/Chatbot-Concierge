@@ -80,18 +80,15 @@ class App extends Component {
           />
           <Route
             path="/manager"
-            render={() =>
-              <Manager />}
+            component={Manager}
           />
           <Route
             path="/activities"
-            render={() =>
-              <Activities />}
+            component={Activities}
           />
           <Route
             path="/shareInput"
-            render={() =>
-              <ShareInput />}
+            component={ShareInput}
           />
         </div>
       );
