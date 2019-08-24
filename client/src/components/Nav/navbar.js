@@ -4,8 +4,6 @@ import logo from './logo.png';
 import '../Nav/style.css';
 import axios from 'axios'
 
-const baseUrl = process.env.PUBLIC_URL; 
-
 class Navbar extends Component {
     constructor() {
         super()
@@ -41,9 +39,9 @@ class Navbar extends Component {
 
                             <ul className="nav navbar-nav pull-sm-left">
                                 <li className="nav-item">
-                                    <Link to={baseUrl +"/shareInput"} className="btn btn-link">
-                                        <a className="nav-link-share">CONTRIBUTE</a>
-                                    </Link>
+                                    {/* <Link to="/shareInput" className="btn btn-link"> */}
+                                        <a href="/shareInput" className="nav-link-share">CONTRIBUTE</a>
+                                    {/* </Link> */}
                                 </li>
                             </ul>
                             <a className="navbar-brand mx-auto" href="/">
@@ -51,9 +49,9 @@ class Navbar extends Component {
                             </a>
                             <ul className="nav navbar-nav pull-sm-left">
                                 <li className="nav-item">
-                                    <Link to={baseUrl +"/#"} className="btn btn-link nav-item nav-link" onClick={this.logout}>
-                                        <a className="nav-link-share">LOGOUT</a>
-                                    </Link> 
+                                    {/* <Link to="#" className="btn btn-link nav-item nav-link" onClick={this.logout}> */}
+                                        <a href="#" onClick={this.logout} className="nav-link-share">LOGOUT</a>
+                                    {/* </Link>  */}
                                 </li>
                             </ul>
                         </div>
@@ -69,9 +67,9 @@ class Navbar extends Component {
 
                             <ul className="nav navbar-nav pull-sm-left">
                                 <li className="nav-item">
-                                    <Link to={baseUrl + "/shareInput"} className="btn btn-link">
-                                         <a className="nav-link-share">CONTRIBUTE</a>
-                                    </Link>
+                                    {/* <Link to="/shareInput" className="btn btn-link"> */}
+                                         <a href="/shareInput" className="nav-link-share">CONTRIBUTE</a>
+                                    {/* </Link> */}
                                 </li>
                             </ul>
                             <a className="navbar-brand mx-auto" href="/">
@@ -79,9 +77,9 @@ class Navbar extends Component {
                             </a>
                             <ul className="nav navbar-nav pull-sm-left">
                                 <li className="nav-item">
-                                <Link to={baseUrl + "/login"} className="btn btn-link nav-item nav-link">
-                                    <a className="nav-link-share">LOGIN</a>
-                                </Link>
+                                {/* <Link to="/login" className="btn btn-link nav-item nav-link"> */}
+                                <a href="/login" className="nav-link-share">LOGIN</a>
+                                {/* </Link> */}
                                 </li>
                             </ul>
                         </div>
