@@ -53,7 +53,8 @@ module.exports = function(app) {
         if (req.user) {
             res.json({ user: req.user })
         } else {
-            res.json({ user: null })
+            res.sendStatus(400).send(new Error('user aint logged in sucka'))
+            // res.json({ user: null })
         }
     })
     
