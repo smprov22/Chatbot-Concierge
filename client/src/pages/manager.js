@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import { Redirect } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { List } from '../components/Events/submissions'
 import Submissions from '../components/Events/submissions2'
 import API from '../utils/api'
@@ -37,7 +37,9 @@ class Manager extends Component {
                     <h1>MANAGER VIEW</h1>
                 </div>
                 <div>
-                    <a className="manager-signup" href={baseUrl + "/signup"} >+ Add a New Manager</a>
+                    <Link to={baseUrl +"/signup"} className="btn btn-link">
+                        + Add a New Manager
+                    </Link>
                 </div>
                 <div className="edit-boxes">
                     {this.state.submissions.length ? (
