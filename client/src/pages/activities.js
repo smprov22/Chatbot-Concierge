@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
 import API from '../utils/api'
-// import { Redirect } from 'react-router-dom'
-// import axios from 'axios'
-// import ReactDOM from 'react-dom';
 import Slider from 'react-rangeslider'
 import 'react-rangeslider/lib/index.css'
 import { SubmitBtn } from '../components/Button/button'
@@ -12,10 +9,6 @@ import '../components/Slider/style.css'
 import '../pages/activities.css'
 import List from '../components/List/index'
 import Card from '../components/Card/index'
-
-// import CitySearch from '../components/CitySearch/citysearch'
-// import { set } from 'mongoose';
-
 
 
 class Activities extends Component {

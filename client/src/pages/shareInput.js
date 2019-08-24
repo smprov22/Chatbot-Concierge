@@ -161,7 +161,7 @@ class ShareInput extends Component {
                                     />
                                     <br />
                                     <textarea
-                                        className="form-control "
+                                        className="form-control"
                                         placeholder="Description"
                                         type="text"
                                         value={this.state.description}
