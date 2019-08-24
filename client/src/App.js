@@ -59,9 +59,9 @@ class App extends Component {
         <div className="App">
 
           {/* greet user if logged in: */}
-          {/* {this.state.loggedIn &&
+          {this.state.loggedIn &&
             <p>You are logged in, {this.state.username}!</p>
-          } */}
+          }
           {/* Routes to different components */}
           <Router>
             <div>
@@ -104,7 +104,6 @@ class App extends Component {
     } else {
       return (
         <div className="App">
-          <Navbar updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
           {/* greet user if logged in: */}
           {this.state.loggedIn &&
             <p>Join the party, {this.state.username}!</p>
@@ -112,6 +111,7 @@ class App extends Component {
           {/* Routes to different components */}
           <Router>
             <div>
+            <Navbar updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
           <Route
             exact path="/"
             component={Home} />
