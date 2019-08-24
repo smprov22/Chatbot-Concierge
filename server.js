@@ -43,3 +43,6 @@ app.listen(PORT, () => {
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+else{
+	app.use(express.static("client/public/user"));
+  }
