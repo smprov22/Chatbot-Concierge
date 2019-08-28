@@ -1,6 +1,8 @@
 ## Hosted At 
 https://chatbot-concierge.herokuapp.com/
 
+![chatbot-concierge-screenshot](/client/public/screenshots/Homepage.PNG)
+
 ## Overview 
 
 - Many budget and chain hotels operate without a concierge but hotel patrons still want to know about local activities that they can go do in the local area.  Although the front desk staff want to be helpful, they are often busy, don’t live in the area or don’t share similar interests as the guests.  The hotel manager also may want the ability to send guests to local attractions that will result in a positive experience and will encourage a return stay.  Many activities that give a town or city character are free but there is no good resource to find these activities.
